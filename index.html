@@ -5,564 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NDG Live Tech</title>
 
-  <link rel="icon" type="image/png" href="favicon.png">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #111111;
-  color: #ffffff;
-  line-height: 1.6;
-}
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-   .lang-switch {
-  position: fixed;
-  top: 25px;
-  right: 30px;
-  display: flex;
-  gap: 12px;
-  z-index: 10;
-
-  background: rgba(0,0,0,0.25);
-  padding: 8px 14px;
-  border-radius: 12px;
-
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  border: 1px solid rgba(255,255,255,0.08);
-}
-
-.lang-switch a {
-  font-weight: bold;
-  font-size: 14px;
-  color: #cccccc;
-}
-
-.lang-switch a:hover,
-.lang-switch a.active {
-  color: #2371d7;
-}
- .main-nav {
-  position: fixed;
-  top: 25px;
-  left: 30px;
-  display: flex;
-  gap: 18px;
-  z-index: 10;
-
-  background: rgba(0,0,0,0.25);
-  padding: 8px 14px;
-  border-radius: 12px;
-
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  border: 1px solid rgba(255,255,255,0.08);
-}
-
-.main-nav a {
-  font-weight: 600;
-  font-size: 14px;
-  color: #cccccc;
-  transition: 0.3s;
-}
-
-.main-nav a:hover {
-  color: #2371d7;
-}
-.main-nav a.active {
-  color: #2371d7;
-}
-.main-nav.scrolled,
-.lang-switch.scrolled {
-  background: rgba(10,10,10,0.75);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
-  border-color: rgba(255,255,255,0.12);
-}
-
-    header {
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 20px;
-
-  background:
-  radial-gradient(circle at top right,
-  rgba(35,113,215,0.45),
-  transparent 32%),
-
-  radial-gradient(circle at center,
-  rgba(35,113,215,0.18),
-  transparent 45%),
-
-  linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.88)),
-  url(photo1.jpg);
-
-  background-size: cover;
-  background-position: center;
-}
-    .hero {
-  max-width: 900px;
-  animation: fadeUp 3s ease forwards;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-    .logo-image {
-  width: 440px;
-  max-width: 85%;
-  margin-bottom: 75px;
-  filter: drop-shadow(0 0 28px rgba(255,255,255,0.18));
-}
-
-    .blue {
-      color: #2371d7FF;
-    }
-
-    .subtitle {
-      font-size: clamp(22px, 3vw, 34px);
-      color: #2371d7FF;
-      margin-bottom: 15px;
-      font-weight: 600;
-    }
-
-    .services-line {
-      font-size: 18px;
-      color: #cccccc;
-      letter-spacing: 1px;
-      margin-bottom: 100px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 15px 28px;
-      border-radius: 14px;
-      font-weight: bold;
-      transition: 0.3s;
-      border: 1px solid rgba(255,255,255,0.25);
-    }
-
-    .btn-primary {
-      background: #2371d7FF;
-      border-color: #2371d7FF;
-    }
-
-    .btn-primary:hover {
-      background: #6176ff;
-    }
-
-    .btn-secondary:hover {
-      border-color: #2371d7FF;
-      color: #2371d7FF;
-    }
-
-    section {
-      padding: 90px 20px;
-    }
-
-    .section-dark {
-  background: #111111;
-}
-
-.section-light {
-  background: #181818;
-}
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 55px;
-    }
-
-    .section-label {
-      color: #2371d7FF;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      font-size: 13px;
-      margin-bottom: 12px;
-    }
-
-    h2 {
-      font-size: clamp(36px, 5vw, 56px);
-      line-height: 1.1;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-    }
-
-    .card {
-  background: #202020;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 24px;
-  padding: 32px;
-  min-height: 230px;
-
-  transition: 0.35s ease;
-  text-align: center;
-}
-.card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(35,113,215,0.35);
-
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-}
-
-    .card h3 {
-  color: #2371d7FF;
-  font-size: 24px;
-  margin-bottom: 18px;
-  text-align: center;
-}
-
-    .card p {
-      color: #cccccc;
-    }
-
-    .about {
-      max-width: 850px;
-      margin: auto;
-      text-align: center;
-      font-size: 21px;
-      color: #d0d0d0;
-    }
-
-    .about p + p {
-      margin-top: 26px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .gallery img {
-  width: 100%;
-  height: 340px;
-  object-fit: cover;
-  border-radius: 24px;
-  display: block;
-
-  transition: 0.4s ease;
-}
-.gallery img:hover {
-  transform: scale(1.03) rotate(0.2deg);
-}
-    .contact {
-      text-align: center;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .contact-info {
-  margin-top: 40px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-
-  flex-wrap: wrap;
-
-  color: #cccccc;
-  font-size: 16px;
-}
-
-.contact-info a {
-  transition: 0.3s;
-}
-
-.contact-info a:hover {
-  color: #2371d7;
-}
-
-.contact-info span {
-  color: #2371d7;
-  font-size: 24px;
-  font-weight: bold;
-  opacity: 0.9;
-}
-    .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  margin-top: 40px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 16px 18px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.08);
-
-  background: #1a1a1a;
-  color: white;
-
-  font-size: 16px;
-  font-family: inherit;
-
-  transition: 0.3s;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: rgba(35,113,215,0.6);
-
-  box-shadow: 0 0 20px rgba(35,113,215,0.15);
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-    footer {
-  padding: 50px 20px;
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.08);
-}
-
-.footer-legal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-  margin-bottom: 18px;
-}
-
-.footer-legal a {
-  color: rgba(255,255,255,0.75);
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.footer-legal a:hover {
-  color: #00AEEF;
-}
-
-.footer-copy {
-  color: rgba(255,255,255,0.45);
-  font-size: 13px;
-}
-
-    @media (max-width: 900px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .gallery {
-  grid-template-columns: repeat(2, 1fr);
-}
-}
-
-    @media (max-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  section {
-    padding: 70px 20px;
-  }
-
-  header {
-    padding-top: 110px;
-  }
-
-  .main-nav {
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .lang-switch {
-    top: 70px;
-    right: 50%;
-    transform: translateX(50%);
-  }
-
-  .main-nav a,
-  .lang-switch a {
-    font-size: 12px;
-  }
-
-  .logo-image {
-    width: 280px;
-    margin-bottom: 45px;
-  }
-
-  .subtitle {
-    font-size: 23px;
-  }
-
-  .services-line {
-    font-size: 14px;
-    margin-bottom: 60px;
-  }
-
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn {
-    width: 100%;
-    max-width: 280px;
-    text-align: center;
-  }
-  .contact-form .btn {
-  align-self: stretch;
-  max-width: none;
-}
-
-  .gallery img {
-    height: 240px;
-  }
-
-  .card {
-    padding: 26px;
-  }
-
-  .contact-info {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .contact-info span {
-    display: none;
-  }
-
-  .footer-legal {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-.cookie-banner {
-  position: fixed;
-  left: 50%;
-  bottom: 30px;
-  transform: translateX(-50%);
-  width: calc(100% - 40px);
-  max-width: 780px;
-  background: rgba(17,17,17,0.98);
-  border: 1px solid rgba(255,255,255,0.14);
-  border-radius: 20px;
-  padding: 26px;
-  z-index: 9999;
-  box-shadow: 0 25px 80px rgba(0,0,0,0.45);
-}
-
-.cookie-banner h3 {
-  color: #00AEEF;
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.cookie-banner p {
-  color: rgba(255,255,255,0.82);
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.cookie-banner a {
-  color: #00AEEF;
-  text-decoration: none;
-}
-
-.cookie-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.cookie-actions button {
-  border: none;
-  padding: 12px 18px;
-  border-radius: 999px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.btn-primary {
-  background: #00AEEF;
-  color: #111111;
-}
-
-.btn-secondary {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid rgba(255,255,255,0.25) !important;
-}
-@media(max-width:700px) {
-  .cookie-banner {
-    bottom: 20px;
-    padding: 22px;
-  }
-
-  .cookie-actions {
-    flex-direction: column;
-  }
-
-  .cookie-actions button {
-    width: 100%;
-  }
-}
-  </style>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/cookies.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+<!--Navigation-->
   <nav class="main-nav">
+  <a href="#">Home</a>
   <a href="#services">Services</a>
   <a href="#about">About</a>
   <a href="#gallery">Gallery</a>
@@ -573,10 +29,10 @@ body {
   <a href="fr.html">FR</a>
   <a href="nl.html">NL</a>
 </nav>
-
+<!--Hero Section-->
   <header>
   <div class="hero">
-    <img src="logo.png" alt="NDG Live Tech Logo" class="logo-image">
+    <img src="images/logo.png" alt="NDG Live Tech Logo" class="logo-image">
 
     <p class="subtitle">Technical Production & Live Event Solutions</p>
     <p class="services-line">
@@ -587,15 +43,15 @@ body {
       <a href="#contact" class="btn btn-primary">
   Contact Us
 </a>
-
       <a href="#services" class="btn btn-secondary">
         View Services
       </a>
     </div>
   </div>
-
 </header>
 
+<main>
+<!--Services-->
   <section id="services" class="section-light">
     <div class="container">
       <div class="section-title">
@@ -626,7 +82,7 @@ body {
       </div>
     </div>
   </section>
-
+<!--A Propos-->
   <section id="about" class="section-dark">
     <div class="container about">
       <p class="section-label">About</p>
@@ -640,7 +96,7 @@ body {
       </p>
     </div>
   </section>
-
+<!--Gallery-->
   <section id="gallery" class="section-light">
     <div class="container">
       <div class="section-title">
@@ -649,19 +105,19 @@ body {
       </div>
 
       <div class="gallery">
-        <img src="photo5.jpeg" alt="Live event lighting">
-        <img src="photo1.jpg" alt="Live event lighting">
-        <img src="photo2.jpeg" alt="Live event sound">
-        <img src="photo6.jpeg" alt="Wedding">
-        <img src="photo3.jpeg" alt="Conference event">
-        <img src="photo4.jpeg" alt="Video mapping">
-        <img src="photo7.jpeg" alt="Live event sound">
-        <img src="photo8.jpeg" alt="LLN">
-        <img src="photo9.jpeg" alt="Visite pape">
+        <img src="images/gallery/photo5.jpeg" alt="Live event lighting">
+        <img src="images/gallery/photo1.jpg" alt="Live event lighting">
+        <img src="images/gallery/photo2.jpeg" alt="Live event sound">
+        <img src="images/gallery/photo6.jpeg" alt="Wedding">
+        <img src="images/gallery/photo3.jpeg" alt="Conference event">
+        <img src="images/gallery/photo4.jpeg" alt="Video mapping">
+        <img src="images/gallery/photo7.jpeg" alt="Live event sound">
+        <img src="images/gallery/photo8.jpeg" alt="LLN">
+        <img src="images/gallery/photo9.jpeg" alt="Visite pape">
       </div>
     </div>
   </section>
-
+<!--Contacts-->
   <section id="contact" class="section-dark">
     <div class="contact">
       <p class="section-label">Contact</p>
@@ -669,15 +125,19 @@ body {
 
 <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
 
+  <!-- Hidden Fields -->
   <input type="hidden" name="access_key" value="1ca54e3a-1ab8-4560-bb15-2a87fa755525">
 
- <input type="hidden" name="subject" value="New message from NDG Live Tech website">
+  <input type="hidden" name="subject"
+         value="New message from NDG Live Tech website">
 
-<input type="hidden" name="from_name" value="NDG Live Tech Website">
+  <input type="hidden" name="from_name"
+         value="NDG Live Tech Website">
 
-<input type="hidden" name="redirect" value="https://ndglivetech.com">
+  <input type="hidden" name="redirect"
+         value="https://ndglivetech.com">
 
-<input type="checkbox" name="botcheck" style="display: none;">
+  <input type="checkbox" name="botcheck" class="hidden">
 
   <input type="text" name="name" placeholder="Your Name" required>
 
@@ -696,32 +156,40 @@ body {
     <div class="contact-info">
 
   <a href="mailto:info@ndglivetech.com">
-    info@ndglivetech.com
+    <i class="fa-regular fa-envelope"></i>
+    Email
   </a>
 
   <span>•</span>
 
-  <a href="tel:+32470982784">
-    +32 470 98 27 84
-  </a>
+  <a href="https://wa.me/32470982784?text=Hello%20Nicolas,%20I%20am%20contacting%20you%20via%20NDG%20Live%20Tech."
+   target="_blank"
+   class="whatsapp-link">
+
+  <i class="fa-brands fa-whatsapp"></i>
+  Whatsapp
+
+</a>
 
   <span>•</span>
 
   <a href="https://instagram.com/ndglivetech" target="_blank" class="instagram-link">
     <i class="fa-brands fa-instagram"></i>
-    @ndglivetech
+    Instagram
   </a>
 
 </div>
   </section>
 
+</main>
+<!--Footer-->
   <footer>
 
   <div class="footer-legal">
-    <a href="legal.html">Legal Notice</a>
-    <a href="terms.html">Terms & Conditions</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="cookies.html">Cookies</a>
+    <a href="legal/legal.html">Legal Notice</a>
+    <a href="legal/terms.html">Terms & Conditions</a>
+    <a href="legal/privacy.html">Privacy Policy</a>
+    <a href="legal/cookies.html">Cookies</a>
   </div>
 
   <p class="footer-copy">
@@ -729,79 +197,29 @@ body {
   </p>
 
 </footer>
-<script>
-  const mainNav = document.querySelector('.main-nav');
-  const langSwitch = document.querySelector('.lang-switch');
-  const navLinks = document.querySelectorAll('.main-nav a');
-  const sections = document.querySelectorAll('section[id]');
-
-  window.addEventListener('scroll', () => {
-
-    if (window.scrollY > 50) {
-      mainNav.classList.add('scrolled');
-      langSwitch.classList.add('scrolled');
-    } else {
-      mainNav.classList.remove('scrolled');
-      langSwitch.classList.remove('scrolled');
-    }
-
-    let current = '';
-
-    sections.forEach(section => {
-  const sectionTop = section.offsetTop - 300;
-  const sectionHeight = section.offsetHeight;
-
-  if (
-    window.scrollY >= sectionTop &&
-    window.scrollY < sectionTop + sectionHeight
-  ) {
-    current = section.getAttribute('id');
-  }
-});
-
-if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 20) {
-  current = 'contact';
-}
-
-navLinks.forEach(link => {
-      link.classList.remove('active');
-
-      if (link.getAttribute('href') === '#' + current) {
-        link.classList.add('active');
-      }
-    });
-  });
-</script>
+<!--Cookie-->
 <div class="cookie-banner" id="cookieBanner">
   <div>
-    <h3>Cookies</h3>
+    
+    <h3>
+  <i class="fa-solid fa-cookie-bite"></i>
+  Cookies, cookies, cookies...
+</h3>
     <p>
       This website uses essential cookies to function properly and may use optional cookies
       to improve your experience. You can accept all cookies or reject non-essential cookies.
-      <a href="cookies.html">Learn more</a>
+      <a href="legal/cookies.html">Learn more</a>
     </p>
   </div>
 
   <div class="cookie-actions">
     <button class="btn-secondary" onclick="rejectCookies()">Reject non-essential</button>
-    <button class="btn-primary" onclick="acceptCookies()">Accept all</button>
+    <button class="btn-primary" onclick="acceptCookies()">
+  <i class="fa-solid fa-cookie-bite"></i>
+  Accept all
+</button>
   </div>
 </div>
-
-<script>
-  function acceptCookies() {
-    localStorage.setItem("cookieConsent", "accepted");
-    document.getElementById("cookieBanner").style.display = "none";
-  }
-
-  function rejectCookies() {
-    localStorage.setItem("cookieConsent", "rejected");
-    document.getElementById("cookieBanner").style.display = "none";
-  }
-
-  if (localStorage.getItem("cookieConsent")) {
-    document.getElementById("cookieBanner").style.display = "none";
-  }
-</script>
+<script src="script.js"></script>
 </body>
 </html>
