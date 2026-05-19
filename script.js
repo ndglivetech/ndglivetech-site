@@ -74,3 +74,19 @@ function rejectCookies() {
     cookieBanner.style.display = "none";
   }
 }
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("open");
+    mainNav.classList.toggle("open");
+  });
+
+  mainNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      menuToggle.classList.remove("open");
+      mainNav.classList.remove("open");
+    });
+  });
+}

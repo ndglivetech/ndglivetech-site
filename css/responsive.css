@@ -110,4 +110,133 @@
   .cookie-actions button {
     width: 100%;
   }
+}/* Mobile menu */
+.menu-toggle {
+  display: none;
+}
+
+.mobile-lang {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    z-index: 1001;
+
+    width: 46px;
+    height: 46px;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 22px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+    transition: 0.3s ease;
+  }
+
+  .menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 80px;
+    left: 24px;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 220px;
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+
+    transition: 0.3s ease;
+  }
+
+  .main-nav.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .main-nav a {
+    padding: 10px 0;
+  }
+
+  .lang-switch {
+    display: none;
+  }
+
+  .mobile-lang {
+    display: block;
+    width: 100%;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .mobile-lang p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 8px;
+
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+
+  .mobile-lang-links {
+    display: flex;
+    gap: 10px;
+  }
+
+  .mobile-lang-links a {
+    padding: 6px 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+
+    font-size: 0.8rem;
+  }
+
+  .mobile-lang-links a.active {
+    background: #1e88ff;
+    border-color: #1e88ff;
+    color: #ffffff;
+  }
 }
