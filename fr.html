@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NDG Live Tech</title>
 
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="ima">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/sections.css">
@@ -15,16 +15,36 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
 <!--Navigation-->
-<nav class="main-nav">
+<button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<nav class="main-nav" id="mainNav">
   <a href="#">Accueil</a>
   <a href="#services">Services</a>
   <a href="#about">À propos</a>
   <a href="#gallery">Galerie</a>
   <a href="#contact">Contact</a>
 </nav>
+
+<div class="mobile-lang">
+  <p class="mobile-lang-title">
+    <i class="fa-solid fa-earth-europe"></i>
+    Langue
+  </p>
+
+  <div class="mobile-lang-links">
+    <a href="index.html">🇬🇧 EN</a>
+    <a href="fr.html" class="active">🇫🇷 FR</a>
+    <a href="nl.html">🇳🇱 NL</a>
+  </div>
+</div>
 
 <nav class="lang-switch">
   <a href="index.html">EN</a>
@@ -35,15 +55,19 @@
 <!--Hero Section-->
 <header>
   <div class="hero">
+
     <img src="images/logo.png" alt="Logo NDG Live Tech" class="logo-image">
 
-    <p class="subtitle">Production Technique & Solutions Événementielles</p>
+    <p class="subtitle">
+      Production Technique & Solutions Événementielles
+    </p>
 
     <p class="services-line">
-      Audio • Lumière • Vidéo • Régie
+      Audio • Lumière • Vidéo • Régie Technique
     </p>
 
     <div class="buttons">
+
       <a href="#contact" class="btn btn-primary">
         Contactez-nous
       </a>
@@ -51,7 +75,9 @@
       <a href="#services" class="btn btn-secondary">
         Voir les services
       </a>
+
     </div>
+
   </div>
 </header>
 
@@ -59,6 +85,7 @@
 
 <!--Services-->
 <section id="services" class="section-light">
+
   <div class="container">
 
     <div class="section-title">
@@ -71,21 +98,21 @@
       <div class="card">
         <h3>Production Technique</h3>
         <p>
-          Coordination et gestion technique pour les événements live et les productions artistiques.
+          Coordination et gestion technique pour événements live et productions artistiques.
         </p>
       </div>
 
       <div class="card">
         <h3>Audio</h3>
         <p>
-          Systèmes son professionnels, support FOH et solutions audio de scène.
+          Systèmes audio professionnels, support FOH et solutions son de scène.
         </p>
       </div>
 
       <div class="card">
         <h3>Lumière</h3>
         <p>
-          Éclairage scénique, architectural et exploitation lumière pour spectacles live.
+          Éclairage scénique, architectural et exploitation lumière pour spectacles.
         </p>
       </div>
 
@@ -97,11 +124,14 @@
       </div>
 
     </div>
+
   </div>
+
 </section>
 
 <!--À propos-->
 <section id="about" class="section-dark">
+
   <div class="container about">
 
     <p class="section-label">À propos</p>
@@ -111,48 +141,53 @@
     <br />
 
     <p>
-      Basé à Bruxelles, NDG Live Tech fournit un support technique professionnel pour les institutions culturelles, concerts, événements d’entreprise et productions artistiques.
+      Basé à Bruxelles, NDG Live Tech fournit un support technique professionnel pour les institutions culturelles, concerts, événements corporate et productions artistiques.
     </p>
 
     <p>
-      Grâce à une solide expérience de terrain dans l’univers du spectacle vivant, nous mettons l’accent sur la fiabilité, la flexibilité et une exécution technique efficace.
+      Grâce à une solide expérience terrain dans l’univers du spectacle vivant, nous mettons l’accent sur la fiabilité, la flexibilité et une exécution technique efficace.
     </p>
 
   </div>
+
 </section>
 
-<!--Galerie-->
+<!--Gallery-->
 <section id="gallery" class="section-light">
+
   <div class="container">
 
     <div class="section-title">
       <p class="section-label">Galerie</p>
-      <h2>Événements</h2>
+      <h2>Événements Live</h2>
     </div>
 
     <div class="gallery">
-      <img src="images/gallery/photo5.jpeg" alt="Éclairage événement live">
-      <img src="images/gallery/photo1.jpg" alt="Éclairage événement live">
-      <img src="images/gallery/photo2.jpeg" alt="Sonorisation événement live">
+
+      <img src="images/gallery/photo5.jpeg" alt="Éclairage événementiel">
+      <img src="images/gallery/photo1.jpg" alt="Éclairage événementiel">
+      <img src="images/gallery/photo2.jpeg" alt="Son live">
       <img src="images/gallery/photo6.jpeg" alt="Mariage">
-      <img src="images/gallery/photo3.jpeg" alt="Événement conférence">
+      <img src="images/gallery/photo3.jpeg" alt="Conférence">
       <img src="images/gallery/photo4.jpeg" alt="Vidéo mapping">
-      <img src="images/gallery/photo7.jpeg" alt="Sonorisation événement live">
+      <img src="images/gallery/photo7.jpeg" alt="Son live">
       <img src="images/gallery/photo8.jpeg" alt="LLN">
       <img src="images/gallery/photo9.jpeg" alt="Visite du pape">
+
     </div>
 
   </div>
+
 </section>
 
-<!--Contact-->
+<!--Contacts-->
 <section id="contact" class="section-dark">
 
   <div class="contact">
 
     <p class="section-label">Contact</p>
 
-    <h2>Travaillons Ensemble</h2>
+    <h2>Travaillons ensemble</h2>
 
 <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
 
@@ -206,9 +241,13 @@
 
     <span>•</span>
 
-    <a href="https://instagram.com/ndglivetech" target="_blank" class="instagram-link">
+    <a href="https://instagram.com/ndglivetech"
+       target="_blank"
+       class="instagram-link">
+
       <i class="fa-brands fa-instagram"></i>
       Instagram
+
     </a>
 
   </div>
@@ -254,7 +293,7 @@
   <div class="cookie-actions">
 
     <button class="btn-secondary" onclick="rejectCookies()">
-      Refuser les cookies non essentiels
+      Refuser les non essentiels
     </button>
 
     <button class="btn-primary" onclick="acceptCookies()">

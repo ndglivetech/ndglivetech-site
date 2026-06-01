@@ -1,18 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const mainNav = document.querySelector(".main-nav");
+  const mainNav = document.getElementById("mainNav");
   const langSwitch = document.querySelector(".lang-switch");
   const navLinks = document.querySelectorAll(".main-nav a");
   const sections = document.querySelectorAll("section[id]");
   const menuToggle = document.getElementById("menuToggle");
   const cookieBanner = document.getElementById("cookieBanner");
 
-  // Menu burger
-  if (menuToggle && mainNav) {
-    menuToggle.addEventListener("click", () => {
-      mainNav.classList.toggle("open");
-    });
-  }
+// Menu burger
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menuToggle.classList.toggle("open");
+    mainNav.classList.toggle("open");
+  }); 
+  mainNav.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
 
+  document.addEventListener("click", () => {
+    menuToggle.classList.remove("open");
+    mainNav.classList.remove("open");
+  });
+
+  mainNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menuToggle.classList.remove("open");
+      mainNav.classList.remove("open");
+    });
+  });
+}
   // Scroll navigation
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
@@ -73,20 +89,4 @@ function rejectCookies() {
   if (cookieBanner) {
     cookieBanner.style.display = "none";
   }
-}
-const menuToggle = document.getElementById("menuToggle");
-const mainNav = document.getElementById("mainNav");
-
-if (menuToggle && mainNav) {
-  menuToggle.addEventListener("click", () => {
-    menuToggle.classList.toggle("open");
-    mainNav.classList.toggle("open");
-  });
-
-  mainNav.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      menuToggle.classList.remove("open");
-      mainNav.classList.remove("open");
-    });
-  });
 }
