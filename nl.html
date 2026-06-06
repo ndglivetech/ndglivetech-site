@@ -18,12 +18,48 @@
 <body>
 
 <!--Navigation-->
-<nav class="main-nav">
-  <a href="#">Home</a>
+<button class="menu-toggle" id="menuToggle" aria-label="Menu openen">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<nav class="main-nav" id="mainNav">
+
+  <a href="#" class="active">Home</a>
   <a href="#services">Diensten</a>
-  <a href="#about">Over ons</a>
+  <a href="#about">Over</a>
   <a href="#gallery">Galerij</a>
   <a href="#contact">Contact</a>
+
+  <div class="mobile-lang">
+
+    <p class="mobile-lang-title">
+      <i class="fa-solid fa-earth-europe"></i>
+      Taal
+    </p>
+
+    <div class="mobile-lang-links">
+
+      <a href="index.html">
+        <span>🇬🇧</span>
+        <span>EN</span>
+      </a>
+
+      <a href="fr.html">
+        <span>🇫🇷</span>
+        <span>FR</span>
+      </a>
+
+      <a href="nl.html" class="lang-active">
+        <span>🇳🇱</span>
+        <span>NL</span>
+      </a>
+
+    </div>
+
+  </div>
+
 </nav>
 
 <nav class="lang-switch">
