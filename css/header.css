@@ -1,38 +1,55 @@
 header {
   min-height: 100vh;
   position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   text-align: center;
+
   padding: 40px 20px;
 
   background:
-  radial-gradient(circle at top right,
-  rgba(35,113,215,0.45),
-  transparent 32%),
+    radial-gradient(
+      circle at top right,
+      rgba(35,113,215,0.45),
+      transparent 32%
+    ),
 
-  radial-gradient(circle at center,
-  rgba(35,113,215,0.18),
-  transparent 45%),
+    radial-gradient(
+      circle at center,
+      rgba(35,113,215,0.18),
+      transparent 45%
+    ),
 
-  linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.88)),
-  url(../images/gallery/photo1.jpg);
+    linear-gradient(
+      rgba(0,0,0,0.72),
+      rgba(0,0,0,0.88)
+    ),
+
+    url(../images/gallery/photo1.jpg);
 
   background-size: cover;
   background-position: center;
 }
 
+/* Navigation */
+
 .main-nav {
   position: fixed;
   top: 25px;
   left: 30px;
+
   display: flex;
   gap: 18px;
+
   z-index: 10;
 
   background: rgba(0,0,0,0.25);
+
   padding: 8px 14px;
+
   border-radius: 12px;
 
   backdrop-filter: blur(10px);
@@ -44,32 +61,55 @@ header {
 .main-nav a {
   font-weight: 600;
   font-size: 14px;
+
   color: #cccccc;
+
   transition: 0.3s;
 }
 
 .main-nav a:hover {
   color: #2371d7;
 }
-.main-nav a.active {
+
+/* Active menu section */
+
+.main-nav > a.active {
   color: #2371d7;
 }
+
+/* Active mobile language */
+
+.main-nav .mobile-lang-links a.lang-active {
+  background: #1e88ff;
+  border-color: #1e88ff;
+  color: #ffffff !important;
+}
+
 .main-nav.scrolled,
 .lang-switch.scrolled {
   background: rgba(10,10,10,0.75);
+
   box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+
   border-color: rgba(255,255,255,0.12);
 }
+
+/* Desktop language switch */
+
 .lang-switch {
   position: fixed;
   top: 25px;
   right: 30px;
+
   display: flex;
   gap: 12px;
+
   z-index: 10;
 
   background: rgba(0,0,0,0.25);
+
   padding: 8px 14px;
+
   border-radius: 12px;
 
   backdrop-filter: blur(10px);
@@ -81,6 +121,7 @@ header {
 .lang-switch a {
   font-weight: bold;
   font-size: 14px;
+
   color: #cccccc;
 }
 
@@ -88,12 +129,17 @@ header {
 .lang-switch a.active {
   color: #2371d7;
 }
+
+/* Hero */
+
 .hero {
   max-width: 900px;
+
   animation: fadeUp 3s ease forwards;
 }
 
 @keyframes fadeUp {
+
   from {
     opacity: 0;
     transform: translateY(30px);
@@ -103,66 +149,82 @@ header {
     opacity: 1;
     transform: translateY(0);
   }
+
 }
 
-    .logo-image {
+.logo-image {
   width: 440px;
   max-width: 85%;
+
   margin-bottom: 75px;
-  filter: drop-shadow(0 0 28px rgba(255,255,255,0.18));
+
+  filter: drop-shadow(
+    0 0 28px rgba(255,255,255,0.18)
+  );
 }
 
-    .blue {
-      color: #2371d7FF;
-    }
+.blue {
+  color: #2371d7FF;
+}
 
-    .subtitle {
-      font-size: clamp(22px, 3vw, 34px);
-      color: #2371d7FF;
-      margin-bottom: 15px;
-      font-weight: 600;
-    }
+.subtitle {
+  font-size: clamp(22px, 3vw, 34px);
 
-    .services-line {
-      font-size: 18px;
-      color: #cccccc;
-      letter-spacing: 1px;
-      margin-bottom: 100px;
-    }
+  color: #2371d7FF;
 
-    .buttons {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+  margin-bottom: 15px;
 
-    .btn {
-      padding: 15px 28px;
-      border-radius: 14px;
-      font-weight: bold;
-      transition: 0.3s;
-      border: 1px solid rgba(255,255,255,0.25);
-    }
+  font-weight: 600;
+}
 
-    .btn-primary {
-      background: #2371d7FF;
-      border-color: #2371d7FF;
-    }
+.services-line {
+  font-size: 18px;
 
-    .btn-primary:hover {
-      background: #6176ff;
-    }
+  color: #cccccc;
 
-    .btn-secondary:hover {
-      border-color: #2371d7FF;
-      color: #2371d7FF;
-    }
+  letter-spacing: 1px;
 
-    section {
-      padding: 90px 20px;
-    }
+  margin-bottom: 100px;
+}
 
-    .section-dark {
+.buttons {
+  display: flex;
+  gap: 16px;
+
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 15px 28px;
+
+  border-radius: 14px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.btn-primary {
+  background: #2371d7FF;
+  border-color: #2371d7FF;
+}
+
+.btn-primary:hover {
+  background: #6176ff;
+}
+
+.btn-secondary:hover {
+  border-color: #2371d7FF;
+  color: #2371d7FF;
+}
+
+section {
+  padding: 90px 20px;
+}
+
+.section-dark {
   background: #111111;
 }

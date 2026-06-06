@@ -1,14 +1,19 @@
 @media (max-width: 900px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
 
-      .gallery {
-  grid-template-columns: repeat(2, 1fr);
-}
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
-    @media (max-width: 600px) {
+/* Small mobile */
+
+@media (max-width: 600px) {
+
   .grid {
     grid-template-columns: 1fr;
   }
@@ -23,26 +28,6 @@
 
   header {
     padding-top: 110px;
-  }
-
-  .main-nav {
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .lang-switch {
-    top: 70px;
-    right: 50%;
-    transform: translateX(50%);
-  }
-
-  .main-nav a,
-  .lang-switch a {
-    font-size: 12px;
   }
 
   .logo-image {
@@ -69,10 +54,11 @@
     max-width: 280px;
     text-align: center;
   }
+
   .contact-form .btn {
-  align-self: stretch;
-  max-width: none;
-}
+    align-self: stretch;
+    max-width: none;
+  }
 
   .gallery img {
     height: 240px;
@@ -95,9 +81,13 @@
     flex-direction: column;
     gap: 10px;
   }
+
 }
 
-@media(max-width:700px) {
+/* Cookies mobile */
+
+@media (max-width: 700px) {
+
   .cookie-banner {
     bottom: 20px;
     padding: 22px;
@@ -110,7 +100,11 @@
   .cookie-actions button {
     width: 100%;
   }
-}/* Mobile menu */
+
+}
+
+/* Mobile menu */
+
 .menu-toggle {
   display: none;
 }
@@ -119,10 +113,13 @@
   display: none;
 }
 
+/* Burger menu */
+
 @media (max-width: 768px) {
 
   .menu-toggle {
     display: flex;
+
     position: fixed;
     top: 24px;
     left: 24px;
@@ -146,8 +143,10 @@
   .menu-toggle span {
     width: 22px;
     height: 2px;
+
     background: #ffffff;
     border-radius: 2px;
+
     transition: 0.3s ease;
   }
 
@@ -176,7 +175,7 @@
     width: 220px;
     padding: 20px;
 
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.92);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 16px;
 
@@ -193,8 +192,13 @@
     transform: translateY(0);
   }
 
-  .main-nav a {
+  .main-nav > a {
     padding: 10px 0;
+    font-size: 12px;
+  }
+
+  .main-nav > a.active {
+    color: #2371d7 !important;
   }
 
   .lang-switch {
@@ -204,39 +208,99 @@
   .mobile-lang {
     display: block;
     width: 100%;
-    margin-top: 14px;
-    padding-top: 14px;
+
+    margin-top: 24px;
+    padding-top: 24px;
+
     border-top: 1px solid rgba(255, 255, 255, 0.15);
   }
 
-  .mobile-lang p {
+  .mobile-lang-title {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 
-    margin-bottom: 8px;
+    margin-bottom: 22px;
 
-    font-size: 0.85rem;
-    opacity: 0.8;
+    font-size: 1rem;
+    font-weight: 600;
+
+    opacity: 0.9;
   }
 
   .mobile-lang-links {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
   }
 
-  .mobile-lang-links a {
-    padding: 6px 10px;
+  .main-nav .mobile-lang-links a {
+    width: 54px !important;
+    height: 54px !important;
 
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 999px;
+    padding: 0 !important;
+    margin: 0 !important;
 
-    font-size: 0.8rem;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border-radius: 50% !important;
+
+    background: transparent !important;
+
+    color: white !important;
+    text-decoration: none !important;
+
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+
+    line-height: 1 !important;
+
+    transition: 0.25s ease;
   }
 
-  .mobile-lang-links a.active {
-    background: #1e88ff;
-    border-color: #1e88ff;
-    color: #ffffff;
+  .main-nav .mobile-lang-links a span {
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    text-align: center !important;
+    line-height: 1 !important;
   }
+
+  .main-nav .mobile-lang-links a span:first-child {
+    font-size: 1.15rem !important;
+    margin-bottom: 5px !important;
+  }
+
+  .main-nav .mobile-lang-links a span:last-child {
+    font-size: 0.72rem !important;
+  }
+
+  .main-nav .mobile-lang-links a.lang-active {
+    background: #1e88ff !important;
+    border-color: #1e88ff !important;
+    color: white !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .main-nav > a.active {
+    color: #2371d7 !important;
+  }
+
+  .main-nav .mobile-lang .mobile-lang-links a.lang-active {
+    background-color: #1e88ff !important;
+    border: 1px solid #1e88ff !important;
+    color: #ffffff !important;
+  }
+
 }
