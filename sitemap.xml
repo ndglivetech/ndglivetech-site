@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main website -->
+  <url>
+    <loc>https://ndglivetech.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/fr.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/nl.html</loc>
+  </url>
+
+  <!-- Legal - English -->
+  <url>
+    <loc>https://ndglivetech.com/legal/legal.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/legal/terms.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/legal/privacy.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/legal/cookies.html</loc>
+  </url>
+
+  <!-- Legal - French -->
+  <url>
+    <loc>https://ndglivetech.com/legal/legal-fr.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/legal/terms-fr.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/legal/privacy-fr.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/legal/cookies-fr.html</loc>
+  </url>
+
+  <!-- Legal - Dutch -->
+  <url>
+    <loc>https://ndglivetech.com/legal/legal-nl.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/legal/terms-nl.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/legal/privacy-nl.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/legal/cookies-nl.html</loc>
+  </url>
+
+</urlset>
