@@ -1,18 +1,404 @@
-.gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
+/* =========================
+   GALLERY
+========================= */
 
-    .gallery img {
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+
+/* Gallery images */
+
+.gallery img {
   width: 100%;
   height: 340px;
+
   object-fit: cover;
+
   border-radius: 24px;
+
   display: block;
 
-  transition: 0.4s ease;
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease,
+    box-shadow 0.35s ease;
 }
-.gallery img:hover {
-  transform: scale(1.03) rotate(0.2deg);
+
+.gallery-item {
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: scale(1.025);
+  filter: brightness(1.06);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.20),
+    0 0 20px rgba(35, 113, 215, 0.08);
+}
+
+
+/* =========================
+   SHOW MORE
+========================= */
+
+/* Extra images hidden by default */
+
+.gallery img.gallery-extra {
+  display: none;
+}
+
+
+/* Show extra images when gallery is expanded */
+
+.gallery.show-all img.gallery-extra {
+  display: block;
+}
+
+
+/* View more button */
+
+.gallery-toggle {
+  display: block;
+
+  margin: 34px auto 0;
+
+  padding: 10px 20px;
+
+  background: rgba(35, 113, 215, 0.10);
+
+  border: 1px solid rgba(35, 113, 215, 0.28);
+  border-radius: 22px;
+
+  color: #d7d9dc;
+
+  font: inherit;
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.gallery-toggle:hover {
+  color: #ffffff;
+
+  background: rgba(35, 113, 215, 0.20);
+
+  border-color: #2371d7;
+
+  box-shadow: 0 0 18px rgba(35, 113, 215, 0.18);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+
+  z-index: 5000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(35, 113, 215, 0.06),
+      transparent 45%
+    ),
+    rgba(5, 8, 12, 0.96);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+
+/* Open lightbox */
+
+.gallery-lightbox.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+/* =========================
+   LIGHTBOX CONTENT
+========================= */
+
+.lightbox-content {
+  width: min(85vw, 1400px);
+  height: 85vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Full image */
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: calc(85vh - 45px);
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.45),
+    0 0 30px rgba(35, 113, 215, 0.05);
+}
+
+
+/* Image counter */
+
+.lightbox-counter {
+  margin-top: 14px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 13px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.lightbox-close {
+  position: absolute;
+
+  top: 28px;
+  right: 34px;
+
+  z-index: 5002;
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.lightbox-close:hover {
+  background: rgba(35, 113, 215, 0.20);
+
+  border-color: #2371d7;
+
+  transform: scale(1.05);
+}
+
+
+/* =========================
+   CAROUSEL ARROWS
+========================= */
+
+.lightbox-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 5002;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  transform: translateY(-50%);
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 34px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.lightbox-arrow:hover {
+  background: rgba(35, 113, 215, 0.20);
+
+  border-color: #2371d7;
+
+  box-shadow: 0 0 18px rgba(35, 113, 215, 0.16);
+}
+
+.lightbox-prev {
+  left: 28px;
+}
+
+.lightbox-next {
+  right: 28px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery img {
+    height: 300px;
+  }
+
+  .lightbox-content {
+    width: 82vw;
+  }
+
+  .lightbox-prev {
+    left: 18px;
+  }
+
+  .lightbox-next {
+    right: 18px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .gallery img {
+    height: 240px;
+    border-radius: 18px;
+  }
+
+  .gallery-item:hover {
+    transform: none;
+  }
+
+  .gallery-toggle {
+    margin-top: 28px;
+  }
+
+
+  /* Lightbox mobile */
+
+  .gallery-lightbox {
+    padding: 16px;
+  }
+
+  .lightbox-content {
+    width: 100%;
+    height: 82vh;
+
+    padding: 0 45px;
+  }
+
+  .lightbox-content img {
+    max-width: 100%;
+    max-height: calc(82vh - 40px);
+
+    border-radius: 10px;
+  }
+
+  .lightbox-close {
+    top: 18px;
+    right: 18px;
+
+    width: 42px;
+    height: 42px;
+
+    font-size: 25px;
+  }
+
+  .lightbox-arrow {
+    width: 42px;
+    height: 42px;
+
+    font-size: 28px;
+  }
+
+  .lightbox-prev {
+    left: 10px;
+  }
+
+  .lightbox-next {
+    right: 10px;
+  }
+
+  .lightbox-counter {
+    margin-top: 12px;
+
+    font-size: 12px;
+  }
+
 }

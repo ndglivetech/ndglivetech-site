@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Legal Notice - NDG Live Tech</title>
 
   <style>
@@ -14,86 +16,283 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #111111;
+
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(35, 113, 215, 0.10),
+          transparent 35%
+        ),
+        #111317;
+
       color: #ffffff;
+
       line-height: 1.7;
-      padding: 80px 25px;
     }
 
+    a {
+      color: #3c8df5;
+      text-decoration: none;
+
+      transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+
+    /* =========================
+       TOP BAR
+    ========================= */
+
+    .legal-topbar {
+      width: min(1100px, 92%);
+
+      margin: 0 auto;
+
+      padding: 28px 0 0;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      gap: 20px;
+    }
+
+    .back-home {
+      display: inline-flex;
+      align-items: center;
+
+      gap: 8px;
+
+      color: #cfd3d8;
+
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .back-home:hover {
+      color: #3c8df5;
+    }
+
+
+    /* =========================
+       LANGUAGE SWITCH
+    ========================= */
+
+    .legal-language {
+      display: flex;
+
+      gap: 8px;
+    }
+
+    .legal-language a {
+      min-width: 38px;
+
+      padding: 6px 10px;
+
+      text-align: center;
+
+      color: #aeb4bb;
+
+      background: rgba(255, 255, 255, 0.035);
+
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .legal-language a.active {
+      color: #ffffff;
+
+      background: rgba(35, 113, 215, 0.20);
+
+      border-color: rgba(35, 113, 215, 0.65);
+    }
+
+
+    /* =========================
+       MAIN CONTENT
+    ========================= */
+
     .container {
-      max-width: 850px;
-      margin: auto;
+      width: min(850px, 92%);
+
+      margin: 0 auto;
+
+      padding: 70px 0 80px;
     }
 
     h1 {
-      font-size: 42px;
       margin-bottom: 50px;
-      color: #00AEEF;
+
+      color: #3c8df5;
+
+      font-size: clamp(34px, 6vw, 46px);
+      line-height: 1.1;
     }
 
     h2 {
-      font-size: 20px;
       margin-bottom: 20px;
-      color: #00AEEF;
+
+      color: #3c8df5;
+
+      font-size: 20px;
     }
 
     section {
       margin-bottom: 50px;
       padding-bottom: 30px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    section:last-of-type {
+      margin-bottom: 0;
     }
 
     p {
-      color: rgba(255,255,255,0.85);
       margin-bottom: 12px;
+
+      color: rgba(255, 255, 255, 0.84);
+
       font-size: 15px;
     }
 
-    a {
-      color: #00AEEF;
-      text-decoration: none;
-      transition: 0.3s;
-    }
 
-    a:hover {
-      opacity: 0.7;
-    }
+    /* =========================
+       COMPANY INFO
+    ========================= */
 
     .info {
       display: grid;
       grid-template-columns: 180px 1fr;
-      gap: 12px;
+
+      gap: 12px 24px;
+
       margin-top: 25px;
     }
 
     .label {
-      color: rgba(255,255,255,0.5);
+      color: rgba(255, 255, 255, 0.48);
     }
 
-    @media(max-width:700px) {
+
+    /* =========================
+       LEGAL DOCUMENTS
+    ========================= */
+
+    .legal-links {
+      display: flex;
+      flex-direction: column;
+
+      align-items: flex-start;
+
+      gap: 10px;
+    }
+
+    .legal-links a {
+      display: inline-flex;
+      align-items: center;
+
+      gap: 8px;
+
+      font-size: 15px;
+    }
+
+    .legal-links a::before {
+      content: "→";
+
+      color: rgba(60, 141, 245, 0.65);
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .legal-footer {
+      width: min(850px, 92%);
+
+      margin: 0 auto;
+
+      padding: 0 0 35px;
+
+      text-align: center;
+
+      color: rgba(255, 255, 255, 0.40);
+
+      font-size: 12px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      .legal-topbar {
+        padding-top: 20px;
+      }
+
+      .container {
+        padding-top: 55px;
+      }
 
       .info {
         grid-template-columns: 1fr;
+
         gap: 5px;
       }
 
-      h1 {
-        font-size: 32px;
+      .label {
+        margin-top: 12px;
+
+        color: #3c8df5;
+
+        font-size: 12px;
+        font-weight: 700;
+
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
 
-      body {
-        padding: 60px 20px;
-      }
     }
   </style>
+
 </head>
+
 
 <body>
 
-  <div class="container">
+  <!-- Top navigation -->
+  <div class="legal-topbar">
+
+    <a href="../index.html" class="back-home">
+      ← Back to NDG Live Tech
+    </a>
+
+    <div class="legal-language">
+      <a href="legal.html" class="active">EN</a>
+      <a href="legal-fr.html">FR</a>
+      <a href="legal-nl.html">NL</a>
+    </div>
+
+  </div>
+
+
+  <main class="container">
 
     <h1>Legal Notice</h1>
 
+
+    <!-- Company Information -->
     <section>
 
       <h2>Company Information</h2>
@@ -139,6 +338,8 @@
 
     </section>
 
+
+    <!-- Activity -->
     <section>
 
       <h2>Activity</h2>
@@ -150,6 +351,8 @@
 
     </section>
 
+
+    <!-- Liability -->
     <section>
 
       <h2>Liability</h2>
@@ -166,6 +369,8 @@
 
     </section>
 
+
+    <!-- Applicable Law -->
     <section>
 
       <h2>Applicable Law</h2>
@@ -177,19 +382,36 @@
 
     </section>
 
+
+    <!-- Legal Documents -->
     <section>
 
       <h2>Legal Documents</h2>
 
-      <p>
-        <a href="terms.html">Terms & Conditions</a><br>
-        <a href="privacy.html">Privacy Policy</a><br>
-        <a href="cookies.html">Cookies Policy</a>
-      </p>
+      <div class="legal-links">
+
+        <a href="terms.html">
+          Terms & Conditions
+        </a>
+
+        <a href="privacy.html">
+          Privacy Policy
+        </a>
+
+        <a href="cookies.html">
+          Cookies Policy
+        </a>
+
+      </div>
 
     </section>
 
-  </div>
+  </main>
+
+
+  <footer class="legal-footer">
+    © 2026 NDG Live Tech. All rights reserved.
+  </footer>
 
 </body>
 

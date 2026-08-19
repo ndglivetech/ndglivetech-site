@@ -1,328 +1,575 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NDG Live Tech</title>
-
-  <link rel="icon" type="image/png" href="ima">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/sections.css">
-  <link rel="stylesheet" href="css/gallery.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/cookies.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NDG Live Tech</title>
+<link href="images/logo.png" rel="icon" type="image/png"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/header.css" rel="stylesheet"/>
+<link href="css/sections.css" rel="stylesheet"/>
+<link href="css/gallery.css" rel="stylesheet"/>
+<link href="css/footer.css" rel="stylesheet"/>
+<link href="css/cookies.css" rel="stylesheet"/>
+<link href="css/certifications.css" rel="stylesheet"/>
+<link href="css/clients.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
 </head>
-
 <body>
-
 <!--Navigation-->
-<button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
-  <span></span>
-  <span></span>
-  <span></span>
+<button aria-label="Ouvrir le menu" class="menu-toggle" id="menuToggle">
+<span></span>
+<span></span>
+<span></span>
 </button>
-
 <nav class="main-nav" id="mainNav">
-
-  <a href="#" class="active">Accueil</a>
-  <a href="#services">Services</a>
-  <a href="#about">À propos</a>
-  <a href="#gallery">Galerie</a>
-  <a href="#contact">Contact</a>
-
-  <div class="mobile-lang">
-
-    <p class="mobile-lang-title">
-      <i class="fa-solid fa-earth-europe"></i>
+<a class="active" href="#">Accueil</a>
+<a href="#services">Services</a>
+<a href="#about">À propos</a>
+<a href="#gallery">Galerie</a>
+<a href="#contact">Contact</a>
+<div class="mobile-lang">
+<p class="mobile-lang-title">
+<i class="fa-solid fa-earth-europe"></i>
       Langue
     </p>
-
-    <div class="mobile-lang-links">
-
-      <a href="index.html">
-        <span>🇬🇧</span>
-        <span>EN</span>
-      </a>
-
-      <a href="fr.html" class="lang-active">
-        <span>🇫🇷</span>
-        <span>FR</span>
-      </a>
-
-      <a href="nl.html">
-        <span>🇳🇱</span>
-        <span>NL</span>
-      </a>
-
-    </div>
-
-  </div>
-
+<div class="mobile-lang-links">
+<a href="index.html">
+<span>🇬🇧</span>
+<span>EN</span>
+</a>
+<a class="lang-active" href="fr.html">
+<span>🇫🇷</span>
+<span>FR</span>
+</a>
+<a href="nl.html">
+<span>🇳🇱</span>
+<span>NL</span>
+</a>
+</div>
+</div>
 </nav>
-
 <nav class="lang-switch">
-  <a href="index.html">EN</a>
-  <a href="fr.html" class="active">FR</a>
-  <a href="nl.html">NL</a>
+<a href="index.html">EN</a>
+<a class="active" href="fr.html">FR</a>
+<a href="nl.html">NL</a>
 </nav>
-
 <!--Hero Section-->
 <header>
-  <div class="hero">
-
-    <img src="images/logo.png" alt="Logo NDG Live Tech" class="logo-image">
-
-    <p class="subtitle">
-      Production Technique & Solutions Événementielles
-    </p>
-
-    <p class="services-line">
-      Audio • Lumière • Vidéo • Régie Technique
-    </p>
-
-    <div class="buttons">
-
-      <a href="#contact" class="btn btn-primary">
-        Contactez-nous
-      </a>
-
-      <a href="#services" class="btn btn-secondary">
+<div class="hero">
+<img alt="NDG Live Tech Logo" class="logo-image" src="images/logo.png"/>
+<p class="subtitle">Solutions techniques pour événements live</p>
+<p class="services-line">
+  Audio • Éclairage • Vidéo • Régie de scène
+</p>
+<div class="buttons">
+<a class="btn btn-primary" href="#contact">
+  Nous contacter
+</a>
+<a class="btn btn-secondary" href="#services">
         Voir les services
       </a>
-
-    </div>
-
-  </div>
+</div>
+</div>
 </header>
-
 <main>
-
-<!--Services-->
-<section id="services" class="section-light">
-
-  <div class="container">
-
-    <div class="section-title">
-      <p class="section-label">Services</p>
-      <h2>Ce que nous faisons</h2>
-    </div>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Production Technique</h3>
-        <p>
-          Coordination et gestion technique pour événements live et productions artistiques.
+<!-- Services -->
+<section class="section-light" id="services">
+<div class="container">
+<div class="section-title">
+<p class="section-label">Services</p>
+<h2>Ce que nous faisons</h2>
+</div>
+<!-- Main Services -->
+<div class="grid">
+<!-- AUDIO -->
+<div class="card service-card">
+<h3>Solutions audio</h3>
+<p>
+          Systèmes de sonorisation, audio live &amp; expertise technique.
         </p>
-      </div>
-
-      <div class="card">
-        <h3>Audio</h3>
-        <p>
-          Systèmes audio professionnels, support FOH et solutions son de scène.
+<button class="learn-more service-toggle" type="button">
+          En savoir plus +
+        </button>
+<div class="service-details">
+<div class="service-group">
+<h4>Audio live</h4>
+<p>• Régie façade</p>
+<p>• Régie retours</p>
+<p>• Mixage live</p>
+<p>• Enregistrement</p>
+</div>
+<div class="service-group">
+<h4>Systèmes &amp; support</h4>
+<p>• Mise en place système</p>
+<p>• Réseaux audio</p>
+<p>• Coordination RF</p>
+<p>• Dépannage</p>
+<p>• Support technique</p>
+<p>• Maintenance</p>
+</div>
+</div>
+</div>
+<!-- VIDEO -->
+<div class="card service-card">
+<h3>Solutions vidéo</h3>
+<p>
+          Solutions vidéo, streaming, projection &amp; écrans LED.
         </p>
-      </div>
-
-      <div class="card">
-        <h3>Lumière</h3>
-        <p>
-          Éclairage scénique, architectural et exploitation lumière pour spectacles.
+<button class="learn-more service-toggle" type="button">
+          En savoir plus +
+        </button>
+<div class="service-details">
+<div class="service-group">
+<h4>Vidéo &amp; streaming</h4>
+<p>• Production multicaméra</p>
+<p>• Streaming live</p>
+<p>• Streaming corporate</p>
+<p>• Enregistrement</p>
+</div>
+<div class="service-group">
+<h4>LED &amp; affichage</h4>
+<p>• Écrans LED</p>
+<p>• Projection</p>
+<p>• Traitement vidéo</p>
+<p>• Routage des signaux</p>
+<p>• Installation &amp; exploitation</p>
+<p>• Support technique</p>
+<p>• Maintenance</p>
+</div>
+</div>
+</div>
+<!-- LIGHTING -->
+<div class="card service-card">
+<h3>Éclairage</h3>
+<p>
+          Exploitation lumière, programmation &amp; support technique.
         </p>
-      </div>
-
-      <div class="card">
-        <h3>Vidéo</h3>
-        <p>
-          Distribution vidéo, projection et support visuel pour événements live.
+<button class="learn-more service-toggle" type="button">
+          En savoir plus +
+        </button>
+<div class="service-details">
+<div class="service-group">
+<h4>Exploitation lumière</h4>
+<p>• Exploitation console</p>
+<p>• Programmation</p>
+<p>• Installation lumière</p>
+<p>• Exploitation du spectacle</p>
+</div>
+<div class="service-group">
+<h4>Support technique</h4>
+<p>• Dépannage</p>
+<p>• Assistance technique</p>
+<p>• Maintenance</p>
+</div>
+</div>
+</div>
+<!-- TECHNICAL PRODUCTION -->
+<div class="card service-card">
+<h3>Production technique</h3>
+<p>
+          Coordination technique, supervision &amp; support événementiel.
         </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!--À propos-->
-<section id="about" class="section-dark">
-
-  <div class="container about">
-
-    <p class="section-label">À propos</p>
-
-    <h2>Support Technique Professionnel</h2>
-
-    <br />
-
-    <p>
-      Basé à Bruxelles, NDG Live Tech fournit un support technique professionnel pour les institutions culturelles, concerts, événements corporate et productions artistiques.
+<button class="learn-more service-toggle" type="button">
+          En savoir plus +
+        </button>
+<div class="service-details">
+<div class="service-group">
+<h4>Production</h4>
+<p>• Supervision technique</p>
+<p>• Coordination technique</p>
+<p>• Régie de scène</p>
+<p>• Montage &amp; démontage événementiel</p>
+</div>
+<div class="service-group">
+<h4>Support sur site</h4>
+<p>• Coordination des équipes</p>
+<p>• Assistance de production</p>
+<p>• Support technique</p>
+<p>• Dépannage</p>
+</div>
+</div>
+</div>
+</div>
+<!-- DRONE & AERIAL IMAGING -->
+<div class="drone-service">
+<div class="drone-content">
+<h3 class="drone-title">
+      Drone &amp; prises de vue aériennes
+    </h3>
+<p class="drone-description">
+      Photographie et vidéo aériennes professionnelles pour événements, lieux, entreprises et projets privés.
     </p>
-
-    <p>
-      Grâce à une solide expérience terrain dans l’univers du spectacle vivant, nous mettons l’accent sur la fiabilité, la flexibilité et une exécution technique efficace.
+<div class="drone-groups">
+<div class="drone-group">
+<h4>Événement &amp; contenu</h4>
+<p>• Couverture événementielle</p>
+<p>• Contenu promotionnel</p>
+<p>• Photo &amp; vidéo aériennes</p>
+</div>
+<div class="drone-group">
+<h4>Inspection &amp; immobilier</h4>
+<p>• Inspection de toitures &amp; bâtiments</p>
+<p>• Prises de vue immobilières &amp; terrains</p>
+<p>• Zones difficiles d’accès</p>
+</div>
+</div>
+<p class="drone-note">
+      Les vols sont réalisés conformément à la réglementation applicable et aux autorisations requises.
     </p>
-
-  </div>
-
+</div>
+</div>
+</div>
 </section>
-
-<!--Gallery-->
-<section id="gallery" class="section-light">
-
-  <div class="container">
-
-    <div class="section-title">
-      <p class="section-label">Galerie</p>
-      <h2>Événements Live</h2>
-    </div>
-
-    <div class="gallery">
-
-      <img src="images/gallery/photo5.jpeg" alt="Éclairage événementiel">
-      <img src="images/gallery/photo1.jpg" alt="Éclairage événementiel">
-      <img src="images/gallery/photo2.jpeg" alt="Son live">
-      <img src="images/gallery/photo6.jpeg" alt="Mariage">
-      <img src="images/gallery/photo3.jpeg" alt="Conférence">
-      <img src="images/gallery/photo4.jpeg" alt="Vidéo mapping">
-      <img src="images/gallery/photo7.jpeg" alt="Son live">
-      <img src="images/gallery/photo8.jpeg" alt="LLN">
-      <img src="images/gallery/photo9.jpeg" alt="Visite du pape">
-
-    </div>
-
-  </div>
-
+<!-- About -->
+<section class="section-dark" id="about">
+<div class="container">
+<div class="section-title">
+<p class="section-label">À propos</p>
+<h2>L’expertise technique. Là où elle est nécessaire.</h2>
+</div>
+<div class="about">
+<p class="about-intro">
+        NDG Live Tech fournit des solutions techniques pour les événements, les lieux, les entreprises et les projets privés — de la production live et des opérations techniques aux systèmes audiovisuels et aux prises de vue aériennes.
+      </p>
+<div class="about-values">
+<span>Fiabilité</span>
+<span>Précision</span>
+<span>Efficacité</span>
+</div>
+<p class="about-text">
+        Chaque projet est différent. L’approche reste la même : comprendre le besoin, proposer la bonne solution technique et la livrer avec précision et fiabilité.
+      </p>
+<p class="about-text">
+        De l’intervention ponctuelle au support technique continu, NDG Live Tech s’adapte à chaque projet et à ses besoins spécifiques.
+      </p>
+<div class="about-signature">
+<span></span>
+<p>Un partenaire technique. Plusieurs domaines d’expertise.</p>
+<span></span>
+</div>
+</div>
+</div>
 </section>
-
-<!--Contacts-->
-<section id="contact" class="section-dark">
-
-  <div class="contact">
-
-    <p class="section-label">Contact</p>
-
-    <h2>Travaillons ensemble</h2>
-
-<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-
-  <!-- Hidden Fields -->
-  <input type="hidden" name="access_key" value="1ca54e3a-1ab8-4560-bb15-2a87fa755525">
-
-  <input type="hidden" name="subject"
-         value="Nouveau message depuis le site NDG Live Tech">
-
-  <input type="hidden" name="from_name"
-         value="Site NDG Live Tech">
-
-  <input type="hidden" name="redirect"
-         value="https://ndglivetech.com">
-
-  <input type="checkbox" name="botcheck" class="hidden">
-
-  <input type="text" name="name" placeholder="Votre nom" required>
-
-  <input type="tel" name="phone" placeholder="Numéro de téléphone">
-
-  <input type="email" name="email" placeholder="Votre email" required>
-
-  <textarea name="message" placeholder="Votre message" rows="6" required></textarea>
-
-  <button type="submit" class="btn btn-primary">
-    Envoyer le message
-  </button>
-
+<!-- Gallery -->
+<section class="section-light" id="gallery">
+<div class="container">
+<div class="section-title">
+<p class="section-label">Galerie</p>
+<h2>Événements live</h2>
+</div>
+<div class="gallery">
+<img alt="Live event lighting" class="gallery-item" src="images/gallery/photo1.jpg"/>
+<img alt="Live event lighting" class="gallery-item" src="images/gallery/photo5.jpeg"/>
+<img alt="Anniversaire Perck" class="gallery-item" src="images/gallery/photo10.jpg"/>
+<img alt="Wedding" class="gallery-item" src="images/gallery/photo6.jpeg"/>
+<img alt="Conference event" class="gallery-item" src="images/gallery/photo3.jpeg"/>
+<img alt="Live event sound" class="gallery-item" src="images/gallery/photo2.jpeg"/>
+<img alt="Monitor Mix" class="gallery-item" src="images/gallery/photo11.jpg"/>
+<img alt="Live event sound" class="gallery-item" src="images/gallery/photo7.jpeg"/>
+<img alt="Video mapping" class="gallery-item" src="images/gallery/photo4.jpeg"/>
+<!-- Hidden at first -->
+<img alt="Visite pape" class="gallery-item gallery-extra" src="images/gallery/photo9.jpeg"/>
+<img alt="Theatre de Namur" class="gallery-item gallery-extra" src="images/gallery/photo12.JPG"/>
+<img alt="LLN" class="gallery-item gallery-extra" src="images/gallery/photo8.jpeg"/>
+</div>
+<button class="gallery-toggle" id="galleryToggle" type="button">
+      Voir plus +
+    </button>
+</div>
+<!-- Gallery Lightbox -->
+<div class="gallery-lightbox" id="galleryLightbox">
+<button aria-label="Fermer la galerie" class="lightbox-close" id="lightboxClose" type="button">
+      ×
+    </button>
+<button aria-label="Image précédente" class="lightbox-arrow lightbox-prev" id="lightboxPrev" type="button">
+      ‹
+    </button>
+<div class="lightbox-content">
+<img alt="Image de la galerie" id="lightboxImage" src=""/>
+<div class="lightbox-counter" id="lightboxCounter">
+</div>
+</div>
+<button aria-label="Image suivante" class="lightbox-arrow lightbox-next" id="lightboxNext" type="button">
+      ›
+    </button>
+</div>
+</section>
+<!-- Why NDG Live Tech -->
+<section class="section-dark why-section" id="why">
+<div class="container">
+<div class="section-title">
+<p class="section-label">Pourquoi NDG Live Tech</p>
+<h2>Bien plus qu’un support technique.</h2>
+</div>
+<p class="why-intro">
+      De la préparation à l’exécution sur site, NDG Live Tech combine expertise technique, flexibilité et fiabilité opérationnelle pour proposer des solutions adaptées à chaque projet.
+    </p>
+<div class="why-grid">
+<div class="why-item">
+<span class="why-number">01</span>
+<div class="why-content">
+<h3>Expertise de terrain</h3>
+<p>
+            Une expérience technique concrète en production live, systèmes audiovisuels et opérations sur site.
+          </p>
+</div>
+</div>
+<div class="why-item">
+<span class="why-number">02</span>
+<div class="why-content">
+<h3>Un partenaire technique unique</h3>
+<p>
+            Un interlocuteur unique capable de coordonner plusieurs disciplines techniques et de s’adapter aux besoins de chaque projet.
+          </p>
+</div>
+</div>
+<div class="why-item">
+<span class="why-number">03</span>
+<div class="why-content">
+<h3>Approche flexible</h3>
+<p>
+            D’une intervention unique à un support continu, chaque solution est construite autour du besoin réel.
+          </p>
+</div>
+</div>
+<div class="why-item">
+<span class="why-number">04</span>
+<div class="why-content">
+<h3>Fiabilité opérationnelle</h3>
+<p>
+            Préparation, précision, dépannage et continuité, de l’installation à la livraison finale.
+          </p>
+</div>
+</div>
+</div>
+<div class="why-process">
+<p class="why-process-label">
+        Une approche pratique, du premier contact à la livraison finale.
+      </p>
+<div class="why-process-steps">
+<span>Comprendre</span>
+<i>→</i>
+<span>Préparer</span>
+<i>→</i>
+<span>Livrer</span>
+<i>→</i>
+<span>Assurer le support</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Training & Certifications -->
+<section class="certifications-section" id="certifications">
+<div class="container">
+<div class="section-title certifications-heading">
+<p class="section-label">Formations &amp; certifications</p>
+<h2>Expertise technique. Développement continu.</h2>
+<p class="certifications-intro">
+        Formations professionnelles et certifications en systèmes audio, audio en réseau, contrôle lumière, technologies audiovisuelles et opérations spécialisées.
+      </p>
+</div>
+<!-- Completed Training & Certifications -->
+<div class="certifications-grid">
+<!-- L-ACOUSTICS -->
+<div class="certification-block certification-lacoustics">
+<div class="certification-logo">
+<img alt="L-Acoustics" src="images/certifications/lacoustics.png"/>
+</div>
+<h3>L-Acoustics</h3>
+<ul>
+<li>L2 System</li>
+<li>System Implementation</li>
+<li>System &amp; Workflow</li>
+</ul>
+</div>
+<!-- DANTE / AUDINATE -->
+<div class="certification-block certification-dante">
+<div class="certification-logo">
+<img alt="Dante by Audinate" src="images/certifications/dante.png"/>
+</div>
+<h3>Dante / Audinate</h3>
+<ul>
+<li>Dante Certification Level 1</li>
+<li>Dante Certification Level 2</li>
+</ul>
+</div>
+<!-- CHAMSYS -->
+<div class="certification-block certification-chamsys">
+<div class="certification-logo">
+<img alt="ChamSys" src="images/certifications/chamsys.svg"/>
+</div>
+<h3>ChamSys</h3>
+<ul>
+<li>Formation Basic</li>
+<li>Formation Advanced</li>
+</ul>
+</div>
+<!-- MADMAPPER -->
+<div class="certification-block certification-madmapper">
+<div class="certification-logo">
+<img alt="MadMapper" src="images/certifications/madmapper.svg"/>
+</div>
+<h3>MadMapper</h3>
+<ul>
+<li>Formation MadMapper</li>
+</ul>
+</div>
+</div>
+<!-- Upcoming Training -->
+<div class="upcoming-training">
+<p class="upcoming-label">
+        Formations à venir
+      </p>
+<div class="upcoming-grid">
+<!-- L-ISA -->
+<div class="upcoming-item">
+<div class="upcoming-logo">
+<img alt="L-Acoustics" src="images/certifications/lacoustics.png"/>
+</div>
+<div class="upcoming-content">
+<h3>L-ISA</h3>
+<span class="training-status">
+              Planifiée
+            </span>
+<p>L-Acoustics</p>
+</div>
+</div>
+<!-- F4T2 -->
+<div class="upcoming-item">
+<div class="upcoming-logo">
+<img alt="Jacques Prévot Artifices" src="images/certifications/f4t2.png"/>
+</div>
+<div class="upcoming-content">
+<h3>F4T2 Pyrotechnie</h3>
+<span class="training-status">
+      Planifiée
+    </span>
+<p>Jacques Prévot Artifices</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Clients -->
+<section class="clients-section" id="clients">
+<div class="container">
+<div class="section-title clients-heading">
+<p class="section-label">Clients sélectionnés</p>
+<h2>Des entreprises avec lesquelles nous travaillons.</h2>
+<p class="clients-intro">
+  Services techniques et support opérationnel pour des entreprises, partenaires de production et organisations sur une grande variété de projets.
+</p>
+</div>
+<div class="clients-logos">
+<!-- ARTO -->
+<a aria-label="Visit Arto website" class="client-logo client-arto" href="https://arto.tv/" rel="noopener noreferrer" target="_blank">
+<img alt="Arto" src="images/clients/arto.png"/>
+</a>
+<!-- AUDEO EVENT TECHNOLOGY -->
+<a aria-label="Visit Audeo Event Technology website" class="client-logo client-audeo" href="https://audeo-event.be/" rel="noopener noreferrer" target="_blank">
+<img alt="Audeo Event Technology" src="images/clients/audeo.png"/>
+</a>
+<!-- COPROVOTE -->
+<a aria-label="Visit Coprovote website" class="client-logo client-coprovote" href="https://coprovote.com/" rel="noopener noreferrer" target="_blank">
+<img alt="Coprovote" src="images/clients/coprovote.png"/>
+</a>
+<!-- MAKE IT POP -->
+<a aria-label="Visit Make It Pop website" class="client-logo client-makeitpop" href="https://www.makeitpop.be/" rel="noopener noreferrer" target="_blank">
+<img alt="Make It Pop" src="images/clients/makeitpop.png"/>
+</a>
+<!-- WEPLAY -->
+<a aria-label="Visit WePlay website" class="client-logo client-weplay" href="https://www.weplay.be/" rel="noopener noreferrer" target="_blank">
+<img alt="WePlay" src="images/clients/weplay.png"/>
+</a>
+</div>
+</div>
+</section>
+<!-- Contact -->
+<section class="section-light" id="contact">
+<div class="container contact-section">
+<div class="section-title">
+<p class="section-label">Contact</p>
+<h2>Travaillons ensemble</h2>
+<p class="contact-intro">
+        Parlez-nous de votre projet, de votre besoin technique ou de votre prochain événement. Nous vous répondrons avec la solution adaptée.
+      </p>
+</div>
+<div class="contact-card">
+<form action="https://api.web3forms.com/submit" class="contact-form" method="POST">
+<!-- Hidden Fields -->
+<input name="access_key" type="hidden" value="1ca54e3a-1ab8-4560-bb15-2a87fa755525"/>
+<input name="subject" type="hidden" value="Nouveau message depuis le site NDG Live Tech"/>
+<input name="from_name" type="hidden" value="Site web NDG Live Tech"/>
+<input name="redirect" type="hidden" value="https://ndglivetech.com"/>
+<input class="hidden" name="botcheck" type="checkbox"/>
+<div class="contact-row">
+<input name="name" placeholder="Votre nom" required="" type="text"/>
+<input name="phone" placeholder="Numéro de téléphone" type="tel"/>
+</div>
+<input name="email" placeholder="Votre e-mail" required="" type="email"/>
+<textarea name="message" placeholder="Parlez-nous de votre projet..." required="" rows="6"></textarea>
+<button class="btn btn-primary contact-submit" type="submit">
+          Envoyer le message
+        </button>
 </form>
-
-  </div>
-
-  <div class="contact-info">
-
-    <a href="mailto:info@ndglivetech.com">
-      <i class="fa-regular fa-envelope"></i>
-      Email
-    </a>
-
-    <span>•</span>
-
-    <a href="https://wa.me/32470982784?text=Bonjour%20Nicolas,%20je%20vous%20contacte%20via%20NDG%20Live%20Tech."
-       target="_blank"
-       class="whatsapp-link">
-
-      <i class="fa-brands fa-whatsapp"></i>
-      Whatsapp
-
-    </a>
-
-    <span>•</span>
-
-    <a href="https://instagram.com/ndglivetech"
-       target="_blank"
-       class="instagram-link">
-
-      <i class="fa-brands fa-instagram"></i>
-      Instagram
-
-    </a>
-
-  </div>
-
+</div>
+<div class="contact-direct">
+<p class="contact-direct-label">
+        Vous préférez un contact direct ?
+      </p>
+<div class="contact-info">
+<a href="mailto:info@ndglivetech.com">
+<i class="fa-regular fa-envelope"></i>
+          Email
+        </a>
+<a class="whatsapp-link" href="https://wa.me/32470982784?text=Hello%20Nicolas,%20I%20am%20contacting%20you%20via%20NDG%20Live%20Tech." rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+<a class="instagram-link" href="https://instagram.com/ndglivetech" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+          Instagram
+        </a>
+</div>
+</div>
+</div>
 </section>
-
 </main>
-
 <!--Footer-->
 <footer>
-
-  <div class="footer-legal">
-    <a href="legal/legal.html">Mentions légales</a>
-    <a href="legal/terms.html">Conditions générales</a>
-    <a href="legal/privacy.html">Politique de confidentialité</a>
-    <a href="legal/cookies.html">Cookies</a>
-  </div>
-
-  <p class="footer-copy">
+<div class="footer-legal">
+  <a href="legal/legal-fr.html">Mentions légales</a>
+  <a href="legal/terms-fr.html">Conditions générales</a>
+  <a href="legal/privacy-fr.html">Politique de confidentialité</a>
+  <a href="legal/cookies-fr.html">Politique des cookies</a>
+</div>
+<p class="footer-copy">
     © 2026 NDG Live Tech. Tous droits réservés.
   </p>
-
 </footer>
-
 <!--Cookie-->
 <div class="cookie-banner" id="cookieBanner">
-
-  <div>
-
-    <h3>
-      <i class="fa-solid fa-cookie-bite"></i>
-      Cookies, cookies, cookies...
-    </h3>
-
-    <p>
-      Ce site utilise des cookies essentiels pour fonctionner correctement et peut utiliser des cookies optionnels afin d’améliorer votre expérience.
-      Vous pouvez accepter tous les cookies ou refuser les cookies non essentiels.
-      <a href="legal/cookies.html">En savoir plus</a>
-    </p>
-
-  </div>
-
-  <div class="cookie-actions">
-
-    <button class="btn-secondary" onclick="rejectCookies()">
-      Refuser les non essentiels
-    </button>
-
-    <button class="btn-primary" onclick="acceptCookies()">
-      <i class="fa-solid fa-cookie-bite"></i>
-      Tout accepter
-    </button>
-
-  </div>
-
+<div>
+<h3>
+<i class="fa-solid fa-cookie-bite"></i>
+  Cookies, cookies, cookies...
+</h3>
+<p>
+      Ce site utilise des cookies essentiels à son bon fonctionnement et peut utiliser des cookies facultatifs afin d’améliorer votre expérience. Vous pouvez accepter tous les cookies ou refuser les cookies non essentiels.
+      <a href="legal/cookies-fr.html">En savoir plus</a>
+</p>
 </div>
-
+<div class="cookie-actions">
+<button class="btn-secondary" onclick="rejectCookies()">Refuser les non essentiels</button>
+<button class="btn-primary" onclick="acceptCookies()">
+<i class="fa-solid fa-cookie-bite"></i>
+  Tout accepter
+</button>
+</div>
+</div>
 <script src="script.js"></script>
-
 </body>
 </html>

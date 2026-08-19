@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conditions Générales - NDG Live Tech</title>
+
+  <title>Terms & Conditions - NDG Live Tech</title>
 
   <style>
     * {
@@ -15,213 +16,697 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #111111;
+
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(35, 113, 215, 0.10),
+          transparent 35%
+        ),
+        #111317;
+
       color: #ffffff;
       line-height: 1.75;
-      padding: 80px 25px;
     }
 
+    a {
+      color: #3c8df5;
+      text-decoration: none;
+      transition: color 0.25s ease, opacity 0.25s ease;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+
+    /* =========================
+       TOP BAR
+    ========================= */
+
+    .legal-topbar {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+      padding: 28px 0 0;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      color: #cfd3d8;
+
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .back-home:hover {
+      color: #3c8df5;
+    }
+
+
+    /* =========================
+       LANGUAGE SWITCH
+    ========================= */
+
+    .legal-language {
+      display: flex;
+      gap: 8px;
+    }
+
+    .legal-language a {
+      min-width: 38px;
+      padding: 6px 10px;
+
+      text-align: center;
+
+      color: #aeb4bb;
+      background: rgba(255, 255, 255, 0.035);
+
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .legal-language a.active {
+      color: #ffffff;
+
+      background: rgba(35, 113, 215, 0.20);
+
+      border-color: rgba(35, 113, 215, 0.65);
+    }
+
+
+    /* =========================
+       MAIN CONTENT
+    ========================= */
+
     .container {
-      max-width: 950px;
-      margin: auto;
+      width: min(950px, 92%);
+      margin: 0 auto;
+      padding: 70px 0 80px;
     }
 
     h1 {
-      font-size: 42px;
-      color: #00AEEF;
       margin-bottom: 20px;
+
+      color: #3c8df5;
+
+      font-size: clamp(34px, 6vw, 46px);
+      line-height: 1.1;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin-bottom: 18px;
+
+      color: rgba(255, 255, 255, 0.72);
+
+      font-size: 15px;
+      line-height: 1.7;
     }
 
     .updated {
-      color: rgba(255,255,255,0.55);
       margin-bottom: 50px;
-      font-size: 14px;
+
+      color: rgba(255, 255, 255, 0.50);
+
+      font-size: 13px;
     }
-    .intro {
-  color: rgba(255,255,255,0.7);
-  margin-bottom: 18px;
-  max-width: 700px;
-}
+
+    section {
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    section:last-of-type {
+      margin-bottom: 0;
+    }
 
     h2 {
-      color: #00AEEF;
-      margin-top: 45px;
+      margin-top: 12px;
       margin-bottom: 18px;
+
+      color: #3c8df5;
+
       font-size: 22px;
     }
 
     p {
-      color: rgba(255,255,255,0.86);
       margin-bottom: 14px;
+
+      color: rgba(255, 255, 255, 0.86);
+
       font-size: 15px;
     }
 
-    section {
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      padding-bottom: 28px;
-      margin-bottom: 28px;
+
+    /* =========================
+       RELATED DOCUMENTS
+    ========================= */
+
+    .legal-links {
+      display: flex;
+      flex-direction: column;
+
+      align-items: flex-start;
+      gap: 10px;
     }
 
-    a {
-      color: #00AEEF;
-      text-decoration: none;
+    .legal-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      font-size: 15px;
     }
 
-    @media(max-width:700px) {
-      body {
-        padding: 60px 20px;
+    .legal-links a::before {
+      content: "→";
+
+      color: rgba(60, 141, 245, 0.65);
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .legal-footer {
+      width: min(950px, 92%);
+      margin: 0 auto;
+      padding: 0 0 35px;
+
+      text-align: center;
+
+      color: rgba(255, 255, 255, 0.40);
+
+      font-size: 12px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      .legal-topbar {
+        padding-top: 20px;
       }
 
-      h1 {
-        font-size: 32px;
+      .container {
+        padding-top: 55px;
       }
 
       h2 {
         font-size: 20px;
       }
+
     }
   </style>
+
 </head>
+
 
 <body>
 
-  <div class="container">
+  <!-- Top navigation -->
+  <div class="legal-topbar">
 
-   <h1>Conditions Générales</h1>
+    <a href="../index.html" class="back-home">
+      ← Back to NDG Live Tech
+    </a>
 
-<p class="intro">
-  These Terms & Conditions are provided in French and apply to all quotations,
-  invoices, services and equipment rentals provided by NDG Live Tech.
-</p>
+    <div class="legal-language">
 
-<p class="updated">Version mise à jour – 2026</p>
+      <a href="terms.html" class="active">
+        EN
+      </a>
 
-    <section>
-      <h2>Définitions</h2>
+      <a href="terms-fr.html">
+        FR
+      </a>
 
-      <p><strong>« NDG Live Tech »</strong> : nom commercial utilisé par M. Nicolas De Greef pour ses activités.</p>
-      <p><strong>« Client »</strong> : toute personne, physique ou morale, demandant une prestation quelconque à NDG Live Tech, y compris la location de matériel.</p>
-      <p><strong>« Convention »</strong> : tout accord, écrit ou verbal, conclu entre le client et NDG Live Tech, pour toute prestation quelconque, y compris la location de matériel.</p>
-      <p><strong>« Événement »</strong> : activité organisée par le client et lors de laquelle intervient NDG Live Tech, directement ou via son matériel mis en location.</p>
-    </section>
+      <a href="terms-nl.html">
+        NL
+      </a>
 
-    <section>
-      <h2>1. Champ d’application</h2>
-      <p>1.1. Les présentes conditions générales sont applicables à toutes les commandes passées à NDG Live Tech ainsi qu’aux devis et à toutes ses prestations, rémunérées ou gratuites. Elles sont les seules applicables et remplacent toutes autres conditions du client.</p>
-      <p>1.2. En concluant une convention avec NDG Live Tech, le client reconnaît avoir pris connaissance préalable des présentes conditions générales et y adhérer.</p>
-      <p>1.3. Toute dérogation accordée par NDG Live Tech aux présentes conditions générales se limite à la convention particulière comprenant cette dérogation, pour autant qu’elle soit écrite et signée par les parties. Les présentes conditions générales restent d’application pour toutes les clauses auxquelles cet écrit n’a pas dérogé. Une dérogation accordée pour une convention n’est pas valable pour d’autres conventions, sauf accord écrit des parties.</p>
-    </section>
-
-    <section>
-      <h2>2. Offre et commande</h2>
-      <p>2.1. Le délai de validité des offres de NDG Live Tech est d’un mois. Toutefois, tant qu’elles n’ont pas été acceptées par le client, elles peuvent être modifiées ou révoquées sans indemnité.</p>
-      <p>2.2. Les offres sont établies sur base des informations fournies par le client. En cas de modification des prestations souhaitées, NDG Live Tech peut adapter ou retirer son offre.</p>
-      <p>2.3. En cas d’urgence (commande à moins d’un mois de la prestation), NDG Live Tech peut réduire la durée de validité de son offre. Cette condition sera précisée dans le devis.</p>
-      <p>2.4. Toute convention est conclue sous la condition résolutoire du paiement de l’acompte convenu dans le délai imparti.</p>
-    </section>
-
-    <section>
-      <h2>3. Prix</h2>
-      <p>3.1. Les prix sont indiqués en euros, hors TVA. Toute modification de TVA ou nouvelle taxe est à charge du client.</p>
-      <p>3.2. Les prix concernent uniquement les prestations ou le matériel décrits dans l’offre.</p>
-      <p>3.3. Les redevances liées aux droits d’auteur (ex. SABAM) sont à charge du client.</p>
-    </section>
-
-    <section>
-      <h2>4. Paiement</h2>
-      <p>4.1. Les factures sont payables à l’échéance indiquée ou au plus tard dans les 15 jours suivant leur réception, sur le compte bancaire de NDG Live Tech.</p>
-      <p>4.2. Un acompte de 50 % sera versé dans les 15 jours suivant l’acceptation du devis.</p>
-      <p>4.3. Tout retard de paiement entraîne, de plein droit et sans mise en demeure, des intérêts légaux majorés de 4 %, ainsi qu’une indemnité forfaitaire de 15 % avec un minimum de 150 €.</p>
-      <p>4.4. Toute contestation doit être adressée dans les 15 jours par écrit. Passé ce délai, la facture est réputée acceptée.</p>
-    </section>
-
-    <section>
-      <h2>5. Droit de rétractation</h2>
-      <p>5.1. Le client dispose d’un délai de 14 jours pour résilier le contrat sans motif.</p>
-      <p>5.2. La rétractation doit être notifiée par écrit avant expiration du délai.</p>
-      <p>5.3. Les sommes versées seront remboursées dans les 30 jours.</p>
-      <p>5.4. Ce droit ne s’applique pas si l’exécution a débuté avec l’accord du client.</p>
-    </section>
-
-    <section>
-      <h2>6. Annulation et rupture</h2>
-      <p>6.1. Hors rétractation ou force majeure, toute annulation doit être notifiée au moins 21 jours avant la prestation.</p>
-      <p>6.2. En cas d’annulation par le client, les sommes versées ne sont pas remboursées.</p>
-      <p>6.3. Si aucune somme n’a été versée, une indemnité forfaitaire de 150 € peut être réclamée.</p>
-      <p>6.4. NDG Live Tech peut résilier le contrat en cas de comportement inapproprié, informations inexactes ou usage abusif du matériel, sans remboursement.</p>
-    </section>
-
-    <section>
-      <h2>7. Force majeure</h2>
-      <p>7.1. Aucune partie n’est responsable en cas de force majeure.</p>
-      <p>7.2. La partie concernée doit prévenir l’autre dans les 24 heures.</p>
-    </section>
-
-    <section>
-      <h2>8. Exécution des prestations</h2>
-      <p>8.1. NDG Live Tech est tenu à une obligation de moyens.</p>
-      <p>8.2. Il respecte les règlements communiqués par le client.</p>
-      <p>8.3. Il peut recourir à des sous-traitants.</p>
-      <p>8.4. Il peut refuser une commande en cas de litige ou d’impayé.</p>
-    </section>
-
-    <section>
-      <h2>9. Obligations du client</h2>
-      <p>9.1. Le client doit obtenir toutes les autorisations nécessaires, notamment SABAM, police ou toute autre autorisation applicable.</p>
-      <p>9.2. Il doit fournir toutes les informations utiles à temps.</p>
-      <p>9.3. Il doit garantir un lieu adapté, sécurisé et équipé.</p>
-      <p>9.4. Il ne peut déplacer le matériel sans autorisation.</p>
-      <p>9.5. En cas de location, il doit savoir utiliser le matériel.</p>
-      <p>9.6. NDG Live Tech décline toute responsabilité en cas de non-respect.</p>
-      <p>9.7. Le client doit collaborer activement.</p>
-      <p>9.8. Le matériel doit être utilisé légalement et correctement.</p>
-      <p>9.9. Le client doit être assuré.</p>
-    </section>
-
-    <section>
-      <h2>10. Responsabilité</h2>
-      <p>10.1. Toute plainte doit être formulée dans les 15 jours.</p>
-      <p>10.2. La responsabilité est limitée au montant du contrat.</p>
-      <p>10.3. Le client est responsable du matériel en sa possession.</p>
-      <p>10.4. Il doit couvrir tout dommage ou perte.</p>
-      <p>10.5. Il est responsable des dommages causés à des tiers.</p>
-    </section>
-
-    <section>
-      <h2>11. Confidentialité</h2>
-      <p>11.1. NDG Live Tech respecte la confidentialité et le RGPD.</p>
-      <p>11.2. Le client peut demander l’arrêt du traitement de ses données.</p>
-    </section>
-
-    <section>
-      <h2>12. Propriété intellectuelle</h2>
-      <p>12.1. Tous les contenus restent la propriété de NDG Live Tech.</p>
-      <p>12.2. Toute reproduction est interdite sans autorisation.</p>
-      <p>12.3. Toute utilisation abusive entraîne une indemnité minimale de 500 €.</p>
-      <p>12.4. NDG Live Tech respecte les droits de ses clients.</p>
-    </section>
-
-    <section>
-      <h2>13. Dispositions diverses</h2>
-      <p>13.1. Le matériel ne peut être ni cédé ni sous-loué.</p>
-      <p>13.2. La nullité d’une clause n’affecte pas les autres.</p>
-      <p>13.3. Le devis et les présentes conditions forment un tout.</p>
-      <p>13.4. Le droit applicable est le droit belge.</p>
-      <p>13.5. En cas de litige, seuls les tribunaux de Bruxelles et la Justice de Paix compétente sont compétents.</p>
-    </section>
-    <section>
-
-  <h2>Documents liés</h2>
-
-  <p>
-    <a href="legal.html">Mentions légales</a><br>
-    <a href="privacy.html">Politique de confidentialité</a><br>
-    <a href="cookies.html">Politique des cookies</a>
-  </p>
-
-</section>
+    </div>
 
   </div>
+
+
+  <main class="container">
+
+    <h1>Terms & Conditions</h1>
+
+    <p class="intro">
+      These Terms & Conditions apply to all quotations, invoices,
+      services and equipment rentals provided by NDG Live Tech.
+    </p>
+
+    <p class="updated">
+      Last updated — 2026
+    </p>
+
+
+    <!-- Definitions -->
+    <section>
+
+      <h2>Definitions</h2>
+
+      <p>
+        <strong>“NDG Live Tech”</strong>:
+        the trade name used by Mr Nicolas De Greef for his activities.
+      </p>
+
+      <p>
+        <strong>“Client”</strong>:
+        any natural or legal person requesting any service from
+        NDG Live Tech, including equipment rental.
+      </p>
+
+      <p>
+        <strong>“Agreement”</strong>:
+        any written or verbal agreement concluded between the Client
+        and NDG Live Tech for any service, including equipment rental.
+      </p>
+
+      <p>
+        <strong>“Event”</strong>:
+        an activity organised by the Client during which NDG Live Tech
+        intervenes, directly or through rented equipment.
+      </p>
+
+    </section>
+
+
+    <!-- 1 -->
+    <section>
+
+      <h2>1. Scope of Application</h2>
+
+      <p>
+        1.1. These Terms & Conditions apply to all orders placed with
+        NDG Live Tech, as well as to quotations and all services,
+        whether paid or free of charge. They are the only applicable
+        conditions and replace any other conditions of the Client.
+      </p>
+
+      <p>
+        1.2. By entering into an agreement with NDG Live Tech,
+        the Client acknowledges having read these Terms & Conditions
+        in advance and agrees to them.
+      </p>
+
+      <p>
+        1.3. Any exception granted by NDG Live Tech to these Terms &
+        Conditions is limited to the specific agreement containing that
+        exception, provided it is written and signed by the parties.
+        These Terms & Conditions remain applicable to all clauses not
+        expressly derogated from. An exception granted for one agreement
+        does not apply to other agreements unless agreed in writing
+        by the parties.
+      </p>
+
+    </section>
+
+
+    <!-- 2 -->
+    <section>
+
+      <h2>2. Offer and Order</h2>
+
+      <p>
+        2.1. NDG Live Tech offers are valid for one month.
+        However, as long as they have not been accepted by the Client,
+        they may be modified or withdrawn without compensation.
+      </p>
+
+      <p>
+        2.2. Offers are prepared on the basis of information supplied
+        by the Client. If the requested services change,
+        NDG Live Tech may adapt or withdraw its offer.
+      </p>
+
+      <p>
+        2.3. In urgent cases (an order placed less than one month
+        before the service), NDG Live Tech may shorten the validity
+        period of its offer. This condition will be specified
+        in the quotation.
+      </p>
+
+      <p>
+        2.4. Any agreement is concluded subject to the resolutory
+        condition of payment of the agreed deposit within
+        the specified period.
+      </p>
+
+    </section>
+
+
+    <!-- 3 -->
+    <section>
+
+      <h2>3. Prices</h2>
+
+      <p>
+        3.1. Prices are stated in euros, excluding VAT.
+        Any change in VAT or new tax is payable by the Client.
+      </p>
+
+      <p>
+        3.2. Prices relate only to the services or equipment
+        described in the offer.
+      </p>
+
+      <p>
+        3.3. Royalties relating to copyright
+        (e.g. SABAM) are payable by the Client.
+      </p>
+
+    </section>
+
+
+    <!-- 4 -->
+    <section>
+
+      <h2>4. Payment</h2>
+
+      <p>
+        4.1. Invoices are payable on the due date stated or,
+        at the latest, within 15 days of receipt,
+        to the bank account of NDG Live Tech.
+      </p>
+
+      <p>
+        4.2. A deposit of 50% must be paid within 15 days
+        following acceptance of the quotation.
+      </p>
+
+      <p>
+        4.3. Any late payment automatically and without prior notice
+        gives rise to statutory interest increased by 4%,
+        as well as fixed compensation of 15%,
+        with a minimum of €150.
+      </p>
+
+      <p>
+        4.4. Any dispute must be submitted in writing within 15 days.
+        After this period, the invoice is deemed accepted.
+      </p>
+
+    </section>
+
+
+    <!-- 5 -->
+    <section>
+
+      <h2>5. Right of Withdrawal</h2>
+
+      <p>
+        5.1. The Client has a period of 14 days to terminate
+        the contract without giving a reason.
+      </p>
+
+      <p>
+        5.2. Withdrawal must be notified in writing
+        before expiry of this period.
+      </p>
+
+      <p>
+        5.3. Amounts paid will be refunded within 30 days.
+      </p>
+
+      <p>
+        5.4. This right does not apply if performance has begun
+        with the Client’s agreement.
+      </p>
+
+    </section>
+
+
+    <!-- 6 -->
+    <section>
+
+      <h2>6. Cancellation and Termination</h2>
+
+      <p>
+        6.1. Except in the case of withdrawal or force majeure,
+        any cancellation must be notified at least 21 days
+        before the service.
+      </p>
+
+      <p>
+        6.2. In the event of cancellation by the Client,
+        amounts already paid are not refunded.
+      </p>
+
+      <p>
+        6.3. If no amount has been paid,
+        fixed compensation of €150 may be claimed.
+      </p>
+
+      <p>
+        6.4. NDG Live Tech may terminate the contract in the event
+        of inappropriate behaviour, inaccurate information
+        or misuse of equipment, without refund.
+      </p>
+
+    </section>
+
+
+    <!-- 7 -->
+    <section>
+
+      <h2>7. Force Majeure</h2>
+
+      <p>
+        7.1. Neither party is liable in the event of force majeure.
+      </p>
+
+      <p>
+        7.2. The affected party must notify the other party
+        within 24 hours.
+      </p>
+
+    </section>
+
+
+    <!-- 8 -->
+    <section>
+
+      <h2>8. Performance of Services</h2>
+
+      <p>
+        8.1. NDG Live Tech is subject to an obligation of means.
+      </p>
+
+      <p>
+        8.2. NDG Live Tech complies with the regulations
+        communicated by the Client.
+      </p>
+
+      <p>
+        8.3. NDG Live Tech may use subcontractors.
+      </p>
+
+      <p>
+        8.4. NDG Live Tech may refuse an order in the event
+        of a dispute or unpaid invoice.
+      </p>
+
+    </section>
+
+
+    <!-- 9 -->
+    <section>
+
+      <h2>9. Client Obligations</h2>
+
+      <p>
+        9.1. The Client must obtain all necessary authorisations,
+        including SABAM, police or any other applicable authorisation.
+      </p>
+
+      <p>
+        9.2. The Client must provide all useful information in due time.
+      </p>
+
+      <p>
+        9.3. The Client must provide a suitable,
+        safe and equipped location.
+      </p>
+
+      <p>
+        9.4. The Client may not move equipment without authorisation.
+      </p>
+
+      <p>
+        9.5. In the event of rental,
+        the Client must know how to use the equipment.
+      </p>
+
+      <p>
+        9.6. NDG Live Tech accepts no liability
+        in the event of non-compliance.
+      </p>
+
+      <p>
+        9.7. The Client must actively cooperate.
+      </p>
+
+      <p>
+        9.8. Equipment must be used lawfully and correctly.
+      </p>
+
+      <p>
+        9.9. The Client must be insured.
+      </p>
+
+    </section>
+
+
+    <!-- 10 -->
+    <section>
+
+      <h2>10. Liability</h2>
+
+      <p>
+        10.1. Any complaint must be submitted within 15 days.
+      </p>
+
+      <p>
+        10.2. Liability is limited to the amount of the contract.
+      </p>
+
+      <p>
+        10.3. The Client is responsible for equipment
+        in their possession.
+      </p>
+
+      <p>
+        10.4. The Client must cover any damage or loss.
+      </p>
+
+      <p>
+        10.5. The Client is responsible for damage
+        caused to third parties.
+      </p>
+
+    </section>
+
+
+    <!-- 11 -->
+    <section>
+
+      <h2>11. Confidentiality</h2>
+
+      <p>
+        11.1. NDG Live Tech respects confidentiality and GDPR.
+      </p>
+
+      <p>
+        11.2. The Client may request that processing
+        of their data be stopped.
+      </p>
+
+    </section>
+
+
+    <!-- 12 -->
+    <section>
+
+      <h2>12. Intellectual Property</h2>
+
+      <p>
+        12.1. All content remains the property of NDG Live Tech.
+      </p>
+
+      <p>
+        12.2. Any reproduction is prohibited without authorisation.
+      </p>
+
+      <p>
+        12.3. Any misuse gives rise to minimum compensation of €500.
+      </p>
+
+      <p>
+        12.4. NDG Live Tech respects the rights of its clients.
+      </p>
+
+    </section>
+
+
+    <!-- 13 -->
+    <section>
+
+      <h2>13. Miscellaneous Provisions</h2>
+
+      <p>
+        13.1. Equipment may not be transferred or sublet.
+      </p>
+
+      <p>
+        13.2. The invalidity of one clause does not affect the others.
+      </p>
+
+      <p>
+        13.3. The quotation and these Terms & Conditions form a whole.
+      </p>
+
+      <p>
+        13.4. Belgian law is applicable.
+      </p>
+
+      <p>
+        13.5. In the event of a dispute, only the courts of Brussels
+        and the competent Justice of the Peace have jurisdiction.
+      </p>
+
+    </section>
+
+
+    <!-- Related documents -->
+    <section>
+
+      <h2>Related Documents</h2>
+
+      <div class="legal-links">
+
+        <a href="legal.html">
+          Legal Notice
+        </a>
+
+        <a href="privacy.html">
+          Privacy Policy
+        </a>
+
+        <a href="cookies.html">
+          Cookies Policy
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="legal-footer">
+    © 2026 NDG Live Tech. All rights reserved.
+  </footer>
 
 </body>
 

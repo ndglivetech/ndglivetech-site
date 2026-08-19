@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Cookies Policy - NDG Live Tech</title>
+  <title>Mentions légales - NDG Live Tech</title>
 
   <style>
     * {
@@ -32,10 +32,7 @@
     a {
       color: #3c8df5;
       text-decoration: none;
-
-      transition:
-        color 0.25s ease,
-        opacity 0.25s ease;
+      transition: color 0.25s ease, opacity 0.25s ease;
     }
 
     a:hover {
@@ -49,9 +46,7 @@
 
     .legal-topbar {
       width: min(1100px, 92%);
-
       margin: 0 auto;
-
       padding: 28px 0 0;
 
       display: flex;
@@ -64,7 +59,6 @@
     .back-home {
       display: inline-flex;
       align-items: center;
-
       gap: 8px;
 
       color: #cfd3d8;
@@ -89,7 +83,6 @@
 
     .legal-language a {
       min-width: 38px;
-
       padding: 6px 10px;
 
       text-align: center;
@@ -119,15 +112,13 @@
     ========================= */
 
     .container {
-      width: min(950px, 92%);
-
+      width: min(850px, 92%);
       margin: 0 auto;
-
       padding: 70px 0 80px;
     }
 
     h1 {
-      margin-bottom: 20px;
+      margin-bottom: 50px;
 
       color: #3c8df5;
 
@@ -135,28 +126,17 @@
       line-height: 1.1;
     }
 
-    .intro {
-      max-width: 760px;
+    h2 {
+      margin-bottom: 20px;
 
-      margin-bottom: 18px;
+      color: #3c8df5;
 
-      color: rgba(255, 255, 255, 0.72);
-
-      font-size: 15px;
-      line-height: 1.7;
-    }
-
-    .updated {
-      margin-bottom: 50px;
-
-      color: rgba(255, 255, 255, 0.50);
-
-      font-size: 13px;
+      font-size: 20px;
     }
 
     section {
-      margin-bottom: 28px;
-      padding-bottom: 28px;
+      margin-bottom: 50px;
+      padding-bottom: 30px;
 
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
@@ -165,32 +145,35 @@
       margin-bottom: 0;
     }
 
-    h2 {
-      margin-top: 12px;
-      margin-bottom: 18px;
+    p {
+      margin-bottom: 12px;
 
-      color: #3c8df5;
-
-      font-size: 22px;
-    }
-
-    p,
-    li {
-      margin-bottom: 14px;
-
-      color: rgba(255, 255, 255, 0.86);
+      color: rgba(255, 255, 255, 0.84);
 
       font-size: 15px;
     }
 
-    ul {
-      margin-left: 22px;
-      margin-bottom: 20px;
+
+    /* =========================
+       COMPANY INFO
+    ========================= */
+
+    .info {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+
+      gap: 12px 24px;
+
+      margin-top: 25px;
+    }
+
+    .label {
+      color: rgba(255, 255, 255, 0.48);
     }
 
 
     /* =========================
-       RELATED DOCUMENTS
+       LEGAL DOCUMENTS
     ========================= */
 
     .legal-links {
@@ -223,7 +206,7 @@
     ========================= */
 
     .legal-footer {
-      width: min(950px, 92%);
+      width: min(850px, 92%);
 
       margin: 0 auto;
 
@@ -251,8 +234,21 @@
         padding-top: 55px;
       }
 
-      h2 {
-        font-size: 20px;
+      .info {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+
+      .label {
+        margin-top: 12px;
+
+        color: #3c8df5;
+
+        font-size: 12px;
+        font-weight: 700;
+
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
 
     }
@@ -266,14 +262,24 @@
   <!-- Top navigation -->
   <div class="legal-topbar">
 
-    <a href="../index.html" class="back-home">
-      ← Back to NDG Live Tech
+    <a href="../fr.html" class="back-home">
+      ← Retour à NDG Live Tech
     </a>
 
     <div class="legal-language">
-      <a href="cookies.html" class="active">EN</a>
-      <a href="cookies-fr.html">FR</a>
-      <a href="cookies-nl.html">NL</a>
+
+      <a href="legal.html">
+        EN
+      </a>
+
+      <a href="legal-fr.html" class="active">
+        FR
+      </a>
+
+      <a href="legal-nl.html">
+        NL
+      </a>
+
     </div>
 
   </div>
@@ -281,136 +287,117 @@
 
   <main class="container">
 
-    <h1>Cookies Policy</h1>
-
-    <p class="intro">
-      This Cookies Policy explains how NDG Live Tech may use cookies
-      and similar technologies on this website.
-    </p>
-
-    <p class="updated">
-      Last updated — 2026
-    </p>
+    <h1>Mentions légales</h1>
 
 
+    <!-- Informations entreprise -->
     <section>
 
-      <h2>1. What Are Cookies?</h2>
+      <h2>Informations sur l’entreprise</h2>
+
+      <div class="info">
+
+        <div class="label">Entreprise</div>
+        <div>NDG Live Tech</div>
+
+        <div class="label">Propriétaire</div>
+        <div>Nicolas De Greef</div>
+
+        <div class="label">Forme juridique</div>
+        <div>Entreprise individuelle</div>
+
+        <div class="label">Numéro d’entreprise</div>
+        <div>1037.633.744</div>
+
+        <div class="label">Numéro de TVA</div>
+        <div>BE1037.633.744</div>
+
+        <div class="label">Adresse</div>
+        <div>
+          Avenue de Floréal 172 boîte 1<br>
+          1180 Uccle - Belgique
+        </div>
+
+        <div class="label">E-mail</div>
+        <div>
+          <a href="mailto:nicolas.degreef@ndglivetech.com">
+            nicolas.degreef@ndglivetech.com
+          </a>
+        </div>
+
+        <div class="label">Téléphone</div>
+        <div>
+          <a href="tel:+32470982784">
+            +32 470 98 27 84
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Activité -->
+    <section>
+
+      <h2>Activité</h2>
 
       <p>
-        Cookies are small text files stored on your device when you visit a website.
-        They can be used to make a website work properly, improve user experience,
-        remember preferences or collect basic statistics.
+        NDG Live Tech fournit des services techniques pour les événements
+        live, notamment en son, éclairage, vidéo et production audiovisuelle.
       </p>
 
     </section>
 
 
+    <!-- Responsabilité -->
     <section>
 
-      <h2>2. Cookies Used on This Website</h2>
+      <h2>Responsabilité</h2>
 
       <p>
-        This website may use cookies for the following purposes:
+        NDG Live Tech met tout en œuvre pour garantir l’exactitude
+        des informations publiées sur ce site internet.
       </p>
 
-      <ul>
-        <li>essential website functionality;</li>
-        <li>security and performance;</li>
-        <li>remembering user preferences;</li>
-        <li>traffic statistics and website improvement.</li>
-      </ul>
-
-    </section>
-
-
-    <section>
-
-      <h2>3. Essential Cookies</h2>
-
       <p>
-        Essential cookies are necessary for the website to function correctly.
-        These cookies do not require prior consent.
+        Toutefois, NDG Live Tech ne peut être tenu responsable
+        d’informations incomplètes, inexactes ou obsolètes.
       </p>
 
     </section>
 
 
+    <!-- Droit applicable -->
     <section>
 
-      <h2>4. Analytics and Third-Party Cookies</h2>
+      <h2>Droit applicable</h2>
 
       <p>
-        If analytics tools, embedded content or third-party services are used
-        on this website, they may place cookies on your device.
-      </p>
-
-      <p>
-        This may include services such as Google, Instagram, hosting providers
-        or other integrated tools.
+        Le droit belge s’applique à tous les accords et litiges.
+        Seuls les tribunaux de Bruxelles sont compétents.
       </p>
 
     </section>
 
 
+    <!-- Documents juridiques -->
     <section>
 
-      <h2>5. Managing Cookies</h2>
-
-      <p>
-        You can manage or delete cookies at any time through your browser settings.
-        Most browsers allow you to block cookies, delete existing cookies or receive
-        a warning before cookies are stored.
-      </p>
-
-    </section>
-
-
-    <section>
-
-      <h2>6. Changes to This Policy</h2>
-
-      <p>
-        NDG Live Tech may update this Cookies Policy when the website evolves
-        or when legal requirements change.
-      </p>
-
-    </section>
-
-
-    <section>
-
-      <h2>7. Contact</h2>
-
-      <p>
-        For any question regarding cookies or privacy, you can contact:
-      </p>
-
-      <p>
-        <a href="mailto:nicolas.degreef@ndglivetech.com">
-          nicolas.degreef@ndglivetech.com
-        </a>
-      </p>
-
-    </section>
-
-
-    <section>
-
-      <h2>8. Related Documents</h2>
+      <h2>Documents juridiques</h2>
 
       <div class="legal-links">
 
-        <a href="legal.html">
-          Legal Notice
+        <a href="terms-fr.html">
+          Conditions générales
         </a>
 
-        <a href="terms.html">
-          Terms & Conditions
+        <a href="privacy-fr.html">
+          Politique de confidentialité
         </a>
 
-        <a href="privacy.html">
-          Privacy Policy
+        <a href="cookies-fr.html">
+          Politique des cookies
         </a>
 
       </div>
@@ -421,7 +408,7 @@
 
 
   <footer class="legal-footer">
-    © 2026 NDG Live Tech. All rights reserved.
+    © 2026 NDG Live Tech. Tous droits réservés.
   </footer>
 
 </body>

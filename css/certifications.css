@@ -1,0 +1,574 @@
+/* =========================
+   TRAINING & CERTIFICATIONS
+========================= */
+
+.certifications-section {
+  position: relative;
+  overflow: hidden;
+
+  padding: 65px 24px;
+
+  background:
+    radial-gradient(
+      circle at 50% 30%,
+      rgba(35, 113, 215, 0.09) 0%,
+      rgba(35, 113, 215, 0.025) 32%,
+      transparent 58%
+    ),
+    #101215;
+}
+
+.certifications-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.certifications-heading {
+  margin-bottom: 36px;
+}
+
+.certifications-heading h2 {
+  margin-bottom: 14px;
+
+  font-size: clamp(32px, 3.5vw, 46px);
+}
+
+.certifications-intro {
+  max-width: 760px;
+  margin: 0 auto;
+
+  color: #c8cbd0;
+
+  font-size: 16px;
+  line-height: 1.65;
+
+  text-align: center;
+}
+
+
+/* =========================
+   CERTIFICATIONS GRID
+========================= */
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  background: rgba(17, 22, 30, 0.70);
+
+  border: 1px solid rgba(35, 113, 215, 0.28);
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+
+/* =========================
+   CERTIFICATION BLOCK
+========================= */
+
+.certification-block {
+  position: relative;
+
+  min-height: 220px;
+
+  padding: 28px 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.certification-block:last-child {
+  border-right: none;
+}
+
+
+/* Hover */
+
+.certification-block:hover {
+  background: rgba(35, 113, 215, 0.045);
+
+  box-shadow:
+    inset 0 0 30px rgba(35, 113, 215, 0.025);
+}
+
+
+/* =========================
+   CERTIFICATION LOGOS
+========================= */
+
+.certification-logo {
+  width: 100%;
+  height: 62px;
+
+  margin: 0 0 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certification-logo img {
+  display: block;
+
+  max-width: 145px;
+  max-height: 58px;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  filter:
+    grayscale(1)
+    brightness(0)
+    invert(1);
+
+  opacity: 0.78;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+
+/* Logo hover */
+
+.certification-block:hover .certification-logo img {
+  opacity: 1;
+
+  transform: translateY(-2px);
+
+  filter:
+    grayscale(1)
+    brightness(0)
+    invert(1)
+    drop-shadow(0 0 10px rgba(35, 113, 215, 0.20));
+}
+
+
+/* =========================
+   INDIVIDUAL LOGO SIZES
+========================= */
+
+.certification-lacoustics .certification-logo img {
+  max-width: 135px;
+}
+
+.certification-dante .certification-logo img {
+  max-width: 145px;
+}
+
+.certification-chamsys .certification-logo img {
+  max-width: 135px;
+}
+
+.certification-madmapper .certification-logo img {
+  max-width: 145px;
+}
+
+
+/* =========================
+   CERTIFICATION TITLES
+========================= */
+
+.certification-block h3 {
+  margin: 0 0 15px;
+
+  color: #3c8df5;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+
+/* =========================
+   TRAINING LIST
+========================= */
+
+.certification-block ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  text-align: left;
+}
+
+.certification-block li {
+  position: relative;
+
+  margin-bottom: 8px;
+  padding-left: 17px;
+
+  color: #c4c8cd;
+
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.certification-block li:last-child {
+  margin-bottom: 0;
+}
+
+.certification-block li::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 8px;
+
+  width: 5px;
+  height: 5px;
+
+  background: #2371d7;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 8px rgba(35, 113, 215, 0.45);
+}
+
+
+/* =========================
+   UPCOMING TRAINING
+========================= */
+
+.upcoming-training {
+  max-width: 1100px;
+
+  margin: 18px auto 0;
+
+  padding: 20px 28px 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(35, 113, 215, 0.05),
+      rgba(17, 22, 30, 0.58)
+    );
+
+  border: 1px solid rgba(35, 113, 215, 0.24);
+  border-radius: 18px;
+}
+
+
+/* Upcoming label */
+
+.upcoming-label {
+  margin: 0 0 16px;
+
+  color: #3c8df5;
+
+  text-align: center;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2.5px;
+}
+
+
+/* =========================
+   UPCOMING GRID
+========================= */
+
+.upcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  align-items: stretch;
+}
+
+
+/* =========================
+   UPCOMING ITEM
+========================= */
+
+.upcoming-item {
+  min-height: 82px;
+
+  padding: 8px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.upcoming-item:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+
+/* =========================
+   UPCOMING LOGOS
+========================= */
+
+.upcoming-logo {
+  width: 150px;
+  height: 65px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upcoming-logo img {
+  display: block;
+
+  max-width: 140px;
+  max-height: 58px;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  filter:
+    grayscale(1)
+    brightness(0)
+    invert(1);
+
+  opacity: 0.78;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.upcoming-item:hover .upcoming-logo img {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+
+/* Upcoming logo hover */
+
+.upcoming-item:hover .upcoming-logo img {
+  opacity: 1;
+
+  transform: scale(1.04);
+}
+
+
+/* =========================
+   UPCOMING CONTENT
+========================= */
+
+.upcoming-content {
+  text-align: left;
+}
+
+.upcoming-content h3 {
+  margin: 0 0 6px;
+
+  color: #eef0f3;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+.upcoming-content p {
+  margin: 7px 0 0;
+
+  color: #9fa5ac;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   SCHEDULED BADGE
+========================= */
+
+.training-status {
+  display: inline-block;
+
+  padding: 3px 8px;
+
+  color: #3c8df5;
+
+  background: rgba(35, 113, 215, 0.08);
+
+  border: 1px solid rgba(35, 113, 215, 0.4);
+  border-radius: 5px;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.2px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    max-width: 720px;
+  }
+
+  .certification-block {
+    min-height: 210px;
+  }
+
+  .certification-block:nth-child(2) {
+    border-right: none;
+  }
+
+  .certification-block:nth-child(1),
+  .certification-block:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .upcoming-training {
+    max-width: 720px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .certifications-section {
+    padding: 50px 20px;
+  }
+
+
+  /* Heading */
+
+  .certifications-heading {
+    margin-bottom: 30px;
+  }
+
+  .certifications-heading h2 {
+    font-size: 30px;
+  }
+
+  .certifications-intro {
+    font-size: 15px;
+  }
+
+
+  /* Certifications */
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 420px;
+  }
+
+  .certification-block {
+    min-height: auto;
+
+    padding: 26px 24px;
+
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .certification-block:last-child {
+    border-bottom: none;
+  }
+
+  .certification-logo {
+    height: 55px;
+
+    margin-bottom: 15px;
+  }
+
+  .certification-logo img {
+    max-height: 50px;
+  }
+
+  .certification-block h3 {
+    font-size: 18px;
+
+    margin-bottom: 12px;
+  }
+
+
+  /* Upcoming */
+
+  .upcoming-training {
+    max-width: 420px;
+
+    margin-top: 16px;
+
+    padding: 22px 18px;
+  }
+
+  .upcoming-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-item {
+    justify-content: flex-start;
+
+    min-height: auto;
+
+    padding: 18px 10px;
+
+    gap: 18px;
+  }
+
+  .upcoming-item:first-child {
+    border-right: none;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .upcoming-logo {
+    width: 85px;
+    height: 55px;
+  }
+
+  .upcoming-logo img {
+    max-width: 80px;
+    max-height: 55px;
+  }
+
+}

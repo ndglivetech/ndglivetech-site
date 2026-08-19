@@ -10,6 +10,7 @@
 
 }
 
+
 /* Small mobile */
 
 @media (max-width: 600px) {
@@ -68,14 +69,173 @@
     padding: 26px;
   }
 
+  .card h3 {
+    white-space: normal;
+  }
+
+
+  /* About */
+
+  .about-intro {
+    font-size: 18px;
+  }
+
+  .about-values {
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 30px;
+  }
+
+  .about-values span:not(:last-child)::after {
+    display: none;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .about-signature {
+    gap: 10px;
+    margin-top: 34px;
+  }
+
+  .about-signature span {
+    width: 25px;
+  }
+
+  .about-signature p {
+    font-size: 13px;
+    white-space: normal;
+  }
+
+
+  /* Why NDG Live Tech */
+
+  .why-intro {
+    margin-bottom: 42px;
+    font-size: 16px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .why-item {
+    min-height: auto;
+    padding: 30px 10px 30px 70px;
+  }
+
+  .why-item:nth-child(3) {
+    border-bottom: none;
+  }
+
+  .why-number {
+    top: 28px;
+    font-size: 46px;
+  }
+
+  .why-content h3 {
+    font-size: 19px;
+  }
+
+  .why-content p {
+    font-size: 15px;
+  }
+
+  .why-process {
+    margin-top: 40px;
+    padding: 28px 20px;
+  }
+
+  .why-process-steps {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .why-process-steps i {
+    transform: rotate(90deg);
+  }
+
+
+  /* Drone */
+
+  .drone-service {
+    padding: 32px 24px;
+  }
+
+  .drone-title {
+    font-size: 22px;
+  }
+
+  .drone-description {
+    font-size: 16px;
+  }
+
+  .drone-groups {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .drone-group h4 {
+    font-size: 14px;
+  }
+
+  .drone-group p {
+    font-size: 15px;
+  }
+
+
+  /* Contact */
+
+  .contact-section {
+    width: 100%;
+  }
+
+  .contact-intro {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .contact-card {
+    padding: 26px 20px;
+    border-radius: 20px;
+  }
+
+  .contact-row {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 15px 16px;
+  }
+
+  .contact-form textarea {
+    min-height: 150px;
+  }
+
+  .contact-direct {
+    margin-top: 28px;
+  }
+
   .contact-info {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+  }
+
+  .contact-info a {
+    width: 100%;
+    max-width: 280px;
   }
 
   .contact-info span {
     display: none;
   }
+
+
+  /* Footer */
 
   .footer-legal {
     flex-direction: column;
@@ -83,6 +243,7 @@
   }
 
 }
+
 
 /* Cookies mobile */
 
@@ -103,6 +264,7 @@
 
 }
 
+
 /* Mobile menu */
 
 .menu-toggle {
@@ -112,6 +274,7 @@
 .mobile-lang {
   display: none;
 }
+
 
 /* Burger menu */
 
@@ -291,6 +454,10 @@
   }
 
 }
+
+
+/* Active language + menu */
+
 @media (max-width: 768px) {
 
   .main-nav > a.active {
