@@ -381,7 +381,6 @@ h2 {
   line-height: 1.6;
 }
 
-
 .drone-note {
   max-width: 760px;
 
@@ -391,6 +390,41 @@ h2 {
 
   font-size: 12px;
   line-height: 1.5;
+}
+
+/* =========================================================
+   DRONE INSPECTION LINK
+========================================================= */
+
+.drone-inspection-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  margin-top: 16px;
+
+  color: #3c8df5;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.drone-inspection-link i {
+  font-size: 12px;
+  transition: transform 0.25s ease;
+}
+
+.drone-inspection-link:hover {
+  color: #ffffff;
+}
+
+.drone-inspection-link:hover i {
+  transform: translateX(4px);
 }
 
 
