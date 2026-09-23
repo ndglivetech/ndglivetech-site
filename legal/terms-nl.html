@@ -2,10 +2,51 @@
 <html lang="nl">
 
 <head>
+
+  <!-- =========================
+       GOOGLE ANALYTICS
+       Toestemming standaard geweigerd
+  ========================== -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+    }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1GKQJENK2"></script>
+
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-F1GKQJENK2');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Algemene voorwaarden - NDG Live Tech</title>
+
+  <link rel="stylesheet" href="../css/cookies.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
 
   <style>
     * {
@@ -39,11 +80,6 @@
       color: #ffffff;
     }
 
-
-    /* =========================
-       TOP BAR
-    ========================= */
-
     .legal-topbar {
       width: min(1100px, 92%);
       margin: 0 auto;
@@ -70,11 +106,6 @@
       color: #3c8df5;
     }
 
-
-    /* =========================
-       LANGUAGE SWITCH
-    ========================= */
-
     .legal-language {
       display: flex;
       gap: 8px;
@@ -98,16 +129,9 @@
 
     .legal-language a.active {
       color: #ffffff;
-
       background: rgba(35, 113, 215, 0.20);
-
       border-color: rgba(35, 113, 215, 0.65);
     }
-
-
-    /* =========================
-       MAIN CONTENT
-    ========================= */
 
     .container {
       width: min(950px, 92%);
@@ -162,7 +186,8 @@
       font-size: 22px;
     }
 
-    p {
+    p,
+    li {
       margin-bottom: 14px;
 
       color: rgba(255, 255, 255, 0.86);
@@ -170,10 +195,10 @@
       font-size: 15px;
     }
 
-
-    /* =========================
-       RELATED DOCUMENTS
-    ========================= */
+    ul {
+      margin-left: 22px;
+      margin-bottom: 20px;
+    }
 
     .legal-links {
       display: flex;
@@ -193,14 +218,8 @@
 
     .legal-links a::before {
       content: "→";
-
       color: rgba(60, 141, 245, 0.65);
     }
-
-
-    /* =========================
-       FOOTER
-    ========================= */
 
     .legal-footer {
       width: min(950px, 92%);
@@ -213,11 +232,6 @@
 
       font-size: 12px;
     }
-
-
-    /* =========================
-       MOBILE
-    ========================= */
 
     @media (max-width: 700px) {
 
@@ -232,7 +246,6 @@
       h2 {
         font-size: 20px;
       }
-
     }
   </style>
 
@@ -241,7 +254,6 @@
 
 <body>
 
-  <!-- Top navigation -->
   <div class="legal-topbar">
 
     <a href="../nl.html" class="back-home">
@@ -272,43 +284,41 @@
     <h1>Algemene voorwaarden</h1>
 
     <p class="intro">
-      Deze algemene voorwaarden zijn van toepassing op alle offertes,
-      facturen, diensten en materiaalverhuur van NDG Live Tech.
+      Deze algemene voorwaarden zijn van toepassing op de offertes,
+      bestellingen, facturen, diensten en materiaalverhuur van NDG Live Tech.
     </p>
 
     <p class="updated">
-      Laatst bijgewerkt — 2026
+      Laatst bijgewerkt — september 2026
     </p>
 
 
-    <!-- Definities -->
+    <!-- DEFINITIES -->
     <section>
 
       <h2>Definities</h2>
 
       <p>
         <strong>“NDG Live Tech”</strong>:
-        de handelsnaam die de heer Nicolas De Greef gebruikt
-        voor zijn activiteiten.
+        de handelsnaam waaronder Nicolas De Greef zijn activiteiten uitoefent.
       </p>
 
       <p>
         <strong>“Klant”</strong>:
-        elke natuurlijke of rechtspersoon die een prestatie vraagt
-        aan NDG Live Tech, met inbegrip van de huur van materiaal.
+        iedere natuurlijke persoon of rechtspersoon die een dienst,
+        prestatie of materiaalverhuur aanvraagt bij NDG Live Tech.
       </p>
 
       <p>
         <strong>“Overeenkomst”</strong>:
-        elke schriftelijke of mondelinge overeenkomst tussen de Klant
-        en NDG Live Tech voor om het even welke prestatie,
-        met inbegrip van materiaalverhuur.
+        iedere overeenkomst tussen NDG Live Tech en de Klant met betrekking
+        tot een prestatie, dienst of materiaalverhuur.
       </p>
 
       <p>
-        <strong>“Evenement”</strong>:
-        een activiteit georganiseerd door de Klant waarbij
-        NDG Live Tech tussenkomt, rechtstreeks of via verhuurd materiaal.
+        <strong>“Prestatie”</strong>:
+        iedere technische, audiovisuele, productie-, drone-,
+        ondersteunings- of andere dienst die door NDG Live Tech wordt geleverd.
       </p>
 
     </section>
@@ -320,27 +330,20 @@
       <h2>1. Toepassingsgebied</h2>
 
       <p>
-        1.1. Deze algemene voorwaarden zijn van toepassing op alle
-        bestellingen bij NDG Live Tech, evenals op offertes en alle
-        prestaties, betaald of gratis. Zij zijn de enige toepasselijke
-        voorwaarden en vervangen alle andere voorwaarden van de Klant.
+        1.1. Deze algemene voorwaarden zijn van toepassing op alle offertes,
+        bestellingen, overeenkomsten, facturen en prestaties van NDG Live Tech.
       </p>
 
       <p>
-        1.2. Door een overeenkomst met NDG Live Tech te sluiten,
-        erkent de Klant vooraf kennis te hebben genomen van deze
-        algemene voorwaarden en ermee in te stemmen.
+        1.2. Door een bestelling te plaatsen, een offerte te aanvaarden
+        of een overeenkomst met NDG Live Tech te sluiten, erkent de Klant
+        kennis te hebben genomen van deze algemene voorwaarden en ermee
+        in te stemmen.
       </p>
 
       <p>
-        1.3. Elke afwijking die NDG Live Tech op deze algemene
-        voorwaarden toestaat, is beperkt tot de specifieke overeenkomst
-        waarin die afwijking is opgenomen, op voorwaarde dat ze
-        schriftelijk is en door de partijen is ondertekend.
-        Deze algemene voorwaarden blijven van toepassing op alle
-        bepalingen waarvan niet schriftelijk is afgeweken.
-        Een afwijking voor één overeenkomst geldt niet voor andere
-        overeenkomsten, tenzij schriftelijk anders overeengekomen.
+        1.3. Afwijkingen van deze voorwaarden zijn alleen geldig wanneer
+        zij uitdrukkelijk en schriftelijk tussen de partijen zijn overeengekomen.
       </p>
 
     </section>
@@ -352,27 +355,22 @@
       <h2>2. Offerte en bestelling</h2>
 
       <p>
-        2.1. Offertes van NDG Live Tech zijn één maand geldig.
-        Zolang ze niet door de Klant zijn aanvaard,
-        kunnen ze zonder vergoeding worden gewijzigd of ingetrokken.
+        2.1. Offertes van NDG Live Tech zijn geldig gedurende de termijn
+        die erop vermeld staat. Wanneer geen termijn is vermeld, bedraagt
+        de geldigheidsduur één maand.
       </p>
 
       <p>
-        2.2. Offertes worden opgesteld op basis van de informatie
-        die de Klant verstrekt. Bij wijziging van de gewenste prestaties
-        kan NDG Live Tech zijn offerte aanpassen of intrekken.
+        2.2. Offertes worden opgesteld op basis van de informatie die door
+        de Klant wordt verstrekt. Iedere wijziging van de aanvraag,
+        technische omstandigheden, planning of omvang van de prestatie
+        kan aanleiding geven tot een aanpassing van de offerte.
       </p>
 
       <p>
-        2.3. In dringende gevallen (bestelling minder dan één maand
-        vóór de prestatie) kan NDG Live Tech de geldigheidsduur
-        van de offerte verkorten. Dit wordt in de offerte vermeld.
-      </p>
-
-      <p>
-        2.4. Elke overeenkomst wordt gesloten onder de ontbindende
-        voorwaarde van betaling van het overeengekomen voorschot
-        binnen de gestelde termijn.
+        2.3. Een bestelling wordt definitief na schriftelijke aanvaarding
+        van de offerte of na iedere andere duidelijke bevestiging van de
+        bestelling door de Klant.
       </p>
 
     </section>
@@ -384,19 +382,26 @@
       <h2>3. Prijzen</h2>
 
       <p>
-        3.1. Prijzen worden uitgedrukt in euro, exclusief btw.
-        Elke wijziging van de btw of nieuwe belasting
-        is ten laste van de Klant.
+        3.1. Tenzij anders vermeld, worden de prijzen uitgedrukt in euro
+        en exclusief btw.
       </p>
 
       <p>
-        3.2. De prijzen hebben uitsluitend betrekking op de prestaties
-        of het materiaal die in de offerte zijn beschreven.
+        3.2. De prijs omvat uitsluitend de prestaties, diensten en/of
+        het materiaal die uitdrukkelijk in de offerte zijn vermeld.
       </p>
 
       <p>
-        3.3. Vergoedingen met betrekking tot auteursrechten
-        (bv. SABAM) zijn ten laste van de Klant.
+        3.3. Bijkomende prestaties, bijkomende werkuren, wijzigingen,
+        verplaatsingen, kosten of materiaal die niet in de oorspronkelijke
+        offerte zijn opgenomen, kunnen afzonderlijk worden gefactureerd.
+      </p>
+
+      <p>
+        3.4. Rechten, vergunningen, auteursrechten, SABAM-kosten of andere
+        kosten die rechtstreeks verband houden met de organisatie van het
+        evenement zijn ten laste van de Klant, tenzij schriftelijk anders
+        is overeengekomen.
       </p>
 
     </section>
@@ -408,27 +413,24 @@
       <h2>4. Betaling</h2>
 
       <p>
-        4.1. Facturen zijn betaalbaar op de vermelde vervaldag
-        of uiterlijk binnen 15 dagen na ontvangst,
-        op de bankrekening van NDG Live Tech.
+        4.1. Facturen zijn betaalbaar binnen de termijn die op de factuur
+        wordt vermeld.
       </p>
 
       <p>
-        4.2. Een voorschot van 50% wordt binnen 15 dagen
-        na aanvaarding van de offerte betaald.
+        4.2. NDG Live Tech kan bij de bestelling een voorschot vragen.
+        De bestelling kan afhankelijk worden gesteld van de tijdige betaling
+        van dit voorschot.
       </p>
 
       <p>
-        4.3. Elke laattijdige betaling geeft van rechtswege
-        en zonder ingebrekestelling aanleiding tot wettelijke
-        interesten verhoogd met 4%, evenals een forfaitaire
-        schadevergoeding van 15% met een minimum van €150.
+        4.3. Bij niet-betaling op de vervaldag kunnen de wettelijk
+        toepasselijke interesten en vergoedingen worden aangerekend.
       </p>
 
       <p>
-        4.4. Elke betwisting moet binnen 15 dagen schriftelijk
-        worden meegedeeld. Na deze termijn wordt de factuur
-        geacht aanvaard te zijn.
+        4.4. Een betwisting van een factuur moet zo snel mogelijk
+        schriftelijk en gemotiveerd aan NDG Live Tech worden meegedeeld.
       </p>
 
     </section>
@@ -437,25 +439,26 @@
     <!-- 5 -->
     <section>
 
-      <h2>5. Herroepingsrecht</h2>
+      <h2>5. Herroepingsrecht van consumenten</h2>
 
       <p>
-        5.1. De Klant beschikt over een termijn van 14 dagen
-        om de overeenkomst zonder opgave van reden te beëindigen.
+        5.1. Wanneer de Klant een consument is en de overeenkomst op afstand
+        of buiten de verkoopruimte wordt gesloten, kan een wettelijk
+        herroepingsrecht van toepassing zijn overeenkomstig de Belgische
+        wetgeving.
       </p>
 
       <p>
-        5.2. De herroeping moet vóór het verstrijken
-        van de termijn schriftelijk worden gemeld.
+        5.2. Wanneer de Klant uitdrukkelijk vraagt dat de uitvoering van
+        de dienst begint vóór het einde van de herroepingstermijn, kunnen
+        de wettelijke regels inzake vroegtijdige uitvoering en vergoeding
+        voor reeds uitgevoerde diensten van toepassing zijn.
       </p>
 
       <p>
-        5.3. Betaalde bedragen worden binnen 30 dagen terugbetaald.
-      </p>
-
-      <p>
-        5.4. Dit recht geldt niet wanneer de uitvoering
-        met instemming van de Klant reeds is begonnen.
+        5.3. Voor bepaalde diensten die verband houden met vrijetijdsactiviteiten
+        en die op een specifieke datum of tijdens een specifieke periode moeten
+        worden uitgevoerd, kan het herroepingsrecht wettelijk uitgesloten zijn.
       </p>
 
     </section>
@@ -464,27 +467,29 @@
     <!-- 6 -->
     <section>
 
-      <h2>6. Annulering en beëindiging</h2>
+      <h2>6. Annulering door de Klant</h2>
 
       <p>
-        6.1. Buiten herroeping of overmacht moet elke annulering
-        minstens 21 dagen vóór de prestatie worden gemeld.
+        6.1. Iedere annulering moet zo snel mogelijk schriftelijk aan
+        NDG Live Tech worden meegedeeld.
       </p>
 
       <p>
-        6.2. Bij annulering door de Klant worden reeds betaalde
-        bedragen niet terugbetaald.
+        6.2. Reeds uitgevoerde werkzaamheden, gemaakte kosten,
+        bestelde goederen, gereserveerd materiaal en verbintenissen
+        tegenover derden kunnen aan de Klant worden aangerekend.
       </p>
 
       <p>
-        6.3. Indien nog geen bedrag werd betaald,
-        kan een forfaitaire schadevergoeding van €150 worden gevorderd.
+        6.3. Wanneer in de offerte specifieke annuleringsvoorwaarden
+        zijn opgenomen, zijn deze van toepassing op de betrokken opdracht.
       </p>
 
       <p>
-        6.4. NDG Live Tech kan de overeenkomst beëindigen
-        bij ongepast gedrag, onjuiste informatie of misbruik
-        van materiaal, zonder terugbetaling.
+        6.4. NDG Live Tech behoudt zich het recht voor een prestatie te
+        weigeren of te beëindigen wanneer de omstandigheden de veiligheid
+        van personen of materiaal in gevaar brengen of wanneer de Klant
+        zijn essentiële verplichtingen niet nakomt.
       </p>
 
     </section>
@@ -496,13 +501,21 @@
       <h2>7. Overmacht</h2>
 
       <p>
-        7.1. Geen van de partijen is aansprakelijk
-        in geval van overmacht.
+        7.1. Geen van de partijen kan aansprakelijk worden gesteld voor
+        de niet-uitvoering of vertraging van haar verplichtingen wanneer
+        deze het gevolg is van een geval van overmacht of een gebeurtenis
+        buiten haar redelijke controle.
       </p>
 
       <p>
-        7.2. De betrokken partij moet de andere partij
-        binnen 24 uur verwittigen.
+        7.2. De betrokken partij brengt de andere partij zo snel mogelijk
+        op de hoogte van de omstandigheden en hun vermoedelijke gevolgen.
+      </p>
+
+      <p>
+        7.3. De partijen zullen, wanneer dit redelijkerwijs mogelijk is,
+        proberen een passende oplossing te vinden, zoals uitstel,
+        wijziging of herplanning van de prestatie.
       </p>
 
     </section>
@@ -511,24 +524,30 @@
     <!-- 8 -->
     <section>
 
-      <h2>8. Uitvoering van de prestaties</h2>
+      <h2>8. Technische prestaties</h2>
 
       <p>
-        8.1. NDG Live Tech is gehouden tot een middelenverbintenis.
+        8.1. NDG Live Tech voert zijn technische prestaties uit volgens
+        de regels van goed vakmanschap en beschikt daarbij over een
+        middelenverbintenis.
       </p>
 
       <p>
-        8.2. NDG Live Tech respecteert de door de Klant
-        meegedeelde reglementen.
+        8.2. De Klant verstrekt tijdig alle technische, organisatorische
+        en praktische informatie die nodig is voor de correcte voorbereiding
+        en uitvoering van de prestatie.
       </p>
 
       <p>
-        8.3. NDG Live Tech kan een beroep doen op onderaannemers.
+        8.3. NDG Live Tech kan een beroep doen op gekwalificeerde
+        medewerkers, freelancers, onderaannemers of technische partners.
       </p>
 
       <p>
-        8.4. NDG Live Tech kan een bestelling weigeren
-        bij een geschil of onbetaalde factuur.
+        8.4. Wanneer de omstandigheden ter plaatse verschillen van de
+        vooraf meegedeelde informatie, kan NDG Live Tech de technische
+        uitvoering aanpassen indien dit noodzakelijk is voor de veiligheid
+        of de goede uitvoering van de opdracht.
       </p>
 
     </section>
@@ -537,46 +556,29 @@
     <!-- 9 -->
     <section>
 
-      <h2>9. Verplichtingen van de Klant</h2>
+      <h2>9. Materiaalverhuur</h2>
 
       <p>
-        9.1. De Klant moet alle nodige toelatingen verkrijgen,
-        waaronder SABAM, politie of elke andere toepasselijke toelating.
+        9.1. Verhuurd materiaal blijft eigendom van NDG Live Tech
+        of van de betrokken leverancier.
       </p>
 
       <p>
-        9.2. De Klant moet tijdig alle nuttige informatie bezorgen.
+        9.2. De Klant verbindt zich ertoe het materiaal zorgvuldig,
+        overeenkomstig zijn bestemming en volgens eventuele technische
+        instructies te gebruiken.
       </p>
 
       <p>
-        9.3. De Klant moet een geschikte,
-        veilige en uitgeruste locatie garanderen.
+        9.3. Zonder voorafgaande toestemming mag het materiaal niet worden
+        verkocht, overgedragen, onderverhuurd, gewijzigd of ter beschikking
+        gesteld van derden.
       </p>
 
       <p>
-        9.4. De Klant mag het materiaal niet verplaatsen
-        zonder toestemming.
-      </p>
-
-      <p>
-        9.5. Bij verhuur moet de Klant het materiaal kunnen gebruiken.
-      </p>
-
-      <p>
-        9.6. NDG Live Tech wijst elke aansprakelijkheid af
-        bij niet-naleving.
-      </p>
-
-      <p>
-        9.7. De Klant moet actief meewerken.
-      </p>
-
-      <p>
-        9.8. Het materiaal moet wettig en correct worden gebruikt.
-      </p>
-
-      <p>
-        9.9. De Klant moet verzekerd zijn.
+        9.4. Verlies, diefstal, beschadiging of abnormale slijtage tijdens
+        de periode waarin het materiaal onder de verantwoordelijkheid van
+        de Klant valt, kan aan de Klant worden aangerekend.
       </p>
 
     </section>
@@ -585,29 +587,31 @@
     <!-- 10 -->
     <section>
 
-      <h2>10. Aansprakelijkheid</h2>
+      <h2>10. Droneprestaties</h2>
 
       <p>
-        10.1. Elke klacht moet binnen 15 dagen worden ingediend.
+        10.1. Droneprestaties worden uitgevoerd met inachtneming van de
+        toepasselijke Belgische en Europese regelgeving en binnen de
+        operationele beperkingen die op het moment van de vlucht gelden.
       </p>
 
       <p>
-        10.2. De aansprakelijkheid is beperkt
-        tot het bedrag van de overeenkomst.
+        10.2. De uitvoering van een dronevlucht kan afhankelijk zijn van
+        weersomstandigheden, luchtruimbeperkingen, geografische zones,
+        veiligheidsvoorwaarden, administratieve toelatingen en andere
+        operationele vereisten.
       </p>
 
       <p>
-        10.3. De Klant is verantwoordelijk voor het materiaal
-        dat zich in zijn bezit bevindt.
+        10.3. NDG Live Tech kan een vlucht uitstellen, wijzigen of annuleren
+        wanneer de wettelijke, technische, meteorologische of veiligheidsvoorwaarden
+        geen veilige of toegestane uitvoering mogelijk maken.
       </p>
 
       <p>
-        10.4. De Klant moet elke schade of elk verlies dekken.
-      </p>
-
-      <p>
-        10.5. De Klant is verantwoordelijk
-        voor schade aan derden.
+        10.4. De Klant verstrekt tijdig alle informatie over de locatie,
+        het doel van de opdracht en eventuele bijzondere omstandigheden
+        die relevant kunnen zijn voor de voorbereiding van de vlucht.
       </p>
 
     </section>
@@ -616,16 +620,30 @@
     <!-- 11 -->
     <section>
 
-      <h2>11. Vertrouwelijkheid</h2>
+      <h2>11. Visuele inspecties met drone</h2>
 
       <p>
-        11.1. NDG Live Tech respecteert de vertrouwelijkheid
-        en de AVG.
+        11.1. Visuele inspecties met drone hebben tot doel beelden en
+        visuele informatie te verzamelen van moeilijk bereikbare zones,
+        gebouwen, daken, gevels of andere structuren.
       </p>
 
       <p>
-        11.2. De Klant kan vragen om de verwerking
-        van zijn gegevens stop te zetten.
+        11.2. Tenzij uitdrukkelijk schriftelijk anders is overeengekomen,
+        vormt een visuele drone-inspectie geen bouwkundige expertise,
+        technische keuring, conformiteitscontrole of certificering.
+      </p>
+
+      <p>
+        11.3. NDG Live Tech rapporteert uitsluitend wat redelijkerwijs
+        zichtbaar is op basis van de verkregen beelden en de omstandigheden
+        tijdens de opname.
+      </p>
+
+      <p>
+        11.4. Verborgen gebreken, interne schade of elementen die niet
+        zichtbaar zijn op de beelden kunnen niet worden vastgesteld
+        door een uitsluitend visuele drone-inspectie.
       </p>
 
     </section>
@@ -634,23 +652,23 @@
     <!-- 12 -->
     <section>
 
-      <h2>12. Intellectuele eigendom</h2>
+      <h2>12. Beelden, video en opgeleverde bestanden</h2>
 
       <p>
-        12.1. Alle inhoud blijft eigendom van NDG Live Tech.
+        12.1. De aard, het formaat en de omvang van de opgeleverde beelden,
+        video's, rapporten of andere bestanden worden bepaald door de offerte
+        of de overeenkomst.
       </p>
 
       <p>
-        12.2. Elke reproductie is verboden zonder toestemming.
+        12.2. De Klant is verantwoordelijk voor het gebruik dat hij maakt
+        van de geleverde beelden en bestanden en voor het respecteren van
+        de toepasselijke rechten van derden.
       </p>
 
       <p>
-        12.3. Elk misbruik geeft aanleiding tot een minimale
-        schadevergoeding van €500.
-      </p>
-
-      <p>
-        12.4. NDG Live Tech respecteert de rechten van zijn klanten.
+        12.3. Tenzij anders overeengekomen, garandeert NDG Live Tech geen
+        onbeperkte archivering van de originele of opgeleverde bestanden.
       </p>
 
     </section>
@@ -659,36 +677,157 @@
     <!-- 13 -->
     <section>
 
-      <h2>13. Diverse bepalingen</h2>
+      <h2>13. Verplichtingen van de Klant</h2>
 
       <p>
-        13.1. Het materiaal mag niet worden overgedragen
-        of onderverhuurd.
+        13.1. De Klant verstrekt correcte, volledige en tijdige informatie
+        die nodig is voor de uitvoering van de opdracht.
       </p>
 
       <p>
-        13.2. De nietigheid van één bepaling heeft geen invloed
-        op de andere bepalingen.
+        13.2. De Klant zorgt, wanneer dit onder zijn verantwoordelijkheid
+        valt, voor de nodige toegangen, vergunningen, toestemmingen,
+        veiligheidsmaatregelen en geschikte werkomstandigheden.
       </p>
 
       <p>
-        13.3. De offerte en deze algemene voorwaarden
-        vormen één geheel.
-      </p>
-
-      <p>
-        13.4. Het Belgische recht is van toepassing.
-      </p>
-
-      <p>
-        13.5. In geval van geschil zijn uitsluitend de rechtbanken
-        van Brussel en het bevoegde vredegerecht bevoegd.
+        13.3. De Klant moet NDG Live Tech informeren over gekende risico's,
+        bijzondere omstandigheden of beperkingen die de uitvoering van de
+        prestatie kunnen beïnvloeden.
       </p>
 
     </section>
 
 
-    <!-- Gerelateerde documenten -->
+    <!-- 14 -->
+    <section>
+
+      <h2>14. Aansprakelijkheid</h2>
+
+      <p>
+        14.1. NDG Live Tech is uitsluitend aansprakelijk voor directe schade
+        die het gevolg is van een bewezen contractuele fout die aan
+        NDG Live Tech kan worden toegerekend.
+      </p>
+
+      <p>
+        14.2. Voor zover wettelijk toegestaan, is NDG Live Tech niet
+        aansprakelijk voor indirecte schade, gevolgschade, winstderving,
+        verlies van gegevens of schade die voortvloeit uit omstandigheden
+        buiten zijn redelijke controle.
+      </p>
+
+      <p>
+        14.3. De aansprakelijkheid van NDG Live Tech wordt beperkt voor
+        zover dit wettelijk is toegestaan en overeenkomstig de toepasselijke
+        overeenkomst en verzekeringsdekking.
+      </p>
+
+    </section>
+
+
+    <!-- 15 -->
+    <section>
+
+      <h2>15. Persoonsgegevens en vertrouwelijkheid</h2>
+
+      <p>
+        15.1. Persoonsgegevens worden verwerkt overeenkomstig de toepasselijke
+        regelgeving inzake gegevensbescherming en de Privacyverklaring van
+        NDG Live Tech.
+      </p>
+
+      <p>
+        15.2. Informatie die in het kader van een opdracht als vertrouwelijk
+        wordt meegedeeld, wordt met passende vertrouwelijkheid behandeld,
+        behoudens wettelijke verplichtingen of wanneer openbaarmaking
+        noodzakelijk is voor de uitvoering van de opdracht.
+      </p>
+
+    </section>
+
+
+    <!-- 16 -->
+    <section>
+
+      <h2>16. Intellectuele eigendom</h2>
+
+      <p>
+        16.1. De intellectuele eigendomsrechten op door NDG Live Tech
+        gecreëerde documenten, ontwerpen, technische schema's, inhoud,
+        foto's, video's en andere creaties blijven behouden voor zover
+        deze rechten niet uitdrukkelijk schriftelijk zijn overgedragen.
+      </p>
+
+      <p>
+        16.2. De Klant ontvangt uitsluitend de gebruiksrechten die nodig
+        zijn voor het overeengekomen doel, tenzij schriftelijk anders
+        is overeengekomen.
+      </p>
+
+      <p>
+        16.3. Rechten van derden blijven volledig van toepassing.
+      </p>
+
+    </section>
+
+
+    <!-- 17 -->
+    <section>
+
+      <h2>17. Klachten en geschillen</h2>
+
+      <p>
+        17.1. Klachten over een prestatie of factuur moeten zo snel mogelijk
+        schriftelijk en voldoende gemotiveerd aan NDG Live Tech worden
+        meegedeeld.
+      </p>
+
+      <p>
+        17.2. De partijen zullen eerst proberen een geschil in onderling
+        overleg op te lossen.
+      </p>
+
+      <p>
+        17.3. Op de overeenkomst is het Belgische recht van toepassing.
+      </p>
+
+      <p>
+        17.4. Wanneer geen minnelijke oplossing wordt bereikt, zijn de
+        bevoegde Belgische rechtbanken bevoegd overeenkomstig de
+        toepasselijke wettelijke regels.
+      </p>
+
+    </section>
+
+
+    <!-- 18 -->
+    <section>
+
+      <h2>18. Slotbepalingen</h2>
+
+      <p>
+        18.1. Indien een bepaling van deze algemene voorwaarden geheel
+        of gedeeltelijk ongeldig, nietig of onafdwingbaar wordt verklaard,
+        heeft dit geen invloed op de geldigheid van de overige bepalingen.
+      </p>
+
+      <p>
+        18.2. NDG Live Tech kan deze algemene voorwaarden wijzigen om
+        rekening te houden met wijzigingen in zijn activiteiten,
+        diensten of de toepasselijke regelgeving.
+      </p>
+
+      <p>
+        18.3. De versie die van toepassing is op een opdracht is in beginsel
+        de versie die van kracht is op het moment waarop de overeenkomst
+        wordt gesloten, behoudens andersluidende schriftelijke overeenkomst.
+      </p>
+
+    </section>
+
+
+    <!-- GERELATEERDE DOCUMENTEN -->
     <section>
 
       <h2>Gerelateerde documenten</h2>
@@ -717,6 +856,51 @@
   <footer class="legal-footer">
     © 2026 NDG Live Tech. Alle rechten voorbehouden.
   </footer>
+
+
+  <!-- ===== COOKIE BANNER ===== -->
+
+  <div class="cookie-banner" id="cookieBanner">
+
+    <div>
+
+      <h3>
+        <i class="fa-solid fa-cookie-bite"></i>
+        Cookies, cookies, cookies...
+      </h3>
+
+      <p>
+        Deze website gebruikt essentiële cookies om correct te functioneren
+        en kan optionele cookies gebruiken om uw ervaring te verbeteren.
+        U kunt alle cookies accepteren of niet-essentiële cookies weigeren.
+        <a href="cookies-nl.html">Meer informatie</a>
+      </p>
+
+    </div>
+
+    <div class="cookie-actions">
+
+      <button
+        class="btn-secondary"
+        onclick="rejectCookies()"
+      >
+        Niet-essentiële cookies weigeren
+      </button>
+
+      <button
+        class="btn-primary"
+        onclick="acceptCookies()"
+      >
+        <i class="fa-solid fa-cookie-bite"></i>
+        Alles accepteren
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <script src="../script.js"></script>
 
 </body>
 

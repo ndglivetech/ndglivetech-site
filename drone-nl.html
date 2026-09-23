@@ -2,10 +2,64 @@
 <html lang="nl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
+  <!-- =========================
+       GOOGLE ANALYTICS
+       Consent denied by default
+  ========================== -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    /* Consent geweigerd by default */
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+
+    /* Eerder geaccepteerde toestemming herstellen */
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-F1GKQJENK2">
+  </script>
+
+  <script>
+    gtag('js', new Date());
+
+    gtag('config', 'G-F1GKQJENK2');
+  </script>
+
+
+  <!-- =========================
+       META
+  ========================== -->
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+
+  <!-- =========================
+       SEO
+  ========================== -->
+
   <title>Drone-inspectie van Daken & Gebouwen | NDG Live Tech</title>
 
   <meta
@@ -13,15 +67,22 @@
     content="Professionele drone-inspectie van daken, gebouwen, dakgoten, schoorstenen, zonnepanelen en moeilijk bereikbare zones in België. HD-beelden en gestructureerde inspectierapporten."
   >
 
-  <meta name="robots" content="index, follow">
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
 
   <!-- Canonical -->
+
   <link
     rel="canonical"
     href="https://ndglivetech.com/drone-nl.html"
   >
 
+
   <!-- Languages -->
+
   <link
     rel="alternate"
     hreflang="en"
@@ -46,7 +107,11 @@
     href="https://ndglivetech.com/drone.html"
   >
 
-  <!-- Open Graph -->
+
+  <!-- =========================
+       OPEN GRAPH
+  ========================== -->
+
   <meta
     property="og:title"
     content="Drone-inspectie van Daken & Gebouwen | NDG Live Tech"
@@ -72,25 +137,39 @@
     content="NDG Live Tech"
   >
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <!-- Main website CSS -->
+  <!-- =========================
+       FAVICON
+  ========================== -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="images/favicon.png"
+  >
+
+
+  <!-- =========================
+       STYLES
+  ========================== -->
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
-
-  <!-- Drone page -->
+  <link rel="stylesheet" href="css/cookies.css">
   <link rel="stylesheet" href="css/drone.css">
-
-  <!-- Responsive -->
   <link rel="stylesheet" href="css/responsive.css">
 
-  <!-- Font Awesome -->
+
+  <!-- =========================
+       FONT AWESOME
+  ========================== -->
+
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   >
+
 </head>
 
 
@@ -160,7 +239,6 @@
   </nav>
 
 
-
   <main>
 
 
@@ -202,7 +280,6 @@
       </div>
 
     </section>
-
 
 
     <!-- ========================================
@@ -251,6 +328,7 @@
 
             </div>
 
+
             <div class="inspection-benefit">
 
               <strong>
@@ -263,6 +341,7 @@
               </span>
 
             </div>
+
 
             <div class="inspection-benefit">
 
@@ -306,7 +385,6 @@
       </div>
 
     </section>
-
 
 
     <!-- ========================================
@@ -449,7 +527,6 @@
     </section>
 
 
-
     <!-- ========================================
          WHY DRONE INSPECTION
     ========================================= -->
@@ -543,7 +620,6 @@
       </div>
 
     </section>
-
 
 
     <!-- ========================================
@@ -652,10 +728,7 @@
       </div>
 
     </section>
-
-
-
-    <!-- ========================================
+        <!-- ========================================
          REAL INSPECTION EXAMPLE
     ========================================= -->
 
@@ -768,7 +841,6 @@
         </div>
 
 
-
         <!-- PHOTO SAMPLE -->
 
         <div
@@ -878,7 +950,6 @@
       </div>
 
     </section>
-
 
 
     <!-- ========================================
@@ -1003,7 +1074,6 @@
       </div>
 
     </section>
-
 
 
     <!-- ========================================
@@ -1159,10 +1229,7 @@
       </div>
 
     </section>
-
-
-
-    <!-- ========================================
+        <!-- ========================================
          BEFORE THE FLIGHT
     ========================================= -->
 
@@ -1213,7 +1280,6 @@
       </div>
 
     </section>
-
 
 
     <!-- ========================================
@@ -1364,7 +1430,6 @@
     </section>
 
 
-
     <!-- ========================================
          CONTACT
     ========================================= -->
@@ -1433,7 +1498,6 @@
   </main>
 
 
-
   <!-- ========================================
        FOOTER
   ========================================= -->
@@ -1450,6 +1514,54 @@
 
   </footer>
 
+
+  <!-- ===== COOKIE BANNER ===== -->
+
+  <div class="cookie-banner" id="cookieBanner">
+
+    <div>
+
+      <h3>
+        <i class="fa-solid fa-cookie-bite"></i>
+        Cookies, cookies, cookies...
+      </h3>
+
+      <p>
+        Deze website gebruikt essentiële cookies om correct te functioneren
+        en kan optionele cookies gebruiken om uw ervaring te verbeteren.
+        U kunt alle cookies accepteren of niet-essentiële cookies weigeren.
+        <a href="legal/cookies-nl.html">Meer informatie</a>
+      </p>
+
+    </div>
+
+    <div class="cookie-actions">
+
+      <button
+        class="btn-secondary"
+        onclick="rejectCookies()"
+      >
+        Niet-essentiële cookies weigeren
+      </button>
+
+      <button
+        class="btn-primary"
+        onclick="acceptCookies()"
+      >
+        <i class="fa-solid fa-cookie-bite"></i>
+        Alles accepteren
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================================
+       MAIN JAVASCRIPT
+  ========================================= -->
+
+  <script src="script.js"></script>
 
 
   <!-- ========================================
@@ -1486,8 +1598,10 @@
           window.scrollY <
             sectionTop + sectionHeight
         ) {
+
           current =
             section.getAttribute("id");
+
         }
 
       });
@@ -1501,7 +1615,9 @@
           link.getAttribute("href") ===
           "#" + current
         ) {
+
           link.classList.add("active");
+
         }
 
       });

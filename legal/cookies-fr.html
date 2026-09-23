@@ -2,10 +2,58 @@
 <html lang="fr">
 
 <head>
+
+  <!-- =========================
+       GOOGLE ANALYTICS
+       Consentement refusé par défaut
+  ========================== -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-F1GKQJENK2">
+  </script>
+
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-F1GKQJENK2');
+  </script>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Politique des cookies - NDG Live Tech</title>
+
+  <!-- COOKIE STYLES -->
+  <link rel="stylesheet" href="../css/cookies.css">
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
 
   <style>
     * {
@@ -131,6 +179,15 @@
       color: #3c8df5;
 
       font-size: 22px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 12px;
+
+      color: #ffffff;
+
+      font-size: 17px;
     }
 
     .intro {
@@ -278,27 +335,30 @@
     <h1>Politique des cookies</h1>
 
     <p class="intro">
-      Cette politique des cookies explique comment NDG Live Tech
-      peut utiliser des cookies et des technologies similaires
-      sur ce site internet.
+      La présente Politique des cookies explique comment NDG Live Tech
+      utilise des cookies et technologies similaires sur son site internet,
+      ainsi que les choix dont disposent les visiteurs concernant leur utilisation.
     </p>
 
     <p class="updated">
-      Dernière mise à jour — 2026
+      Dernière mise à jour — septembre 2026
     </p>
 
 
     <!-- 1 -->
     <section>
 
-      <h2>1. Que sont les cookies ?</h2>
+      <h2>1. Qu’est-ce qu’un cookie ?</h2>
 
       <p>
-        Les cookies sont de petits fichiers texte stockés sur votre
-        appareil lorsque vous visitez un site internet.
-        Ils peuvent être utilisés pour assurer le bon fonctionnement
-        du site, améliorer l’expérience utilisateur, mémoriser
-        des préférences ou collecter des statistiques de base.
+        Un cookie est un petit fichier ou une information enregistrée ou lue
+        sur votre appareil lors de la consultation d’un site internet.
+      </p>
+
+      <p>
+        Les cookies et technologies similaires peuvent notamment permettre
+        d’assurer certaines fonctionnalités du site, de mémoriser des choix
+        ou de mesurer la fréquentation et l’utilisation du site.
       </p>
 
     </section>
@@ -307,18 +367,35 @@
     <!-- 2 -->
     <section>
 
-      <h2>2. Cookies utilisés sur ce site</h2>
+      <h2>2. Catégories de cookies utilisées</h2>
 
       <p>
-        Ce site peut utiliser des cookies aux fins suivantes :
+        Le site de NDG Live Tech peut utiliser différentes catégories
+        de cookies et technologies similaires.
       </p>
 
-      <ul>
-        <li>fonctionnement essentiel du site ;</li>
-        <li>sécurité et performances ;</li>
-        <li>mémorisation des préférences de l’utilisateur ;</li>
-        <li>statistiques de fréquentation et amélioration du site.</li>
-      </ul>
+      <h3>Cookies strictement nécessaires</h3>
+
+      <p>
+        Ces cookies sont nécessaires au fonctionnement du site ou à la
+        fourniture d’un service expressément demandé par l’utilisateur.
+        Lorsqu’ils sont strictement nécessaires, ils peuvent être utilisés
+        sans consentement préalable.
+      </p>
+
+      <h3>Cookies analytiques</h3>
+
+      <p>
+        NDG Live Tech utilise Google Analytics afin d’obtenir des statistiques
+        concernant l’utilisation du site et d’en améliorer le contenu,
+        la navigation et les performances.
+      </p>
+
+      <p>
+        Lorsque leur utilisation nécessite votre consentement, ces technologies
+        ne sont activées qu’en fonction du choix que vous avez exprimé
+        via le système de gestion des cookies.
+      </p>
 
     </section>
 
@@ -326,11 +403,27 @@
     <!-- 3 -->
     <section>
 
-      <h2>3. Cookies essentiels</h2>
+      <h2>3. Google Analytics</h2>
 
       <p>
-        Les cookies essentiels sont nécessaires au bon fonctionnement
-        du site. Ces cookies ne nécessitent pas de consentement préalable.
+        Le site utilise Google Analytics, un service d’analyse fourni par Google.
+      </p>
+
+      <p>
+        Ce service permet notamment à NDG Live Tech de comprendre de manière
+        statistique comment le site est consulté, par exemple quelles pages
+        sont visitées et comment les visiteurs utilisent le site.
+      </p>
+
+      <p>
+        Dans le cadre de ce service, Google Analytics peut utiliser des cookies
+        ou technologies similaires et traiter certaines informations techniques
+        relatives à votre visite, à votre navigateur et à votre appareil.
+      </p>
+
+      <p>
+        L’utilisation de Google Analytics est liée au choix de consentement
+        exprimé par le visiteur lorsque celui-ci est requis.
       </p>
 
     </section>
@@ -339,17 +432,18 @@
     <!-- 4 -->
     <section>
 
-      <h2>4. Cookies analytiques et cookies tiers</h2>
+      <h2>4. Cookies et services tiers</h2>
 
       <p>
-        Si des outils d’analyse, des contenus intégrés ou des services
-        tiers sont utilisés sur ce site, ils peuvent déposer
-        des cookies sur votre appareil.
+        Certains services techniques utilisés par NDG Live Tech peuvent
+        également intervenir dans le fonctionnement du site ou dans le
+        traitement de certaines demandes.
       </p>
 
       <p>
-        Cela peut inclure des services tels que Google, Instagram,
-        des fournisseurs d’hébergement ou d’autres outils intégrés.
+        Lorsqu’un service tiers utilise des cookies ou technologies similaires
+        qui ne sont pas strictement nécessaires, leur utilisation est soumise
+        aux règles applicables en matière de consentement.
       </p>
 
     </section>
@@ -358,14 +452,23 @@
     <!-- 5 -->
     <section>
 
-      <h2>5. Gestion des cookies</h2>
+      <h2>5. Votre choix concernant les cookies</h2>
 
       <p>
-        Vous pouvez gérer ou supprimer les cookies à tout moment
-        dans les paramètres de votre navigateur.
-        La plupart des navigateurs permettent de bloquer les cookies,
-        de supprimer les cookies existants ou de recevoir
-        un avertissement avant leur enregistrement.
+        Lorsqu’un consentement est requis, vous pouvez accepter ou refuser
+        l’utilisation des cookies concernés via le bandeau ou l’outil de
+        gestion des cookies affiché sur le site.
+      </p>
+
+      <p>
+        Le refus des cookies non essentiels ne doit pas empêcher l’accès
+        aux fonctionnalités essentielles du site.
+      </p>
+
+      <p>
+        Vous pouvez également supprimer les cookies déjà enregistrés ou
+        modifier certaines autorisations depuis les paramètres de votre
+        navigateur.
       </p>
 
     </section>
@@ -374,11 +477,21 @@
     <!-- 6 -->
     <section>
 
-      <h2>6. Modifications de cette politique</h2>
+      <h2>6. Retrait ou modification du consentement</h2>
 
       <p>
-        NDG Live Tech peut mettre à jour cette politique des cookies
-        lorsque le site évolue ou lorsque les exigences légales changent.
+        Lorsque le traitement repose sur votre consentement, vous pouvez
+        retirer ou modifier celui-ci à tout moment.
+      </p>
+
+      <p>
+        Le retrait du consentement n’affecte pas la licéité des traitements
+        réalisés avant ce retrait.
+      </p>
+
+      <p>
+        Vous pouvez également supprimer les cookies déjà présents sur votre
+        appareil depuis les paramètres de votre navigateur.
       </p>
 
     </section>
@@ -387,11 +500,69 @@
     <!-- 7 -->
     <section>
 
-      <h2>7. Contact</h2>
+      <h2>7. Durée de conservation</h2>
 
       <p>
-        Pour toute question concernant les cookies
-        ou la confidentialité, vous pouvez contacter :
+        La durée de conservation dépend du type de cookie ou de technologie
+        utilisé.
+      </p>
+
+      <p>
+        NDG Live Tech veille à ce que les cookies et données associées ne soient
+        pas conservés au-delà de la durée nécessaire aux finalités pour lesquelles
+        ils sont utilisés, sous réserve des durées appliquées par les prestataires
+        concernés et de la législation applicable.
+      </p>
+
+    </section>
+
+
+    <!-- 8 -->
+    <section>
+
+      <h2>8. Données personnelles</h2>
+
+      <p>
+        Lorsque l’utilisation de cookies ou technologies similaires entraîne
+        un traitement de données à caractère personnel, ce traitement est
+        également soumis à la Politique de confidentialité de NDG Live Tech.
+      </p>
+
+      <p>
+        Cette politique contient notamment des informations concernant les
+        finalités du traitement, les destinataires des données et les droits
+        dont disposent les personnes concernées.
+      </p>
+
+    </section>
+
+
+    <!-- 9 -->
+    <section>
+
+      <h2>9. Modification de la Politique des cookies</h2>
+
+      <p>
+        NDG Live Tech peut modifier la présente Politique des cookies afin
+        de tenir compte de l’évolution du site, des services utilisés ou
+        de la réglementation applicable.
+      </p>
+
+      <p>
+        La date de la dernière mise à jour est indiquée en haut de cette page.
+      </p>
+
+    </section>
+
+
+    <!-- 10 -->
+    <section>
+
+      <h2>10. Contact</h2>
+
+      <p>
+        Pour toute question concernant l’utilisation des cookies ou la
+        protection de vos données personnelles, vous pouvez contacter :
       </p>
 
       <p>
@@ -403,10 +574,10 @@
     </section>
 
 
-    <!-- 8 -->
+    <!-- 11 -->
     <section>
 
-      <h2>8. Documents liés</h2>
+      <h2>11. Documents liés</h2>
 
       <div class="legal-links">
 
@@ -432,6 +603,53 @@
   <footer class="legal-footer">
     © 2026 NDG Live Tech. Tous droits réservés.
   </footer>
+
+
+  <!-- ===== COOKIE BANNER ===== -->
+
+  <div class="cookie-banner" id="cookieBanner">
+
+    <div>
+
+      <h3>
+        <i class="fa-solid fa-cookie-bite"></i>
+        Cookies, cookies, cookies...
+      </h3>
+
+      <p>
+        Ce site utilise des cookies essentiels à son bon fonctionnement
+        et peut utiliser des cookies optionnels afin d'améliorer votre expérience.
+        Vous pouvez accepter tous les cookies ou refuser les cookies non essentiels.
+        <a href="cookies-fr.html">En savoir plus</a>
+      </p>
+
+    </div>
+
+    <div class="cookie-actions">
+
+      <button
+        class="btn-secondary"
+        onclick="rejectCookies()"
+      >
+        Refuser les cookies non essentiels
+      </button>
+
+      <button
+        class="btn-primary"
+        onclick="acceptCookies()"
+      >
+        <i class="fa-solid fa-cookie-bite"></i>
+        Tout accepter
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ===== MAIN JAVASCRIPT ===== -->
+
+  <script src="../script.js"></script>
 
 </body>
 

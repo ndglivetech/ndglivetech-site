@@ -2,10 +2,58 @@
 <html lang="en">
 
 <head>
+
+  <!-- =========================
+       GOOGLE ANALYTICS
+       Consent denied by default
+  ========================== -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-F1GKQJENK2">
+  </script>
+
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-F1GKQJENK2');
+  </script>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Cookies Policy - NDG Live Tech</title>
+
+  <!-- COOKIE STYLES -->
+  <link rel="stylesheet" href="../css/cookies.css">
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
 
   <style>
     * {
@@ -32,10 +80,7 @@
     a {
       color: #3c8df5;
       text-decoration: none;
-
-      transition:
-        color 0.25s ease,
-        opacity 0.25s ease;
+      transition: color 0.25s ease, opacity 0.25s ease;
     }
 
     a:hover {
@@ -49,22 +94,18 @@
 
     .legal-topbar {
       width: min(1100px, 92%);
-
       margin: 0 auto;
-
       padding: 28px 0 0;
 
       display: flex;
       justify-content: space-between;
       align-items: center;
-
       gap: 20px;
     }
 
     .back-home {
       display: inline-flex;
       align-items: center;
-
       gap: 8px;
 
       color: #cfd3d8;
@@ -89,13 +130,11 @@
 
     .legal-language a {
       min-width: 38px;
-
       padding: 6px 10px;
 
       text-align: center;
 
       color: #aeb4bb;
-
       background: rgba(255, 255, 255, 0.035);
 
       border: 1px solid rgba(255, 255, 255, 0.08);
@@ -120,9 +159,7 @@
 
     .container {
       width: min(950px, 92%);
-
       margin: 0 auto;
-
       padding: 70px 0 80px;
     }
 
@@ -135,9 +172,26 @@
       line-height: 1.1;
     }
 
+    h2 {
+      margin-top: 12px;
+      margin-bottom: 18px;
+
+      color: #3c8df5;
+
+      font-size: 22px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 12px;
+
+      color: #ffffff;
+
+      font-size: 17px;
+    }
+
     .intro {
       max-width: 760px;
-
       margin-bottom: 18px;
 
       color: rgba(255, 255, 255, 0.72);
@@ -165,15 +219,6 @@
       margin-bottom: 0;
     }
 
-    h2 {
-      margin-top: 12px;
-      margin-bottom: 18px;
-
-      color: #3c8df5;
-
-      font-size: 22px;
-    }
-
     p,
     li {
       margin-bottom: 14px;
@@ -198,14 +243,12 @@
       flex-direction: column;
 
       align-items: flex-start;
-
       gap: 10px;
     }
 
     .legal-links a {
       display: inline-flex;
       align-items: center;
-
       gap: 8px;
 
       font-size: 15px;
@@ -224,9 +267,7 @@
 
     .legal-footer {
       width: min(950px, 92%);
-
       margin: 0 auto;
-
       padding: 0 0 35px;
 
       text-align: center;
@@ -263,7 +304,7 @@
 
 <body>
 
-  <!-- Top navigation -->
+  <!-- Navigation -->
   <div class="legal-topbar">
 
     <a href="../index.html" class="back-home">
@@ -271,9 +312,19 @@
     </a>
 
     <div class="legal-language">
-      <a href="cookies.html" class="active">EN</a>
-      <a href="cookies-fr.html">FR</a>
-      <a href="cookies-nl.html">NL</a>
+
+      <a href="cookies.html" class="active">
+        EN
+      </a>
+
+      <a href="cookies-fr.html">
+        FR
+      </a>
+
+      <a href="cookies-nl.html">
+        NL
+      </a>
+
     </div>
 
   </div>
@@ -284,106 +335,229 @@
     <h1>Cookies Policy</h1>
 
     <p class="intro">
-      This Cookies Policy explains how NDG Live Tech may use cookies
-      and similar technologies on this website.
+      This Cookies Policy explains how NDG Live Tech uses cookies and
+      similar technologies on its website, as well as the choices available
+      to visitors regarding their use.
     </p>
 
     <p class="updated">
-      Last updated — 2026
+      Last updated — September 2026
     </p>
 
 
+    <!-- 1 -->
     <section>
 
-      <h2>1. What Are Cookies?</h2>
+      <h2>1. What is a cookie?</h2>
 
       <p>
-        Cookies are small text files stored on your device when you visit a website.
-        They can be used to make a website work properly, improve user experience,
-        remember preferences or collect basic statistics.
+        A cookie is a small file or piece of information stored on or read
+        from your device when you visit a website.
+      </p>
+
+      <p>
+        Cookies and similar technologies may, in particular, enable certain
+        website features, remember choices or measure website traffic and use.
       </p>
 
     </section>
 
 
+    <!-- 2 -->
     <section>
 
-      <h2>2. Cookies Used on This Website</h2>
+      <h2>2. Categories of cookies used</h2>
 
       <p>
-        This website may use cookies for the following purposes:
+        The NDG Live Tech website may use different categories of cookies
+        and similar technologies.
       </p>
 
-      <ul>
-        <li>essential website functionality;</li>
-        <li>security and performance;</li>
-        <li>remembering user preferences;</li>
-        <li>traffic statistics and website improvement.</li>
-      </ul>
-
-    </section>
-
-
-    <section>
-
-      <h2>3. Essential Cookies</h2>
+      <h3>Strictly necessary cookies</h3>
 
       <p>
-        Essential cookies are necessary for the website to function correctly.
-        These cookies do not require prior consent.
+        These cookies are necessary for the operation of the website or
+        for the provision of a service expressly requested by the user.
+        Where they are strictly necessary, they may be used without
+        prior consent.
       </p>
 
-    </section>
-
-
-    <section>
-
-      <h2>4. Analytics and Third-Party Cookies</h2>
+      <h3>Analytics cookies</h3>
 
       <p>
-        If analytics tools, embedded content or third-party services are used
-        on this website, they may place cookies on your device.
+        NDG Live Tech uses Google Analytics to obtain statistics about
+        the use of the website and to improve its content, navigation
+        and performance.
       </p>
 
       <p>
-        This may include services such as Google, Instagram, hosting providers
-        or other integrated tools.
+        Where their use requires your consent, these technologies are
+        activated only in accordance with the choice you have expressed
+        through the cookie management system.
       </p>
 
     </section>
 
 
+    <!-- 3 -->
     <section>
 
-      <h2>5. Managing Cookies</h2>
+      <h2>3. Google Analytics</h2>
 
       <p>
-        You can manage or delete cookies at any time through your browser settings.
-        Most browsers allow you to block cookies, delete existing cookies or receive
-        a warning before cookies are stored.
+        The website uses Google Analytics, an analytics service provided by Google.
+      </p>
+
+      <p>
+        This service enables NDG Live Tech to understand statistically how
+        the website is used, for example which pages are visited and how
+        visitors use the website.
+      </p>
+
+      <p>
+        As part of this service, Google Analytics may use cookies or similar
+        technologies and process certain technical information relating to
+        your visit, browser and device.
+      </p>
+
+      <p>
+        The use of Google Analytics is linked to the consent choice expressed
+        by the visitor where such consent is required.
       </p>
 
     </section>
 
 
+    <!-- 4 -->
     <section>
 
-      <h2>6. Changes to This Policy</h2>
+      <h2>4. Cookies and third-party services</h2>
 
       <p>
-        NDG Live Tech may update this Cookies Policy when the website evolves
-        or when legal requirements change.
+        Certain technical services used by NDG Live Tech may also be involved
+        in the operation of the website or in processing certain requests.
+      </p>
+
+      <p>
+        Where a third-party service uses cookies or similar technologies
+        that are not strictly necessary, their use is subject to the
+        applicable consent requirements.
       </p>
 
     </section>
 
 
+    <!-- 5 -->
     <section>
 
-      <h2>7. Contact</h2>
+      <h2>5. Your choices regarding cookies</h2>
 
       <p>
-        For any question regarding cookies or privacy, you can contact:
+        Where consent is required, you can accept or reject the use of the
+        relevant cookies through the cookie banner or cookie management tool
+        displayed on the website.
+      </p>
+
+      <p>
+        Rejecting non-essential cookies should not prevent access to the
+        website's essential features.
+      </p>
+
+      <p>
+        You can also delete cookies that have already been stored or change
+        certain permissions through your browser settings.
+      </p>
+
+    </section>
+
+
+    <!-- 6 -->
+    <section>
+
+      <h2>6. Withdrawal or modification of consent</h2>
+
+      <p>
+        Where processing is based on your consent, you may withdraw or
+        modify that consent at any time.
+      </p>
+
+      <p>
+        Withdrawal of consent does not affect the lawfulness of processing
+        carried out before its withdrawal.
+      </p>
+
+      <p>
+        You can also delete cookies already stored on your device through
+        your browser settings.
+      </p>
+
+    </section>
+
+
+    <!-- 7 -->
+    <section>
+
+      <h2>7. Retention period</h2>
+
+      <p>
+        The retention period depends on the type of cookie or technology used.
+      </p>
+
+      <p>
+        NDG Live Tech ensures that cookies and associated data are not retained
+        beyond the period necessary for the purposes for which they are used,
+        subject to the retention periods applied by the relevant service
+        providers and applicable legislation.
+      </p>
+
+    </section>
+
+
+    <!-- 8 -->
+    <section>
+
+      <h2>8. Personal data</h2>
+
+      <p>
+        Where the use of cookies or similar technologies results in the
+        processing of personal data, such processing is also subject to
+        NDG Live Tech's Privacy Policy.
+      </p>
+
+      <p>
+        This policy contains, in particular, information concerning the
+        purposes of processing, recipients of the data and the rights
+        available to data subjects.
+      </p>
+
+    </section>
+
+
+    <!-- 9 -->
+    <section>
+
+      <h2>9. Changes to the Cookies Policy</h2>
+
+      <p>
+        NDG Live Tech may amend this Cookies Policy to take account of
+        changes to the website, the services used or applicable regulations.
+      </p>
+
+      <p>
+        The date of the latest update is indicated at the top of this page.
+      </p>
+
+    </section>
+
+
+    <!-- 10 -->
+    <section>
+
+      <h2>10. Contact</h2>
+
+      <p>
+        For any questions concerning the use of cookies or the protection
+        of your personal data, you can contact:
       </p>
 
       <p>
@@ -395,9 +569,10 @@
     </section>
 
 
+    <!-- 11 -->
     <section>
 
-      <h2>8. Related Documents</h2>
+      <h2>11. Related Documents</h2>
 
       <div class="legal-links">
 
@@ -423,6 +598,52 @@
   <footer class="legal-footer">
     © 2026 NDG Live Tech. All rights reserved.
   </footer>
+
+
+  <!-- ===== COOKIE BANNER ===== -->
+
+  <div class="cookie-banner" id="cookieBanner">
+
+    <div>
+
+      <h3>
+        <i class="fa-solid fa-cookie-bite"></i>
+        Cookies, cookies, cookies...
+      </h3>
+
+      <p>
+        This website uses essential cookies to function properly and may use optional cookies
+        to improve your experience. You can accept all cookies or reject non-essential cookies.
+        <a href="cookies.html">Learn more</a>
+      </p>
+
+    </div>
+
+    <div class="cookie-actions">
+
+      <button
+        class="btn-secondary"
+        onclick="rejectCookies()"
+      >
+        Reject non-essential
+      </button>
+
+      <button
+        class="btn-primary"
+        onclick="acceptCookies()"
+      >
+        <i class="fa-solid fa-cookie-bite"></i>
+        Accept all
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ===== MAIN JAVASCRIPT ===== -->
+
+  <script src="../script.js"></script>
 
 </body>
 

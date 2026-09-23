@@ -2,10 +2,58 @@
 <html lang="nl">
 
 <head>
+
+  <!-- =========================
+       GOOGLE ANALYTICS
+       Toestemming standaard geweigerd
+  ========================== -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-F1GKQJENK2">
+  </script>
+
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-F1GKQJENK2');
+  </script>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Cookiebeleid - NDG Live Tech</title>
+
+  <!-- COOKIE STYLES -->
+  <link rel="stylesheet" href="../css/cookies.css">
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
 
   <style>
     * {
@@ -131,6 +179,15 @@
       color: #3c8df5;
 
       font-size: 22px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 12px;
+
+      color: #ffffff;
+
+      font-size: 17px;
     }
 
     .intro {
@@ -278,26 +335,30 @@
     <h1>Cookiebeleid</h1>
 
     <p class="intro">
-      Dit cookiebeleid legt uit hoe NDG Live Tech cookies
-      en soortgelijke technologieën op deze website kan gebruiken.
+      Dit cookiebeleid legt uit hoe NDG Live Tech cookies en soortgelijke
+      technologieën op zijn website gebruikt en welke keuzes bezoekers
+      hebben met betrekking tot het gebruik ervan.
     </p>
 
     <p class="updated">
-      Laatst bijgewerkt — 2026
+      Laatst bijgewerkt — september 2026
     </p>
 
 
     <!-- 1 -->
     <section>
 
-      <h2>1. Wat zijn cookies?</h2>
+      <h2>1. Wat is een cookie?</h2>
 
       <p>
-        Cookies zijn kleine tekstbestanden die op uw apparaat
-        worden opgeslagen wanneer u een website bezoekt.
-        Ze kunnen worden gebruikt om een website correct te laten
-        functioneren, de gebruikerservaring te verbeteren,
-        voorkeuren te onthouden of basisstatistieken te verzamelen.
+        Een cookie is een klein bestand of stukje informatie dat op uw
+        apparaat wordt opgeslagen of gelezen wanneer u een website bezoekt.
+      </p>
+
+      <p>
+        Cookies en soortgelijke technologieën kunnen onder meer worden
+        gebruikt om bepaalde functies van de website mogelijk te maken,
+        keuzes te onthouden of het bezoek en gebruik van de website te meten.
       </p>
 
     </section>
@@ -306,18 +367,35 @@
     <!-- 2 -->
     <section>
 
-      <h2>2. Cookies die op deze website worden gebruikt</h2>
+      <h2>2. Categorieën van gebruikte cookies</h2>
 
       <p>
-        Deze website kan cookies gebruiken voor de volgende doeleinden:
+        De website van NDG Live Tech kan verschillende categorieën cookies
+        en soortgelijke technologieën gebruiken.
       </p>
 
-      <ul>
-        <li>essentiële werking van de website;</li>
-        <li>beveiliging en prestaties;</li>
-        <li>het onthouden van gebruikersvoorkeuren;</li>
-        <li>bezoekersstatistieken en verbetering van de website.</li>
-      </ul>
+      <h3>Strikt noodzakelijke cookies</h3>
+
+      <p>
+        Deze cookies zijn noodzakelijk voor de werking van de website
+        of voor het leveren van een dienst die uitdrukkelijk door de
+        gebruiker werd gevraagd. Wanneer zij strikt noodzakelijk zijn,
+        kunnen zij zonder voorafgaande toestemming worden gebruikt.
+      </p>
+
+      <h3>Analytische cookies</h3>
+
+      <p>
+        NDG Live Tech gebruikt Google Analytics om statistieken te verkrijgen
+        over het gebruik van de website en om de inhoud, navigatie en
+        prestaties ervan te verbeteren.
+      </p>
+
+      <p>
+        Wanneer het gebruik ervan uw toestemming vereist, worden deze
+        technologieën alleen geactiveerd in overeenstemming met de keuze
+        die u via het cookiebeheersysteem hebt gemaakt.
+      </p>
 
     </section>
 
@@ -325,12 +403,28 @@
     <!-- 3 -->
     <section>
 
-      <h2>3. Essentiële cookies</h2>
+      <h2>3. Google Analytics</h2>
 
       <p>
-        Essentiële cookies zijn noodzakelijk voor de correcte werking
-        van de website. Voor deze cookies is geen voorafgaande
-        toestemming vereist.
+        De website gebruikt Google Analytics, een analysedienst van Google.
+      </p>
+
+      <p>
+        Met deze dienst kan NDG Live Tech op statistische wijze begrijpen
+        hoe de website wordt geraadpleegd, bijvoorbeeld welke pagina's
+        worden bezocht en hoe bezoekers de website gebruiken.
+      </p>
+
+      <p>
+        In het kader van deze dienst kan Google Analytics cookies of
+        soortgelijke technologieën gebruiken en bepaalde technische
+        informatie over uw bezoek, browser en apparaat verwerken.
+      </p>
+
+      <p>
+        Het gebruik van Google Analytics is gekoppeld aan de keuze inzake
+        toestemming die door de bezoeker wordt gemaakt wanneer deze
+        toestemming vereist is.
       </p>
 
     </section>
@@ -339,17 +433,18 @@
     <!-- 4 -->
     <section>
 
-      <h2>4. Analytische cookies en cookies van derden</h2>
+      <h2>4. Cookies en diensten van derden</h2>
 
       <p>
-        Wanneer analysetools, geïntegreerde inhoud of diensten
-        van derden op deze website worden gebruikt,
-        kunnen zij cookies op uw apparaat plaatsen.
+        Bepaalde technische diensten die door NDG Live Tech worden gebruikt,
+        kunnen eveneens betrokken zijn bij de werking van de website of
+        bij de verwerking van bepaalde aanvragen.
       </p>
 
       <p>
-        Dit kan diensten omvatten zoals Google, Instagram,
-        hostingproviders of andere geïntegreerde tools.
+        Wanneer een dienst van een derde cookies of soortgelijke technologieën
+        gebruikt die niet strikt noodzakelijk zijn, is het gebruik ervan
+        onderworpen aan de toepasselijke regels inzake toestemming.
       </p>
 
     </section>
@@ -358,14 +453,22 @@
     <!-- 5 -->
     <section>
 
-      <h2>5. Cookies beheren</h2>
+      <h2>5. Uw keuze met betrekking tot cookies</h2>
 
       <p>
-        U kunt cookies op elk moment beheren of verwijderen
-        via de instellingen van uw browser.
-        De meeste browsers laten u toe cookies te blokkeren,
-        bestaande cookies te verwijderen of een waarschuwing
-        te ontvangen voordat cookies worden opgeslagen.
+        Wanneer toestemming vereist is, kunt u het gebruik van de betrokken
+        cookies aanvaarden of weigeren via de cookiebanner of het
+        cookiebeheersysteem dat op de website wordt weergegeven.
+      </p>
+
+      <p>
+        Het weigeren van niet-essentiële cookies mag de toegang tot de
+        essentiële functies van de website niet verhinderen.
+      </p>
+
+      <p>
+        U kunt reeds opgeslagen cookies ook verwijderen of bepaalde
+        toestemmingen wijzigen via de instellingen van uw browser.
       </p>
 
     </section>
@@ -374,11 +477,22 @@
     <!-- 6 -->
     <section>
 
-      <h2>6. Wijzigingen aan dit beleid</h2>
+      <h2>6. Intrekking of wijziging van toestemming</h2>
 
       <p>
-        NDG Live Tech kan dit cookiebeleid bijwerken wanneer
-        de website evolueert of wanneer wettelijke vereisten wijzigen.
+        Wanneer de verwerking op uw toestemming is gebaseerd, kunt u
+        deze toestemming op elk moment intrekken of wijzigen.
+      </p>
+
+      <p>
+        Het intrekken van uw toestemming heeft geen invloed op de
+        rechtmatigheid van de verwerking die vóór de intrekking heeft
+        plaatsgevonden.
+      </p>
+
+      <p>
+        U kunt cookies die reeds op uw apparaat aanwezig zijn ook
+        verwijderen via de instellingen van uw browser.
       </p>
 
     </section>
@@ -387,16 +501,19 @@
     <!-- 7 -->
     <section>
 
-      <h2>7. Contact</h2>
+      <h2>7. Bewaartermijn</h2>
 
       <p>
-        Voor vragen over cookies of privacy kunt u contact opnemen via:
+        De bewaartermijn is afhankelijk van het type cookie of de
+        gebruikte technologie.
       </p>
 
       <p>
-        <a href="mailto:nicolas.degreef@ndglivetech.com">
-          nicolas.degreef@ndglivetech.com
-        </a>
+        NDG Live Tech zorgt ervoor dat cookies en de bijbehorende gegevens
+        niet langer worden bewaard dan noodzakelijk voor de doeleinden
+        waarvoor zij worden gebruikt, rekening houdend met de bewaartermijnen
+        die door de betrokken dienstverleners worden toegepast en met de
+        toepasselijke wetgeving.
       </p>
 
     </section>
@@ -405,7 +522,64 @@
     <!-- 8 -->
     <section>
 
-      <h2>8. Gerelateerde documenten</h2>
+      <h2>8. Persoonsgegevens</h2>
+
+      <p>
+        Wanneer het gebruik van cookies of soortgelijke technologieën
+        leidt tot de verwerking van persoonsgegevens, valt deze verwerking
+        eveneens onder het Privacybeleid van NDG Live Tech.
+      </p>
+
+      <p>
+        Dit beleid bevat onder meer informatie over de doeleinden van
+        de verwerking, de ontvangers van de gegevens en de rechten van
+        de betrokken personen.
+      </p>
+
+    </section>
+
+
+    <!-- 9 -->
+    <section>
+
+      <h2>9. Wijzigingen aan het Cookiebeleid</h2>
+
+      <p>
+        NDG Live Tech kan dit Cookiebeleid wijzigen om rekening te houden
+        met wijzigingen aan de website, de gebruikte diensten of de
+        toepasselijke regelgeving.
+      </p>
+
+      <p>
+        De datum van de laatste update wordt bovenaan deze pagina vermeld.
+      </p>
+
+    </section>
+
+
+    <!-- 10 -->
+    <section>
+
+      <h2>10. Contact</h2>
+
+      <p>
+        Voor vragen over het gebruik van cookies of de bescherming van
+        uw persoonsgegevens kunt u contact opnemen via:
+      </p>
+
+      <p>
+        <a href="mailto:legal@ndglivetech.com">
+          legal@ndglivetech.com
+        </a>
+      </p>
+
+    </section>
+
+
+    <!-- 11 -->
+    <section>
+
+      <h2>11. Gerelateerde documenten</h2>
 
       <div class="legal-links">
 
@@ -431,6 +605,53 @@
   <footer class="legal-footer">
     © 2026 NDG Live Tech. Alle rechten voorbehouden.
   </footer>
+
+
+  <!-- ===== COOKIE BANNER ===== -->
+
+  <div class="cookie-banner" id="cookieBanner">
+
+    <div>
+
+      <h3>
+        <i class="fa-solid fa-cookie-bite"></i>
+        Cookies, cookies, cookies...
+      </h3>
+
+      <p>
+        Deze website gebruikt essentiële cookies om correct te functioneren
+        en kan optionele cookies gebruiken om uw ervaring te verbeteren.
+        U kunt alle cookies accepteren of niet-essentiële cookies weigeren.
+        <a href="cookies-nl.html">Meer informatie</a>
+      </p>
+
+    </div>
+
+    <div class="cookie-actions">
+
+      <button
+        class="btn-secondary"
+        onclick="rejectCookies()"
+      >
+        Niet-essentiële cookies weigeren
+      </button>
+
+      <button
+        class="btn-primary"
+        onclick="acceptCookies()"
+      >
+        <i class="fa-solid fa-cookie-bite"></i>
+        Alles accepteren
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ===== MAIN JAVASCRIPT ===== -->
+
+  <script src="../script.js"></script>
 
 </body>
 

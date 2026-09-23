@@ -2,10 +2,64 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
+  <!-- =========================
+       GOOGLE ANALYTICS
+       Consent denied by default
+  ========================== -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    /* Consent denied by default */
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+
+    /* Restore previously accepted consent */
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-F1GKQJENK2">
+  </script>
+
+  <script>
+    gtag('js', new Date());
+
+    gtag('config', 'G-F1GKQJENK2');
+  </script>
+
+
+  <!-- =========================
+       META
+  ========================== -->
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+
+  <!-- =========================
+       SEO
+  ========================== -->
+
   <title>Drone Roof & Building Inspection | NDG Live Tech</title>
 
   <meta
@@ -13,15 +67,22 @@
     content="Professional drone inspection for roofs, buildings, gutters, chimneys, solar panels and hard-to-reach areas in Belgium. HD imagery and structured inspection reports."
   >
 
-  <meta name="robots" content="index, follow">
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
 
   <!-- Canonical -->
+
   <link
     rel="canonical"
     href="https://ndglivetech.com/drone.html"
   >
 
+
   <!-- Languages -->
+
   <link
     rel="alternate"
     hreflang="en"
@@ -46,7 +107,11 @@
     href="https://ndglivetech.com/drone.html"
   >
 
-  <!-- Open Graph -->
+
+  <!-- =========================
+       OPEN GRAPH
+  ========================== -->
+
   <meta
     property="og:title"
     content="Drone Roof & Building Inspection | NDG Live Tech"
@@ -72,25 +137,39 @@
     content="NDG Live Tech"
   >
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <!-- Main website CSS -->
+  <!-- =========================
+       FAVICON
+  ========================== -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="images/favicon.png"
+  >
+
+
+  <!-- =========================
+       STYLES
+  ========================== -->
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
-
-  <!-- Drone page -->
+  <link rel="stylesheet" href="css/cookies.css">
   <link rel="stylesheet" href="css/drone.css">
-
-  <!-- Responsive -->
   <link rel="stylesheet" href="css/responsive.css">
 
-  <!-- Font Awesome -->
+
+  <!-- =========================
+       FONT AWESOME
+  ========================== -->
+
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   >
+
 </head>
 
 
@@ -160,7 +239,6 @@
   </nav>
 
 
-
   <main>
 
 
@@ -204,66 +282,75 @@
     </section>
 
 
-
     <!-- ========================================
          INTRO
     ========================================= -->
 
     <section class="inspection-intro">
-  <div class="inspection-intro-inner">
 
-    <div class="inspection-intro-copy">
-      <p class="section-eyebrow">A PRACTICAL INSPECTION SOLUTION</p>
+      <div class="inspection-intro-inner">
 
-      <h2>Inspect first. Decide with better information.</h2>
+        <div class="inspection-intro-copy">
 
-      <p>
-        Drone inspection provides fast visual access to elevated or difficult areas
-        without requiring scaffolding, ladders or direct access for an initial assessment.
-      </p>
+          <p class="section-eyebrow">
+            A PRACTICAL INSPECTION SOLUTION
+          </p>
 
-      <p>
-        The objective is simple: provide clear photographic evidence that can help identify
-        visible defects, document the condition of a structure and support maintenance or
-        repair decisions.
-      </p>
+          <h2>
+            Inspect first. Decide with better information.
+          </h2>
 
-      <div class="inspection-benefits">
-        <div class="inspection-benefit">
-          <strong>Safer access</strong>
-          <span>Reduce the need for ladders, scaffolding and difficult access.</span>
+          <p>
+            Drone inspection provides fast visual access to elevated or difficult areas
+            without requiring scaffolding, ladders or direct access for an initial assessment.
+          </p>
+
+          <p>
+            The objective is simple: provide clear photographic evidence that can help identify
+            visible defects, document the condition of a structure and support maintenance or
+            repair decisions.
+          </p>
+
+          <div class="inspection-benefits">
+
+            <div class="inspection-benefit">
+              <strong>Safer access</strong>
+              <span>Reduce the need for ladders, scaffolding and difficult access.</span>
+            </div>
+
+            <div class="inspection-benefit">
+              <strong>Clear evidence</strong>
+              <span>Receive detailed visual documentation of the inspected area.</span>
+            </div>
+
+            <div class="inspection-benefit">
+              <strong>Faster decisions</strong>
+              <span>Identify visible issues before planning further intervention.</span>
+            </div>
+
+          </div>
+
         </div>
 
-        <div class="inspection-benefit">
-          <strong>Clear evidence</strong>
-          <span>Receive detailed visual documentation of the inspected area.</span>
+
+        <div class="inspection-intro-visual">
+
+          <img
+            src="../images/drone/dji_fly_20260810_142322_0080_1786366464136inspect_photo.jpg"
+            alt="Drone roof inspection"
+          >
+
+          <div class="inspection-visual-badge">
+            <span>No scaffolding required</span>
+            <strong>Fast visual assessment</strong>
+          </div>
+
         </div>
 
-        <div class="inspection-benefit">
-          <strong>Faster decisions</strong>
-          <span>Identify visible issues before planning further intervention.</span>
-        </div>
       </div>
-    </div>
 
-    <div class="inspection-intro-visual">
-      <img
-        src="../images/drone/dji_fly_20260810_142322_0080_1786366464136inspect_photo.jpg"
-        alt="Drone roof inspection"
-      >
-
-      <div class="inspection-visual-badge">
-        <span>No scaffolding required</span>
-        <strong>Fast visual assessment</strong>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-    <!-- ========================================
+    </section>
+        <!-- ========================================
          WHAT WE INSPECT
     ========================================= -->
 
@@ -403,7 +490,6 @@
     </section>
 
 
-
     <!-- ========================================
          WHY DRONE INSPECTION
     ========================================= -->
@@ -495,7 +581,6 @@
       </div>
 
     </section>
-
 
 
     <!-- ========================================
@@ -602,7 +687,6 @@
       </div>
 
     </section>
-
 
 
     <!-- ========================================
@@ -719,7 +803,6 @@
         </div>
 
 
-
         <!-- PHOTO SAMPLE -->
         <div
           class="drone-case-gallery"
@@ -831,10 +914,7 @@
       </div>
 
     </section>
-
-
-
-    <!-- ========================================
+        <!-- ========================================
          INSPECTION REPORT
     ========================================= -->
 
@@ -956,157 +1036,155 @@
     </section>
 
 
-
     <!-- ========================================
          PRICING
     ========================================= -->
 
     <section
-  class="drone-page-section drone-pricing-section"
-  id="pricing"
->
+      class="drone-page-section drone-pricing-section"
+      id="pricing"
+    >
 
-  <div class="drone-container">
+      <div class="drone-container">
 
-    <div class="drone-section-heading">
+        <div class="drone-section-heading">
 
-      <p class="drone-section-label">
-        Inspection Packages
-      </p>
+          <p class="drone-section-label">
+            Inspection Packages
+          </p>
 
-      <h2>
-        Choose the level of inspection you need.
-      </h2>
+          <h2>
+            Choose the level of inspection you need.
+          </h2>
 
-      <p>
-        Every property is different. Pricing depends on the location,
-        flight environment, areas to inspect and operational requirements.
-        Final pricing is always confirmed before the inspection.
-      </p>
+          <p>
+            Every property is different. Pricing depends on the location,
+            flight environment, areas to inspect and operational requirements.
+            Final pricing is always confirmed before the inspection.
+          </p>
 
-    </div>
-
-
-    <div class="drone-pricing-grid">
-
-
-      <!-- ROOF INSPECTION -->
-      <article class="drone-price-card">
-
-        <p class="drone-price-name">
-          Visual Inspection
-        </p>
-
-        <h3>
-          Roof Inspection
-        </h3>
-
-        <div class="drone-price">
-          From €199
         </div>
 
-        <ul>
-          <li>Pre-flight location assessment</li>
-          <li>Visual inspection of the roof</li>
-          <li>Chimneys, flashing and gutters where visible</li>
-          <li>Up to 15 high-resolution photographs</li>
-          <li>Organised digital delivery</li>
-        </ul>
 
-        <a
-          href="#contact"
-          class="drone-price-button"
-        >
-          Request a Quote
-        </a>
-
-      </article>
+        <div class="drone-pricing-grid">
 
 
-      <!-- ROOF INSPECTION + REPORT -->
-      <article class="drone-price-card featured">
+          <!-- ROOF INSPECTION -->
+          <article class="drone-price-card">
 
-        <p class="drone-price-name">
-          Documented Inspection
-        </p>
+            <p class="drone-price-name">
+              Visual Inspection
+            </p>
 
-        <h3>
-          Roof Inspection + Report
-        </h3>
+            <h3>
+              Roof Inspection
+            </h3>
 
-        <div class="drone-price">
-          From €299
+            <div class="drone-price">
+              From €199
+            </div>
+
+            <ul>
+              <li>Pre-flight location assessment</li>
+              <li>Visual inspection of the roof</li>
+              <li>Chimneys, flashing and gutters where visible</li>
+              <li>Up to 15 high-resolution photographs</li>
+              <li>Organised digital delivery</li>
+            </ul>
+
+            <a
+              href="#contact"
+              class="drone-price-button"
+            >
+              Request a Quote
+            </a>
+
+          </article>
+
+
+          <!-- ROOF INSPECTION + REPORT -->
+          <article class="drone-price-card featured">
+
+            <p class="drone-price-name">
+              Documented Inspection
+            </p>
+
+            <h3>
+              Roof Inspection + Report
+            </h3>
+
+            <div class="drone-price">
+              From €299
+            </div>
+
+            <ul>
+              <li>Pre-flight location assessment</li>
+              <li>Complete visual roof inspection</li>
+              <li>Detailed photographic coverage</li>
+              <li>Referenced inspection images</li>
+              <li>Visible observations documented</li>
+              <li>Structured PDF inspection report</li>
+              <li>Digital report &amp; image delivery</li>
+            </ul>
+
+            <a
+              href="#contact"
+              class="drone-price-button"
+            >
+              Request a Quote
+            </a>
+
+          </article>
+
+
+          <!-- ROOF & BUILDING INSPECTION -->
+          <article class="drone-price-card">
+
+            <p class="drone-price-name">
+              Extended Inspection
+            </p>
+
+            <h3>
+              Roof &amp; Building Inspection
+            </h3>
+
+            <div class="drone-price">
+              From €449
+            </div>
+
+            <ul>
+              <li>Pre-flight location assessment</li>
+              <li>Roof and visible exterior inspection</li>
+              <li>Facades and elevated building areas</li>
+              <li>Gutters, chimneys and difficult-access elements</li>
+              <li>Extended photographic documentation</li>
+              <li>Referenced visual observations</li>
+              <li>Structured PDF inspection report</li>
+              <li>Complete digital inspection file</li>
+            </ul>
+
+            <a
+              href="#contact"
+              class="drone-price-button"
+            >
+              Request a Quote
+            </a>
+
+          </article>
+
         </div>
 
-        <ul>
-          <li>Pre-flight location assessment</li>
-          <li>Complete visual roof inspection</li>
-          <li>Detailed photographic coverage</li>
-          <li>Referenced inspection images</li>
-          <li>Visible observations documented</li>
-          <li>Structured PDF inspection report</li>
-          <li>Digital report &amp; image delivery</li>
-        </ul>
 
-        <a
-          href="#contact"
-          class="drone-price-button"
-        >
-          Request a Quote
-        </a>
-
-      </article>
-
-
-      <!-- ROOF & BUILDING INSPECTION -->
-      <article class="drone-price-card">
-
-        <p class="drone-price-name">
-          Extended Inspection
+        <p class="drone-pricing-note">
+          Prices shown include VAT. Final pricing depends on the location,
+          flight environment, areas to inspect and operational requirements.<br>
+          Travel, restricted airspace, additional authorisations or specific
+          documentation requirements may affect the final quotation.
         </p>
 
-        <h3>
-          Roof &amp; Building Inspection
-        </h3>
+      </div>
 
-        <div class="drone-price">
-          From €449
-        </div>
-
-        <ul>
-          <li>Pre-flight location assessment</li>
-          <li>Roof and visible exterior inspection</li>
-          <li>Facades and elevated building areas</li>
-          <li>Gutters, chimneys and difficult-access elements</li>
-          <li>Extended photographic documentation</li>
-          <li>Referenced visual observations</li>
-          <li>Structured PDF inspection report</li>
-          <li>Complete digital inspection file</li>
-        </ul>
-
-        <a
-          href="#contact"
-          class="drone-price-button"
-        >
-          Request a Quote
-        </a>
-
-      </article>
-
-    </div>
-
-    <p class="drone-pricing-note">
-  Prices shown include VAT. Final pricing depends on the location,
-  flight environment, areas to inspect and operational requirements.<br>
-  Travel, restricted airspace, additional authorisations or specific
-  documentation requirements may affect the final quotation.
-</p>
-    </p>
-
-  </div>
-
-</section>
-
+    </section>
 
 
     <!-- ========================================
@@ -1135,19 +1213,19 @@
           <div>
 
             <p>
-  Before each mission, the location and operational environment are reviewed
-  to confirm that the inspection can be carried out safely and legally.
-</p>
+              Before each mission, the location and operational environment are reviewed
+              to confirm that the inspection can be carried out safely and legally.
+            </p>
 
-<p>
-  This includes airspace, weather conditions, site access,
-  applicable flight restrictions and privacy considerations.
-</p>
+            <p>
+              This includes airspace, weather conditions, site access,
+              applicable flight restrictions and privacy considerations.
+            </p>
 
-<p>
-  If specific authorisations or additional arrangements are required,
-  these are identified before the inspection and discussed with you in advance.
-</p>
+            <p>
+              If specific authorisations or additional arrangements are required,
+              these are identified before the inspection and discussed with you in advance.
+            </p>
 
           </div>
 
@@ -1158,159 +1236,154 @@
     </section>
 
 
-
     <!-- ========================================
          FAQ
     ========================================= -->
 
-    <!-- ========================================
-     FAQ
-========================================= -->
+    <section
+      class="drone-page-section drone-faq-section"
+      id="faq"
+    >
 
-<section
-  class="drone-page-section drone-faq-section"
-  id="faq"
->
+      <div class="drone-container">
 
-  <div class="drone-container">
+        <div class="drone-section-heading">
 
-    <div class="drone-section-heading">
+          <p class="drone-section-label">
+            FAQ
+          </p>
 
-      <p class="drone-section-label">
-        FAQ
-      </p>
+          <h2>
+            Frequently asked questions.
+          </h2>
 
-      <h2>
-        Frequently asked questions.
-      </h2>
-
-    </div>
+        </div>
 
 
-    <div class="drone-faq-list">
+        <div class="drone-faq-list">
 
 
-      <details>
+          <details>
 
-        <summary>
-          Do I need to be present during the inspection?
-        </summary>
+            <summary>
+              Do I need to be present during the inspection?
+            </summary>
 
-        <p>
-          Not always. This depends on the property,
-          access requirements and the areas to be inspected.
-          If access can be arranged in advance,
-          the inspection can often be carried out
-          without you being present.
-        </p>
+            <p>
+              Not always. This depends on the property,
+              access requirements and the areas to be inspected.
+              If access can be arranged in advance,
+              the inspection can often be carried out
+              without you being present.
+            </p>
 
-      </details>
-
-
-      <details>
-
-        <summary>
-          What happens if the weather is unsuitable?
-        </summary>
-
-        <p>
-          If wind, rain or visibility conditions
-          do not allow the flight to be carried out safely,
-          the inspection will be postponed or rescheduled.
-        </p>
-
-      </details>
+          </details>
 
 
-      <details>
+          <details>
 
-        <summary>
-          Can every property be inspected?
-        </summary>
+            <summary>
+              What happens if the weather is unsuitable?
+            </summary>
 
-        <p>
-          Most locations can be assessed,
-          but airspace restrictions, site conditions,
-          privacy considerations or other operational constraints
-          may require additional preparation
-          or limit the inspection.
-        </p>
+            <p>
+              If wind, rain or visibility conditions
+              do not allow the flight to be carried out safely,
+              the inspection will be postponed or rescheduled.
+            </p>
 
-      </details>
+          </details>
 
 
-      <details>
+          <details>
 
-        <summary>
-          Can you inspect a roof without climbing onto it?
-        </summary>
+            <summary>
+              Can every property be inspected?
+            </summary>
 
-        <p>
-          In many cases, yes.
-          The drone can provide detailed exterior imagery
-          of roofs and difficult-to-access areas
-          without requiring direct roof access
-          for the initial visual inspection.
-        </p>
+            <p>
+              Most locations can be assessed,
+              but airspace restrictions, site conditions,
+              privacy considerations or other operational constraints
+              may require additional preparation
+              or limit the inspection.
+            </p>
 
-      </details>
-
-
-      <details>
-
-        <summary>
-          What will I receive after the inspection?
-        </summary>
-
-        <p>
-          This depends on the selected package.
-          Deliverables can include high-resolution photographs,
-          organised photographic documentation and,
-          when selected, a structured PDF inspection report.
-        </p>
-
-      </details>
+          </details>
 
 
-      <details>
+          <details>
 
-        <summary>
-         How quickly will I receive the results? 
-        </summary>
+            <summary>
+              Can you inspect a roof without climbing onto it?
+            </summary>
 
-        <p>
-          Delivery time depends on the selected package
-          and the scope of the inspection.
-          The expected delivery time is confirmed
-          before the mission.
-        </p>
+            <p>
+              In many cases, yes.
+              The drone can provide detailed exterior imagery
+              of roofs and difficult-to-access areas
+              without requiring direct roof access
+              for the initial visual inspection.
+            </p>
 
-      </details>
-
-
-      <details>
-
-        <summary>
-          Can the report be shared with a roofer or insurance company?
-        </summary>
-
-        <p>
-          Yes. The digital documentation can be shared
-          with roofers, contractors, property managers,
-          insurers or other professionals.
-          The report provides visual documentation
-          and does not replace a structural
-          or specialist diagnosis.
-        </p>
-
-      </details>
+          </details>
 
 
-    </div>
+          <details>
 
-  </div>
+            <summary>
+              What will I receive after the inspection?
+            </summary>
 
-</section>
+            <p>
+              This depends on the selected package.
+              Deliverables can include high-resolution photographs,
+              organised photographic documentation and,
+              when selected, a structured PDF inspection report.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              How quickly will I receive the results?
+            </summary>
+
+            <p>
+              Delivery time depends on the selected package
+              and the scope of the inspection.
+              The expected delivery time is confirmed
+              before the mission.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Can the report be shared with a roofer or insurance company?
+            </summary>
+
+            <p>
+              Yes. The digital documentation can be shared
+              with roofers, contractors, property managers,
+              insurers or other professionals.
+              The report provides visual documentation
+              and does not replace a structural
+              or specialist diagnosis.
+            </p>
+
+          </details>
+
+
+        </div>
+
+      </div>
+
+    </section>
 
 
     <!-- ========================================
@@ -1318,65 +1391,64 @@
     ========================================= -->
 
     <section
-  class="drone-page-section drone-contact-section"
-  id="contact"
->
+      class="drone-page-section drone-contact-section"
+      id="contact"
+    >
 
-  <div class="drone-container">
+      <div class="drone-container">
 
-    <div class="drone-contact-box">
+        <div class="drone-contact-box">
 
-      <p class="drone-section-label">
-        Request an Inspection
-      </p>
+          <p class="drone-section-label">
+            Request an Inspection
+          </p>
 
-      <h2>
-        Send the address and tell us what needs to be checked.
-      </h2>
+          <h2>
+            Send the address and tell us what needs to be checked.
+          </h2>
 
-      <p>
-        Include the property location,
-        the areas you would like inspected,
-        your preferred inspection package if known,
-        and any useful information about the issue.
-        Not sure which package you need? We can help you choose.
-      </p>
+          <p>
+            Include the property location,
+            the areas you would like inspected,
+            your preferred inspection package if known,
+            and any useful information about the issue.
+            Not sure which package you need? We can help you choose.
+          </p>
 
-      <div class="drone-contact-actions">
+          <div class="drone-contact-actions">
 
-        <a
-          href="mailto:inspection@ndglivetech.com"
-          class="btn btn-primary"
-        >
-          <i class="fa-regular fa-envelope"></i>
-          Request by Email
-        </a>
+            <a
+              href="mailto:inspection@ndglivetech.com"
+              class="btn btn-primary"
+            >
+              <i class="fa-regular fa-envelope"></i>
+              Request by Email
+            </a>
 
-        <a
-          href="https://wa.me/32470982784"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-secondary"
-        >
-          <i class="fa-brands fa-whatsapp"></i>
-          WhatsApp
-        </a>
+            <a
+              href="https://wa.me/32470982784"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              WhatsApp
+            </a>
+
+          </div>
+
+          <p class="drone-contact-note">
+            No commitment — we'll review the location before confirming the inspection.
+          </p>
+
+        </div>
 
       </div>
 
-      <p class="drone-contact-note">
-        No commitment — we'll review the location before confirming the inspection.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
+    </section>
 
 
   </main>
-
 
 
   <!-- ========================================
@@ -1395,6 +1467,64 @@
 
   </footer>
 
+
+  <!-- ========================================
+       COOKIE BANNER
+  ========================================= -->
+
+    <!-- ===== COOKIE BANNER ===== -->
+
+  <div class="cookie-banner" id="cookieBanner">
+
+    <div>
+
+      <h3>
+        <i class="fa-solid fa-cookie-bite"></i>
+        Cookies, cookies, cookies...
+      </h3>
+
+      <p>
+        This website uses essential cookies to function properly and may use optional cookies
+        to improve your experience. You can accept all cookies or reject non-essential cookies.
+        <a href="legal/cookies.html">Learn more</a>
+      </p>
+
+    </div>
+
+    <div class="cookie-actions">
+
+      <button
+        class="btn-secondary"
+        onclick="rejectCookies()"
+      >
+        Reject non-essential
+      </button>
+
+      <button
+        class="btn-primary"
+        onclick="acceptCookies()"
+      >
+        <i class="fa-solid fa-cookie-bite"></i>
+        Accept all
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================================
+       MAIN JAVASCRIPT
+  ========================================= -->
+
+  <script src="script.js"></script>
+
+
+  <!-- ========================================
+       MAIN JAVASCRIPT
+  ========================================= -->
+
+  <script src="script.js"></script>
 
 
   <!-- ========================================
@@ -1431,8 +1561,10 @@
           window.scrollY <
             sectionTop + sectionHeight
         ) {
+
           current =
             section.getAttribute("id");
+
         }
 
       });
@@ -1446,7 +1578,9 @@
           link.getAttribute("href") ===
           "#" + current
         ) {
+
           link.classList.add("active");
+
         }
 
       });

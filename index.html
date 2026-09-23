@@ -1,42 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1GKQJENK2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-F1GKQJENK2');
-</script>
+  <!-- =========================
+       GOOGLE ANALYTICS
+       Consent denied by default
+  ========================== -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    /* Consentement refusé par défaut */
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+
+    /* Restaurer le consentement si déjà accepté */
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-F1GKQJENK2">
+  </script>
+
+  <script>
+    gtag('js', new Date());
+
+    gtag('config', 'G-F1GKQJENK2');
+  </script>
+
+
+  <!-- =========================
+       META
+  ========================== -->
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <title>NDG Live Tech</title>
 
-    <meta
+  <meta
     name="description"
     content="NDG Live Tech provides professional technical production, audio, lighting, video, streaming and drone services for live events and private projects in Belgium."
   >
 
-  <link rel="canonical" href="https://ndglivetech.com/">
 
-  <link rel="alternate" hreflang="en" href="https://ndglivetech.com/">
-  <link rel="alternate" hreflang="fr" href="https://ndglivetech.com/fr.html">
-  <link rel="alternate" hreflang="nl" href="https://ndglivetech.com/nl.html">
-  <link rel="alternate" hreflang="x-default" href="https://ndglivetech.com/">
+  <!-- =========================
+       SEO
+  ========================== -->
 
-  <link rel="icon" type="image/png" href="images/logo.png">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/sections.css">
-  <link rel="stylesheet" href="css/gallery.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/cookies.css">
-  <link rel="stylesheet" href="css/certifications.css">
-  <link rel="stylesheet" href="css/clients.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link
+    rel="canonical"
+    href="https://ndglivetech.com/"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="https://ndglivetech.com/"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="fr"
+    href="https://ndglivetech.com/fr.html"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="nl"
+    href="https://ndglivetech.com/nl.html"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href="https://ndglivetech.com/"
+  >
+
+
+  <!-- =========================
+       FAVICON
+  ========================== -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+  >
+
+
+  <!-- =========================
+       STYLES
+  ========================== -->
+
+  <link
+    rel="stylesheet"
+    href="css/main.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/header.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/sections.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/gallery.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/footer.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/cookies.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/certifications.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/clients.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/responsive.css"
+  >
+
+
+  <!-- =========================
+       FONT AWESOME
+  ========================== -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+
 </head>
 <body>
 <!-- ===== NAVIGATION ===== -->

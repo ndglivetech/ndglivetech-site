@@ -2,10 +2,58 @@
 <html lang="en">
 
 <head>
+
+  <!-- =========================
+       GOOGLE ANALYTICS
+       Consent denied by default
+  ========================== -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-F1GKQJENK2">
+  </script>
+
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-F1GKQJENK2');
+  </script>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Privacy Policy - NDG Live Tech</title>
+
+  <!-- COOKIE STYLES -->
+  <link rel="stylesheet" href="../css/cookies.css">
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
 
   <style>
     * {
@@ -32,39 +80,27 @@
     a {
       color: #3c8df5;
       text-decoration: none;
-
-      transition:
-        color 0.25s ease,
-        opacity 0.25s ease;
+      transition: color 0.25s ease, opacity 0.25s ease;
     }
 
     a:hover {
       color: #ffffff;
     }
 
-
-    /* =========================
-       TOP BAR
-    ========================= */
-
     .legal-topbar {
       width: min(1100px, 92%);
-
       margin: 0 auto;
-
       padding: 28px 0 0;
 
       display: flex;
       justify-content: space-between;
       align-items: center;
-
       gap: 20px;
     }
 
     .back-home {
       display: inline-flex;
       align-items: center;
-
       gap: 8px;
 
       color: #cfd3d8;
@@ -77,11 +113,6 @@
       color: #3c8df5;
     }
 
-
-    /* =========================
-       LANGUAGE SWITCH
-    ========================= */
-
     .legal-language {
       display: flex;
       gap: 8px;
@@ -89,13 +120,11 @@
 
     .legal-language a {
       min-width: 38px;
-
       padding: 6px 10px;
 
       text-align: center;
 
       color: #aeb4bb;
-
       background: rgba(255, 255, 255, 0.035);
 
       border: 1px solid rgba(255, 255, 255, 0.08);
@@ -113,16 +142,9 @@
       border-color: rgba(35, 113, 215, 0.65);
     }
 
-
-    /* =========================
-       MAIN CONTENT
-    ========================= */
-
     .container {
       width: min(950px, 92%);
-
       margin: 0 auto;
-
       padding: 70px 0 80px;
     }
 
@@ -135,9 +157,17 @@
       line-height: 1.1;
     }
 
+    h2 {
+      margin-top: 12px;
+      margin-bottom: 18px;
+
+      color: #3c8df5;
+
+      font-size: 22px;
+    }
+
     .intro {
       max-width: 760px;
-
       margin-bottom: 18px;
 
       color: rgba(255, 255, 255, 0.72);
@@ -158,20 +188,11 @@
       margin-bottom: 28px;
       padding-bottom: 28px;
 
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255,255, 0.08);
     }
 
     section:last-of-type {
       margin-bottom: 0;
-    }
-
-    h2 {
-      margin-top: 12px;
-      margin-bottom: 18px;
-
-      color: #3c8df5;
-
-      font-size: 22px;
     }
 
     p,
@@ -188,24 +209,17 @@
       margin-bottom: 20px;
     }
 
-
-    /* =========================
-       RELATED DOCUMENTS
-    ========================= */
-
     .legal-links {
       display: flex;
       flex-direction: column;
 
       align-items: flex-start;
-
       gap: 10px;
     }
 
     .legal-links a {
       display: inline-flex;
       align-items: center;
-
       gap: 8px;
 
       font-size: 15px;
@@ -217,16 +231,9 @@
       color: rgba(60, 141, 245, 0.65);
     }
 
-
-    /* =========================
-       FOOTER
-    ========================= */
-
     .legal-footer {
       width: min(950px, 92%);
-
       margin: 0 auto;
-
       padding: 0 0 35px;
 
       text-align: center;
@@ -235,11 +242,6 @@
 
       font-size: 12px;
     }
-
-
-    /* =========================
-       MOBILE
-    ========================= */
 
     @media (max-width: 700px) {
 
@@ -263,7 +265,6 @@
 
 <body>
 
-  <!-- Top navigation -->
   <div class="legal-topbar">
 
     <a href="../index.html" class="back-home">
@@ -271,9 +272,19 @@
     </a>
 
     <div class="legal-language">
-      <a href="privacy.html" class="active">EN</a>
-      <a href="privacy-fr.html">FR</a>
-      <a href="privacy-nl.html">NL</a>
+
+      <a href="privacy.html" class="active">
+        EN
+      </a>
+
+      <a href="privacy-fr.html">
+        FR
+      </a>
+
+      <a href="privacy-nl.html">
+        NL
+      </a>
+
     </div>
 
   </div>
@@ -284,12 +295,14 @@
     <h1>Privacy Policy</h1>
 
     <p class="intro">
-      This Privacy Policy explains how NDG Live Tech collects,
-      uses and protects personal data in accordance with GDPR regulations.
+      This Privacy Policy explains how NDG Live Tech collects, uses,
+      stores and protects personal data in connection with its website
+      and professional activities, in accordance with the General Data
+      Protection Regulation (GDPR) and applicable legislation.
     </p>
 
     <p class="updated">
-      Last updated — 2026
+      Last updated — September 2026
     </p>
 
 
@@ -304,6 +317,8 @@
       <p>
         NDG Live Tech<br>
         Nicolas De Greef<br>
+        Sole proprietorship<br>
+        Company number: 1037.633.744<br>
         Avenue de Floréal 172 boîte 1<br>
         1180 Uccle — Belgium<br><br>
 
@@ -326,29 +341,34 @@
       <h2>2. Personal Data Collected</h2>
 
       <p>
-        NDG Live Tech may collect personal data when you:
+        NDG Live Tech may collect personal data, in particular when you:
       </p>
 
       <ul>
-        <li>contact us by email or phone;</li>
-        <li>request a quotation;</li>
-        <li>book technical services;</li>
         <li>use the website contact form;</li>
-        <li>communicate regarding an event or production.</li>
+        <li>contact NDG Live Tech by email or telephone;</li>
+        <li>request or accept a quotation;</li>
+        <li>order a service or rental;</li>
+        <li>participate in a project, event or production;</li>
+        <li>request an audiovisual service or drone mission;</li>
+        <li>browse the website, where you have accepted the relevant analytics tools.</li>
       </ul>
 
       <p>
-        Collected data may include:
+        Depending on the circumstances, the data processed may include:
       </p>
 
       <ul>
-        <li>name and surname;</li>
+        <li>first and last name;</li>
         <li>email address;</li>
-        <li>phone number;</li>
-        <li>company or organization name;</li>
-        <li>event-related information;</li>
-        <li>billing information;</li>
-        <li>message content and communications.</li>
+        <li>telephone number;</li>
+        <li>postal address;</li>
+        <li>company or organisation name;</li>
+        <li>company number and billing information;</li>
+        <li>information relating to the project, event or intervention site;</li>
+        <li>content of messages and communications;</li>
+        <li>photographs, videos or other content required to perform a service;</li>
+        <li>technical data and information relating to the use of the website.</li>
       </ul>
 
     </section>
@@ -356,19 +376,52 @@
 
     <section>
 
-      <h2>3. Purpose of Processing</h2>
+      <h2>3. Purposes and Legal Bases</h2>
 
       <p>
-        Personal data is processed exclusively for:
+        NDG Live Tech processes personal data only where there is
+        a legal basis permitting such processing.
+      </p>
+
+      <p>
+        Processing may in particular be necessary in order to:
       </p>
 
       <ul>
-        <li>responding to inquiries;</li>
-        <li>preparing quotations and invoices;</li>
-        <li>organizing technical services and productions;</li>
-        <li>administrative and accounting management;</li>
-        <li>legal and tax obligations;</li>
-        <li>professional communication with clients and partners.</li>
+
+        <li>
+          respond to a request and prepare a quotation or service
+          — pre-contractual measures;
+        </li>
+
+        <li>
+          organise, perform and follow up services
+          — performance of a contract;
+        </li>
+
+        <li>
+          issue and manage invoices, payments and accounting documents
+          — performance of the contract and legal obligations;
+        </li>
+
+        <li>
+          comply with accounting, tax or regulatory obligations
+          applicable to NDG Live Tech
+          — legal obligation;
+        </li>
+
+        <li>
+          ensure administrative management, service security and
+          the defence of NDG Live Tech's rights
+          — legitimate interest;
+        </li>
+
+        <li>
+          analyse the use of the website where the user's consent
+          is required and has been given
+          — consent.
+        </li>
+
       </ul>
 
     </section>
@@ -376,29 +429,107 @@
 
     <section>
 
-      <h2>4. Legal Basis</h2>
+      <h2>4. Contact Form</h2>
 
       <p>
-        Personal data processing is based on:
+        The NDG Live Tech website uses a third-party technical service
+        to enable contact forms to be submitted.
+      </p>
+
+      <p>
+        Information entered into the form is processed in order to
+        transmit and handle your request. You are advised not to provide
+        sensitive data or information that is not necessary for your
+        request through the contact form.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>5. Data Related to Audiovisual and Drone Services</h2>
+
+      <p>
+        In connection with audiovisual, event or drone services,
+        NDG Live Tech may process photographs, videos and other images
+        required to perform the mission.
+      </p>
+
+      <p>
+        Depending on the circumstances, these images may allow persons
+        to be identified directly or indirectly and may therefore
+        constitute personal data.
+      </p>
+
+      <p>
+        NDG Live Tech limits the collection and use of these images
+        to what is necessary for the purpose of the service, applicable
+        regulatory obligations and the uses agreed with the Client.
+      </p>
+
+      <p>
+        During a drone inspection, images may in particular show
+        buildings, land, vehicles or surrounding elements. NDG Live Tech
+        takes reasonable measures to avoid the unnecessary collection
+        of data relating to third parties.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>6. Google Analytics and Browsing Data</h2>
+
+      <p>
+        NDG Live Tech uses Google Analytics to better understand
+        how the website is used, including the number of visits,
+        pages viewed and certain technical information relating
+        to the devices and browsers used.
+      </p>
+
+      <p>
+        Where legislation requires the user's consent, the relevant
+        analytics technologies are used only in accordance with the
+        choice expressed by the user through the cookie management system.
+      </p>
+
+      <p>
+        Further information about cookies and similar technologies
+        is available in the Cookies Policy.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>7. Recipients and Service Providers</h2>
+
+      <p>
+        Personal data is not sold to third parties.
+      </p>
+
+      <p>
+        It may, however, be disclosed where necessary to service
+        providers acting on behalf of NDG Live Tech, including
+        in the following areas:
       </p>
 
       <ul>
-        <li>the execution of a contract;</li>
-        <li>pre-contractual measures;</li>
-        <li>legal obligations;</li>
-        <li>the legitimate interest of NDG Live Tech.</li>
+        <li>website hosting and technical services;</li>
+        <li>forms and electronic communications;</li>
+        <li>website analytics tools;</li>
+        <li>billing and accounting;</li>
+        <li>technical service providers and subcontractors required for a service;</li>
+        <li>professional advisers;</li>
+        <li>public authorities where required by law.</li>
       </ul>
 
-    </section>
-
-
-    <section>
-
-      <h2>5. Data Retention</h2>
-
       <p>
-        Personal data is retained only for the duration necessary
-        for the purposes described above and according to Belgian legal obligations.
+        These recipients have access to the data only to the extent
+        necessary to perform their tasks or comply with their obligations.
       </p>
 
     </section>
@@ -406,29 +537,19 @@
 
     <section>
 
-      <h2>6. Data Sharing</h2>
+      <h2>8. International Data Transfers</h2>
 
       <p>
-        Personal data is never sold to third parties.
+        Certain technical service providers used by NDG Live Tech
+        may process or make data accessible from countries outside
+        the European Economic Area.
       </p>
 
       <p>
-        Data may be shared with trusted service providers,
-        subcontractors or public authorities only when necessary
-        for technical, legal, administrative or accounting purposes.
-      </p>
-
-    </section>
-
-
-    <section>
-
-      <h2>7. Data Security</h2>
-
-      <p>
-        NDG Live Tech implements reasonable technical and organizational measures
-        to protect personal data against unauthorized access,
-        misuse, disclosure or destruction.
+        Where such transfers take place, NDG Live Tech ensures,
+        to the extent required by applicable legislation, that they
+        are based on a recognised legal mechanism, such as an adequacy
+        decision or appropriate safeguards.
       </p>
 
     </section>
@@ -436,23 +557,87 @@
 
     <section>
 
-      <h2>8. Your Rights</h2>
+      <h2>9. Data Retention</h2>
 
       <p>
-        Under GDPR regulations, you have the right to:
+        Personal data is retained only for as long as necessary
+        to fulfil the purposes for which it was collected, as well
+        as for the periods necessary to comply with legal obligations
+        or to establish, exercise or defend legal claims.
+      </p>
+
+      <p>
+        Accounting and tax documents are retained for the periods
+        required by applicable legislation.
+      </p>
+
+      <p>
+        Data relating to contact requests that do not result in a
+        commercial relationship is not intended to be retained indefinitely.
+      </p>
+
+      <p>
+        Images, videos, reports and other files relating to a service
+        are retained for the period necessary to perform and follow up
+        that service, unless longer retention is justified by the contract,
+        a legal obligation or a legitimate interest.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>10. Data Security</h2>
+
+      <p>
+        NDG Live Tech implements reasonable technical and organisational
+        measures to protect personal data against loss, unauthorised access,
+        misuse, alteration or unauthorised disclosure.
+      </p>
+
+      <p>
+        As no computer system or means of transmission can provide
+        absolute security, these measures are reasonably adapted
+        to the nature of the data and the identified risks.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>11. Your Rights</h2>
+
+      <p>
+        Subject to the conditions laid down by the GDPR, you may
+        in particular have the following rights:
       </p>
 
       <ul>
-        <li>access your personal data;</li>
-        <li>request correction of inaccurate data;</li>
-        <li>request deletion of your data;</li>
-        <li>object to processing;</li>
-        <li>request restriction of processing;</li>
-        <li>request data portability where applicable.</li>
+        <li>the right to be informed about the processing of your data;</li>
+        <li>the right of access to your personal data;</li>
+        <li>the right to rectify inaccurate or incomplete data;</li>
+        <li>the right to erasure where the legal conditions are met;</li>
+        <li>the right to restriction of processing;</li>
+        <li>the right to object to certain processing;</li>
+        <li>the right to data portability where applicable;</li>
+        <li>the right to withdraw your consent where processing is based on consent;</li>
+        <li>
+          the right not to be subject to a decision based solely
+          on automated processing which produces certain legal or
+          similarly significant effects, where this right applies.
+        </li>
       </ul>
 
       <p>
-        To exercise your rights, contact:
+        Withdrawal of consent does not affect the lawfulness of
+        processing carried out before its withdrawal.
+      </p>
+
+      <p>
+        To exercise your rights or ask a question concerning your data,
+        you can contact:
       </p>
 
       <p>
@@ -461,16 +646,9 @@
         </a>
       </p>
 
-    </section>
-
-
-    <section>
-
-      <h2>9. Complaints</h2>
-
       <p>
-        If you believe your personal data is not processed correctly,
-        you may file a complaint with the Belgian Data Protection Authority.
+        NDG Live Tech may request information reasonably necessary
+        to verify the identity of the person making a request.
       </p>
 
     </section>
@@ -478,7 +656,42 @@
 
     <section>
 
-      <h2>10. Related Documents</h2>
+      <h2>12. Complaint to the Data Protection Authority</h2>
+
+      <p>
+        If you believe that the processing of your personal data
+        does not comply with applicable legislation, you have the
+        right to lodge a complaint with the Belgian Data Protection Authority.
+      </p>
+
+      <p>
+        Data Protection Authority<br>
+        Rue de la Presse 35<br>
+        1000 Brussels — Belgium
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>13. Changes to this Privacy Policy</h2>
+
+      <p>
+        NDG Live Tech may amend this Privacy Policy to take account
+        of changes to its services, technical tools or applicable regulations.
+      </p>
+
+      <p>
+        The date of the latest update is indicated at the top of this page.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>14. Related Documents</h2>
 
       <div class="legal-links">
 
@@ -504,6 +717,52 @@
   <footer class="legal-footer">
     © 2026 NDG Live Tech. All rights reserved.
   </footer>
+
+
+  <!-- ===== COOKIE BANNER ===== -->
+
+  <div class="cookie-banner" id="cookieBanner">
+
+    <div>
+
+      <h3>
+        <i class="fa-solid fa-cookie-bite"></i>
+        Cookies, cookies, cookies...
+      </h3>
+
+      <p>
+        This website uses essential cookies to function properly and may use optional cookies
+        to improve your experience. You can accept all cookies or reject non-essential cookies.
+        <a href="cookies.html">Learn more</a>
+      </p>
+
+    </div>
+
+    <div class="cookie-actions">
+
+      <button
+        class="btn-secondary"
+        onclick="rejectCookies()"
+      >
+        Reject non-essential
+      </button>
+
+      <button
+        class="btn-primary"
+        onclick="acceptCookies()"
+      >
+        <i class="fa-solid fa-cookie-bite"></i>
+        Accept all
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ===== MAIN JAVASCRIPT ===== -->
+
+  <script src="../script.js"></script>
 
 </body>
 

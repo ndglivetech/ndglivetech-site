@@ -2,10 +2,58 @@
 <html lang="en">
 
 <head>
+
+  <!-- =========================
+       GOOGLE ANALYTICS
+       Consent denied by default
+  ========================== -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-F1GKQJENK2">
+  </script>
+
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-F1GKQJENK2');
+  </script>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Terms & Conditions - NDG Live Tech</title>
+
+  <!-- COOKIE STYLES -->
+  <link rel="stylesheet" href="../css/cookies.css">
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
 
   <style>
     * {
@@ -32,7 +80,10 @@
     a {
       color: #3c8df5;
       text-decoration: none;
-      transition: color 0.25s ease, opacity 0.25s ease;
+
+      transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
     }
 
     a:hover {
@@ -52,6 +103,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       gap: 20px;
     }
 
@@ -87,6 +139,7 @@
       text-align: center;
 
       color: #aeb4bb;
+
       background: rgba(255, 255, 255, 0.035);
 
       border: 1px solid rgba(255, 255, 255, 0.08);
@@ -178,7 +231,6 @@
     .legal-links {
       display: flex;
       flex-direction: column;
-
       align-items: flex-start;
       gap: 10px;
     }
@@ -186,6 +238,7 @@
     .legal-links a {
       display: inline-flex;
       align-items: center;
+
       gap: 8px;
 
       font-size: 15px;
@@ -249,19 +302,9 @@
     </a>
 
     <div class="legal-language">
-
-      <a href="terms.html" class="active">
-        EN
-      </a>
-
-      <a href="terms-fr.html">
-        FR
-      </a>
-
-      <a href="terms-nl.html">
-        NL
-      </a>
-
+      <a href="terms.html" class="active">EN</a>
+      <a href="terms-fr.html">FR</a>
+      <a href="terms-nl.html">NL</a>
     </div>
 
   </div>
@@ -272,12 +315,13 @@
     <h1>Terms & Conditions</h1>
 
     <p class="intro">
-      These Terms & Conditions apply to all quotations, invoices,
-      services and equipment rentals provided by NDG Live Tech.
+      These Terms & Conditions apply to services, technical services,
+      audiovisual productions, drone services, visual inspections and
+      equipment rentals provided by NDG Live Tech.
     </p>
 
     <p class="updated">
-      Last updated — 2026
+      Updated version – September 2026
     </p>
 
 
@@ -288,25 +332,33 @@
 
       <p>
         <strong>“NDG Live Tech”</strong>:
-        the trade name used by Mr Nicolas De Greef for his activities.
+        the trade name used by Nicolas De Greef, sole proprietor,
+        company number 1037.633.744.
       </p>
 
       <p>
         <strong>“Client”</strong>:
-        any natural or legal person requesting any service from
-        NDG Live Tech, including equipment rental.
+        any natural or legal person who orders or accepts a service,
+        quotation or rental from NDG Live Tech.
+      </p>
+
+      <p>
+        <strong>“Consumer”</strong>:
+        any natural person acting for purposes outside their
+        professional activity.
       </p>
 
       <p>
         <strong>“Agreement”</strong>:
-        any written or verbal agreement concluded between the Client
-        and NDG Live Tech for any service, including equipment rental.
+        the agreement concluded between NDG Live Tech and the Client,
+        in particular on the basis of a quotation, order or written agreement.
       </p>
 
       <p>
-        <strong>“Event”</strong>:
-        an activity organised by the Client during which NDG Live Tech
-        intervenes, directly or through rented equipment.
+        <strong>“Service”</strong>:
+        any technical, audiovisual, event, streaming, filming,
+        drone, visual inspection or other service agreed between
+        NDG Live Tech and the Client.
       </p>
 
     </section>
@@ -318,26 +370,26 @@
       <h2>1. Scope of Application</h2>
 
       <p>
-        1.1. These Terms & Conditions apply to all orders placed with
-        NDG Live Tech, as well as to quotations and all services,
-        whether paid or free of charge. They are the only applicable
-        conditions and replace any other conditions of the Client.
+        1.1. These Terms & Conditions apply to quotations,
+        orders, services and rentals concluded with NDG Live Tech.
       </p>
 
       <p>
-        1.2. By entering into an agreement with NDG Live Tech,
-        the Client acknowledges having read these Terms & Conditions
-        in advance and agrees to them.
+        1.2. The accepted quotation, any specific conditions and
+        these Terms & Conditions together constitute the agreement
+        between NDG Live Tech and the Client.
       </p>
 
       <p>
-        1.3. Any exception granted by NDG Live Tech to these Terms &
-        Conditions is limited to the specific agreement containing that
-        exception, provided it is written and signed by the parties.
-        These Terms & Conditions remain applicable to all clauses not
-        expressly derogated from. An exception granted for one agreement
-        does not apply to other agreements unless agreed in writing
-        by the parties.
+        1.3. In the event of any conflict, specific conditions
+        expressly agreed in writing shall prevail over these
+        Terms & Conditions.
+      </p>
+
+      <p>
+        1.4. Mandatory provisions applicable to consumers remain
+        applicable notwithstanding any provision to the contrary
+        in these Terms & Conditions.
       </p>
 
     </section>
@@ -349,28 +401,28 @@
       <h2>2. Offer and Order</h2>
 
       <p>
-        2.1. NDG Live Tech offers are valid for one month.
-        However, as long as they have not been accepted by the Client,
-        they may be modified or withdrawn without compensation.
+        2.1. Unless otherwise stated, NDG Live Tech offers and
+        quotations are valid for 30 days from their date of issue.
       </p>
 
       <p>
-        2.2. Offers are prepared on the basis of information supplied
-        by the Client. If the requested services change,
-        NDG Live Tech may adapt or withdraw its offer.
+        2.2. Offers are prepared on the basis of the information
+        provided by the Client. Any change to the project, schedule,
+        location, technical requirements or conditions of performance
+        may result in an adjustment to the price and quotation.
       </p>
 
       <p>
-        2.3. In urgent cases (an order placed less than one month
-        before the service), NDG Live Tech may shorten the validity
-        period of its offer. This condition will be specified
-        in the quotation.
+        2.3. An order becomes final after acceptance of the quotation
+        or written confirmation of the order and, where a deposit is
+        required, subject to payment of that deposit within the
+        agreed period.
       </p>
 
       <p>
-        2.4. Any agreement is concluded subject to the resolutory
-        condition of payment of the agreed deposit within
-        the specified period.
+        2.4. NDG Live Tech may refuse an order where the technical,
+        regulatory, financial or safety conditions necessary for its
+        proper performance are not met.
       </p>
 
     </section>
@@ -382,18 +434,31 @@
       <h2>3. Prices</h2>
 
       <p>
-        3.1. Prices are stated in euros, excluding VAT.
-        Any change in VAT or new tax is payable by the Client.
+        3.1. Prices are expressed in euros and specify, depending
+        on the quotation, whether they are exclusive or inclusive of VAT.
       </p>
 
       <p>
-        3.2. Prices relate only to the services or equipment
-        described in the offer.
+        3.2. Only the services, supplies, equipment and expenses
+        expressly mentioned in the quotation are included in the price.
       </p>
 
       <p>
-        3.3. Royalties relating to copyright
-        (e.g. SABAM) are payable by the Client.
+        3.3. Any additional service requested by the Client or made
+        necessary by a change in the conditions initially communicated
+        may be subject to additional invoicing.
+      </p>
+
+      <p>
+        3.4. Travel, parking, accommodation, meals, permits,
+        special access or third-party services may be invoiced
+        when they are not included in the initial quotation.
+      </p>
+
+      <p>
+        3.5. Unless otherwise stated in the quotation, copyright,
+        related rights, licences and royalties associated with
+        the content or event remain payable by the Client.
       </p>
 
     </section>
@@ -405,26 +470,34 @@
       <h2>4. Payment</h2>
 
       <p>
-        4.1. Invoices are payable on the due date stated or,
-        at the latest, within 15 days of receipt,
-        to the bank account of NDG Live Tech.
+        4.1. Unless otherwise provided in the quotation or invoice,
+        invoices are payable within 15 days from their date of issue.
       </p>
 
       <p>
-        4.2. A deposit of 50% must be paid within 15 days
-        following acceptance of the quotation.
+        4.2. NDG Live Tech may request a deposit, in particular
+        a deposit of 50%, upon confirmation of a service.
       </p>
 
       <p>
-        4.3. Any late payment automatically and without prior notice
-        gives rise to statutory interest increased by 4%,
-        as well as fixed compensation of 15%,
-        with a minimum of €150.
+        4.3. In the event of late payment by a professional Client,
+        interest and compensation provided for under the applicable
+        Belgian legislation on late payment in commercial transactions
+        may be claimed.
       </p>
 
       <p>
-        4.4. Any dispute must be submitted in writing within 15 days.
-        After this period, the invoice is deemed accepted.
+        4.4. Where the Client is a consumer, any late payment
+        shall be handled in accordance with the mandatory provisions
+        of Belgian law relating to consumer debts, particularly
+        regarding the free reminder, prior waiting period, interest
+        and any compensation that may apply.
+      </p>
+
+      <p>
+        4.5. Any dispute relating to an invoice must be communicated
+        to NDG Live Tech as soon as possible, with a sufficiently
+        precise description of the disputed elements.
       </p>
 
     </section>
@@ -433,25 +506,36 @@
     <!-- 5 -->
     <section>
 
-      <h2>5. Right of Withdrawal</h2>
+      <h2>5. Consumers' Right of Withdrawal</h2>
 
       <p>
-        5.1. The Client has a period of 14 days to terminate
-        the contract without giving a reason.
+        5.1. Where a distance or off-premises contract legally gives
+        the consumer a right of withdrawal, the consumer has, in principle,
+        a period of 14 days to exercise that right, in accordance with
+        the applicable legislation.
       </p>
 
       <p>
-        5.2. Withdrawal must be notified in writing
-        before expiry of this period.
+        5.2. The withdrawal request may be submitted by means of an
+        unambiguous statement to:
+        <a href="mailto:legal@ndglivetech.com">legal@ndglivetech.com</a>.
       </p>
 
       <p>
-        5.3. Amounts paid will be refunded within 30 days.
+        5.3. Where the consumer expressly requests that performance
+        of a service begin before the expiry of the withdrawal period,
+        the consequences provided for by the applicable legislation
+        shall apply. A proportionate amount for services already provided
+        may in particular be payable in the event of withdrawal after
+        performance has begun.
       </p>
 
       <p>
-        5.4. This right does not apply if performance has begun
-        with the Client’s agreement.
+        5.4. Where the service has been fully performed before the end
+        of the withdrawal period, following the consumer's express request
+        and prior acknowledgement of the loss of the right of withdrawal
+        where required by law, the right of withdrawal may no longer
+        be exercised.
       </p>
 
     </section>
@@ -460,28 +544,42 @@
     <!-- 6 -->
     <section>
 
-      <h2>6. Cancellation and Termination</h2>
+      <h2>6. Cancellation by the Client</h2>
 
       <p>
-        6.1. Except in the case of withdrawal or force majeure,
-        any cancellation must be notified at least 21 days
-        before the service.
+        6.1. Subject to any statutory right of withdrawal applicable
+        to consumers and cases of force majeure, any cancellation
+        must be communicated in writing to NDG Live Tech.
       </p>
 
       <p>
-        6.2. In the event of cancellation by the Client,
-        amounts already paid are not refunded.
+        6.2. Where cancellation occurs more than 30 calendar days
+        before the scheduled date of the service, no cancellation
+        fee is payable.
       </p>
 
       <p>
-        6.3. If no amount has been paid,
-        fixed compensation of €150 may be claimed.
+        6.3. Where cancellation occurs between 15 and 30 calendar days
+        before the service, compensation equal to 25% of the amount
+        agreed for the service is payable.
       </p>
 
       <p>
-        6.4. NDG Live Tech may terminate the contract in the event
-        of inappropriate behaviour, inaccurate information
-        or misuse of equipment, without refund.
+        6.4. Where cancellation occurs between 7 and 14 calendar days
+        before the service, compensation equal to 50% of the amount
+        agreed for the service is payable.
+      </p>
+
+      <p>
+        6.5. Where cancellation occurs less than 7 calendar days
+        before the service, compensation equal to 100% of the amount
+        agreed for the service is payable.
+      </p>
+
+      <p>
+        6.6. External costs already incurred specifically for the project
+        which cannot reasonably be cancelled or recovered may also remain
+        payable, within the limits permitted by applicable law.
       </p>
 
     </section>
@@ -493,12 +591,24 @@
       <h2>7. Force Majeure</h2>
 
       <p>
-        7.1. Neither party is liable in the event of force majeure.
+        7.1. Neither party may be held liable for a failure resulting
+        from an unforeseeable event or an event beyond its control
+        which makes performance of the service impossible or
+        unreasonably dangerous.
       </p>
 
       <p>
-        7.2. The affected party must notify the other party
-        within 24 hours.
+        7.2. Depending on the circumstances, such events may include:
+        severe weather conditions, administrative or airspace restrictions,
+        major power or network outages, natural disasters, fire,
+        serious accidents or any situation presenting a significant
+        risk to persons or equipment.
+      </p>
+
+      <p>
+        7.3. The affected party shall inform the other party as soon
+        as possible. Where reasonably possible, the parties shall
+        give priority to finding a new date or an alternative solution.
       </p>
 
     </section>
@@ -507,24 +617,37 @@
     <!-- 8 -->
     <section>
 
-      <h2>8. Performance of Services</h2>
+      <h2>8. Performance of Technical Services</h2>
 
       <p>
-        8.1. NDG Live Tech is subject to an obligation of means.
+        8.1. NDG Live Tech performs its services with the care and skills
+        reasonably expected of a professional and, unless expressly
+        agreed otherwise, is subject to an obligation of means.
       </p>
 
       <p>
-        8.2. NDG Live Tech complies with the regulations
-        communicated by the Client.
+        8.2. NDG Live Tech may adapt the technical means used where
+        necessary for the proper performance of the service, provided
+        that this does not substantially alter the agreed service.
       </p>
 
       <p>
-        8.3. NDG Live Tech may use subcontractors.
+        8.3. NDG Live Tech may engage collaborators, technicians,
+        suppliers or subcontractors where required by the nature
+        of the service.
       </p>
 
       <p>
-        8.4. NDG Live Tech may refuse an order in the event
-        of a dispute or unpaid invoice.
+        8.4. The Client must provide, in due time, the technical
+        information, schedules, plans, access details, contacts and
+        constraints necessary for performance of the service.
+      </p>
+
+      <p>
+        8.5. Any waiting time, extension, schedule change or additional
+        intervention attributable to a change requested by the Client
+        or to conditions differing from those initially communicated
+        may result in additional invoicing.
       </p>
 
     </section>
@@ -533,46 +656,36 @@
     <!-- 9 -->
     <section>
 
-      <h2>9. Client Obligations</h2>
+      <h2>9. Rental and Provision of Equipment</h2>
 
       <p>
-        9.1. The Client must obtain all necessary authorisations,
-        including SABAM, police or any other applicable authorisation.
+        9.1. Equipment made available remains the property of
+        NDG Live Tech or its lawful owner.
       </p>
 
       <p>
-        9.2. The Client must provide all useful information in due time.
+        9.2. The Client must use the equipment for its intended purpose,
+        in accordance with the instructions received and the applicable
+        safety rules.
       </p>
 
       <p>
-        9.3. The Client must provide a suitable,
-        safe and equipped location.
+        9.3. Unless prior authorisation has been given, the equipment
+        may not be transferred, sublet, moved to another location
+        or modified.
       </p>
 
       <p>
-        9.4. The Client may not move equipment without authorisation.
+        9.4. During the period in which the equipment is entrusted
+        to the Client, the Client must take reasonable precautions
+        to prevent theft, loss or damage.
       </p>
 
       <p>
-        9.5. In the event of rental,
-        the Client must know how to use the equipment.
-      </p>
-
-      <p>
-        9.6. NDG Live Tech accepts no liability
-        in the event of non-compliance.
-      </p>
-
-      <p>
-        9.7. The Client must actively cooperate.
-      </p>
-
-      <p>
-        9.8. Equipment must be used lawfully and correctly.
-      </p>
-
-      <p>
-        9.9. The Client must be insured.
+        9.5. Any loss or damage attributable to the Client or persons
+        for whom the Client is responsible may result in the invoicing
+        of reasonable repair or replacement costs, taking into account
+        in particular the condition and value of the equipment concerned.
       </p>
 
     </section>
@@ -581,28 +694,47 @@
     <!-- 10 -->
     <section>
 
-      <h2>10. Liability</h2>
+      <h2>10. Drone Services</h2>
 
       <p>
-        10.1. Any complaint must be submitted within 15 days.
+        10.1. Any drone operation is carried out subject to the
+        regulatory, operational and safety conditions applicable
+        to the location, date and type of mission concerned.
       </p>
 
       <p>
-        10.2. Liability is limited to the amount of the contract.
+        10.2. The final feasibility of a flight may depend in particular
+        on the airspace, temporary restrictions, any required authorisations,
+        the environment, the presence of persons, obstacles and
+        weather conditions.
       </p>
 
       <p>
-        10.3. The Client is responsible for equipment
-        in their possession.
+        10.3. NDG Live Tech retains final operational authority regarding
+        the take-off, continuation, interruption or cancellation of
+        a flight where required by regulatory or safety conditions.
       </p>
 
       <p>
-        10.4. The Client must cover any damage or loss.
+        10.4. Where conditions do not reasonably allow the planned
+        flight to be carried out, NDG Live Tech and the Client shall,
+        where possible, seek a new date or an alternative solution.
       </p>
 
       <p>
-        10.5. The Client is responsible for damage
-        caused to third parties.
+        10.5. The Client must provide any information available to them
+        concerning the site, access, specific risks, restrictions,
+        persons present and any other factor likely to affect the
+        preparation or safety of the mission.
+      </p>
+
+      <p>
+        10.6. Unless otherwise agreed, NDG Live Tech is responsible
+        for regulatory procedures directly related to the drone operation
+        that fall within its responsibility as operator of the mission.
+        Authorisations or agreements falling under the responsibility
+        of the owner, occupant or organiser of the site remain the
+        responsibility of the relevant party.
       </p>
 
     </section>
@@ -611,15 +743,41 @@
     <!-- 11 -->
     <section>
 
-      <h2>11. Confidentiality</h2>
+      <h2>11. Visual Inspections by Drone</h2>
 
       <p>
-        11.1. NDG Live Tech respects confidentiality and GDPR.
+        11.1. A drone inspection constitutes a remote visual observation
+        of elements that are visible and accessible using the imaging
+        equipment employed during the mission.
       </p>
 
       <p>
-        11.2. The Client may request that processing
-        of their data be stopped.
+        11.2. Any report provided describes observations that can
+        reasonably be established from the images collected at the
+        time of the inspection.
+      </p>
+
+      <p>
+        11.3. Unless the mission is expressly entrusted to a professional
+        holding the necessary qualifications, the inspection and report
+        do not constitute a structural assessment, stability inspection,
+        watertightness diagnosis, technical certification or guarantee
+        that defects are absent.
+      </p>
+
+      <p>
+        11.4. Certain defects may be invisible from the outside,
+        concealed by building elements or impossible to identify
+        from an aerial image. NDG Live Tech cannot guarantee the
+        detection of defects that are not reasonably observable
+        under the conditions of the mission.
+      </p>
+
+      <p>
+        11.5. Where a potentially significant anomaly is observed,
+        the report may recommend that the Client consult a roofer,
+        architect, engineer or other qualified professional in order
+        to carry out a further examination.
       </p>
 
     </section>
@@ -628,22 +786,32 @@
     <!-- 12 -->
     <section>
 
-      <h2>12. Intellectual Property</h2>
+      <h2>12. Images, Video and Deliverables</h2>
 
       <p>
-        12.1. All content remains the property of NDG Live Tech.
+        12.1. The characteristics of the files delivered to the Client
+        — including format, resolution, duration, number of images or
+        type of report — are those specified in the quotation or
+        agreed for the service.
       </p>
 
       <p>
-        12.2. Any reproduction is prohibited without authorisation.
+        12.2. Unless otherwise agreed, working files, editing projects,
+        undelivered raw footage and internal technical elements are
+        not included in the deliverables.
       </p>
 
       <p>
-        12.3. Any misuse gives rise to minimum compensation of €500.
+        12.3. The Client guarantees that they hold the necessary rights
+        to the content, music, logos, images, documents and other
+        elements supplied to NDG Live Tech for performance of the service.
       </p>
 
       <p>
-        12.4. NDG Live Tech respects the rights of its clients.
+        12.4. Rights to use photographs, videos, creations or other
+        content produced by NDG Live Tech are determined by the quotation
+        or agreement concluded with the Client and by the applicable
+        intellectual property legislation.
       </p>
 
     </section>
@@ -652,27 +820,176 @@
     <!-- 13 -->
     <section>
 
-      <h2>13. Miscellaneous Provisions</h2>
+      <h2>13. Client Obligations</h2>
 
       <p>
-        13.1. Equipment may not be transferred or sublet.
+        13.1. The Client shall provide accurate and complete information
+        necessary for the preparation and performance of the service.
       </p>
 
       <p>
-        13.2. The invalidity of one clause does not affect the others.
+        13.2. The Client shall ensure that NDG Live Tech can access
+        the location of the service at the agreed times and under
+        reasonably safe conditions.
       </p>
 
       <p>
-        13.3. The quotation and these Terms & Conditions form a whole.
+        13.3. Where this falls within the Client's responsibility,
+        the Client shall obtain the authorisations relating to the
+        location, event, persons, content or installations necessary
+        for the service.
       </p>
 
       <p>
-        13.4. Belgian law is applicable.
+        13.4. The Client shall inform NDG Live Tech of any specific
+        risk or constraint likely to affect the safety or performance
+        of the service.
+      </p>
+
+    </section>
+
+
+    <!-- 14 -->
+    <section>
+
+      <h2>14. Liability</h2>
+
+      <p>
+        14.1. Each party shall be liable for damage attributable to it
+        in accordance with applicable law.
       </p>
 
       <p>
-        13.5. In the event of a dispute, only the courts of Brussels
-        and the competent Justice of the Peace have jurisdiction.
+        14.2. NDG Live Tech cannot be held liable for damage resulting
+        from incorrect or incomplete information provided by the Client,
+        improper use of equipment or deliverables, or the Client's
+        failure to comply with their own obligations.
+      </p>
+
+      <p>
+        14.3. To the extent permitted by law, NDG Live Tech shall not
+        be liable for indirect damage that is not the direct and
+        foreseeable consequence of a breach attributable to it.
+      </p>
+
+      <p>
+        14.4. Nothing in these Terms & Conditions is intended to
+        exclude or limit any liability that cannot legally be
+        excluded or limited.
+      </p>
+
+    </section>
+
+
+    <!-- 15 -->
+    <section>
+
+      <h2>15. Personal Data and Confidentiality</h2>
+
+      <p>
+        15.1. Personal data is processed in accordance with applicable
+        legislation and NDG Live Tech's Privacy Policy.
+      </p>
+
+      <p>
+        15.2. Requests relating to data protection may be sent to:
+        <a href="mailto:legal@ndglivetech.com">legal@ndglivetech.com</a>.
+      </p>
+
+      <p>
+        15.3. In the context of a drone or audiovisual mission,
+        persons, properties or elements of the surrounding environment
+        may appear in images. NDG Live Tech implements reasonable
+        measures necessary to comply with the applicable regulations
+        and the agreed purpose of the mission.
+      </p>
+
+    </section>
+
+
+    <!-- 16 -->
+    <section>
+
+      <h2>16. Intellectual Property</h2>
+
+      <p>
+        16.1. Elements of the website, documents, creations,
+        photographs, videos, reports and other content produced
+        by NDG Live Tech remain protected by applicable
+        intellectual property rights.
+      </p>
+
+      <p>
+        16.2. Delivery of a deliverable to the Client does not
+        automatically result in the transfer of all intellectual
+        property rights. Any rights of use or assignments granted
+        are determined by the quotation or by a written agreement.
+      </p>
+
+      <p>
+        16.3. The Client retains the rights they hold in the elements
+        they provide to NDG Live Tech.
+      </p>
+
+    </section>
+
+
+    <!-- 17 -->
+    <section>
+
+      <h2>17. Complaints and Disputes</h2>
+
+      <p>
+        17.1. Any difficulty relating to a service must be communicated
+        to NDG Live Tech as soon as possible in order to allow a
+        solution to be sought.
+      </p>
+
+      <p>
+        17.2. Complaints may be sent to:
+        <a href="mailto:legal@ndglivetech.com">legal@ndglivetech.com</a>.
+      </p>
+
+      <p>
+        17.3. The parties shall, to the extent reasonably possible,
+        seek an amicable solution before initiating proceedings.
+      </p>
+
+      <p>
+        17.4. These Terms & Conditions and agreements concluded with
+        NDG Live Tech are governed by Belgian law.
+      </p>
+
+      <p>
+        17.5. In the event of a dispute, the competent court shall
+        be determined in accordance with the applicable legal rules,
+        without prejudice to the mandatory rights enjoyed by consumers.
+      </p>
+
+    </section>
+
+
+    <!-- 18 -->
+    <section>
+
+      <h2>18. Final Provisions</h2>
+
+      <p>
+        18.1. If any provision of these Terms & Conditions is declared
+        null, invalid or unenforceable, the remaining provisions shall
+        remain applicable to the fullest extent permitted by law.
+      </p>
+
+      <p>
+        18.2. The fact that NDG Live Tech does not immediately invoke
+        a provision of these Terms & Conditions does not constitute
+        a waiver of its right to invoke that provision subsequently.
+      </p>
+
+      <p>
+        18.3. The version of the Terms & Conditions applicable to an
+        agreement is the version communicated or made accessible to
+        the Client when the agreement is concluded.
       </p>
 
     </section>
@@ -707,6 +1024,52 @@
   <footer class="legal-footer">
     © 2026 NDG Live Tech. All rights reserved.
   </footer>
+
+
+  <!-- ===== COOKIE BANNER ===== -->
+
+  <div class="cookie-banner" id="cookieBanner">
+
+    <div>
+
+      <h3>
+        <i class="fa-solid fa-cookie-bite"></i>
+        Cookies, cookies, cookies...
+      </h3>
+
+      <p>
+        This website uses essential cookies to function properly and may use optional cookies
+        to improve your experience. You can accept all cookies or reject non-essential cookies.
+        <a href="cookies.html">Learn more</a>
+      </p>
+
+    </div>
+
+    <div class="cookie-actions">
+
+      <button
+        class="btn-secondary"
+        onclick="rejectCookies()"
+      >
+        Reject non-essential
+      </button>
+
+      <button
+        class="btn-primary"
+        onclick="acceptCookies()"
+      >
+        <i class="fa-solid fa-cookie-bite"></i>
+        Accept all
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ===== MAIN JAVASCRIPT ===== -->
+
+  <script src="../script.js"></script>
 
 </body>
 

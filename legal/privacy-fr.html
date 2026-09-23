@@ -2,10 +2,58 @@
 <html lang="fr">
 
 <head>
+
+  <!-- =========================
+       GOOGLE ANALYTICS
+       Consentement refusé par défaut
+  ========================== -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-F1GKQJENK2">
+  </script>
+
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-F1GKQJENK2');
+  </script>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Politique de confidentialité - NDG Live Tech</title>
+
+  <!-- COOKIE STYLES -->
+  <link rel="stylesheet" href="../css/cookies.css">
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
 
   <style>
     * {
@@ -247,13 +295,15 @@
     <h1>Politique de confidentialité</h1>
 
     <p class="intro">
-      Cette politique de confidentialité explique comment NDG Live Tech
-      collecte, utilise et protège les données à caractère personnel
-      conformément au RGPD.
+      La présente Politique de confidentialité explique comment NDG Live Tech
+      collecte, utilise, conserve et protège les données à caractère personnel
+      dans le cadre de son site internet et de ses activités professionnelles,
+      conformément au Règlement général sur la protection des données (RGPD)
+      et à la législation applicable.
     </p>
 
     <p class="updated">
-      Dernière mise à jour — 2026
+      Dernière mise à jour — septembre 2026
     </p>
 
 
@@ -268,6 +318,8 @@
       <p>
         NDG Live Tech<br>
         Nicolas De Greef<br>
+        Entreprise individuelle<br>
+        Numéro d’entreprise : 1037.633.744<br>
         Avenue de Floréal 172 boîte 1<br>
         1180 Uccle — Belgique<br><br>
 
@@ -290,29 +342,35 @@
       <h2>2. Données personnelles collectées</h2>
 
       <p>
-        NDG Live Tech peut collecter des données personnelles lorsque vous :
+        NDG Live Tech peut collecter des données personnelles notamment lorsque
+        vous :
       </p>
 
       <ul>
-        <li>nous contactez par e-mail ou téléphone ;</li>
-        <li>demandez un devis ;</li>
-        <li>réservez des prestations techniques ;</li>
         <li>utilisez le formulaire de contact du site ;</li>
-        <li>communiquez au sujet d’un événement ou d’une production.</li>
+        <li>contactez NDG Live Tech par e-mail ou téléphone ;</li>
+        <li>demandez ou acceptez un devis ;</li>
+        <li>commandez une prestation ou une location ;</li>
+        <li>participez à un projet, un événement ou une production ;</li>
+        <li>demandez une prestation audiovisuelle ou une mission par drone ;</li>
+        <li>naviguez sur le site internet, lorsque vous avez accepté les outils d’analyse concernés.</li>
       </ul>
 
       <p>
-        Les données collectées peuvent comprendre :
+        Selon la situation, les données traitées peuvent notamment comprendre :
       </p>
 
       <ul>
         <li>nom et prénom ;</li>
         <li>adresse e-mail ;</li>
         <li>numéro de téléphone ;</li>
+        <li>adresse postale ;</li>
         <li>nom de l’entreprise ou de l’organisation ;</li>
-        <li>informations liées à l’événement ;</li>
-        <li>informations de facturation ;</li>
-        <li>contenu des messages et communications.</li>
+        <li>numéro d’entreprise et informations de facturation ;</li>
+        <li>informations relatives au projet, à l’événement ou au lieu d’intervention ;</li>
+        <li>contenu des messages et communications ;</li>
+        <li>photographies, vidéos ou autres contenus nécessaires à la réalisation d’une prestation ;</li>
+        <li>données techniques et informations relatives à l’utilisation du site.</li>
       </ul>
 
     </section>
@@ -320,19 +378,52 @@
 
     <section>
 
-      <h2>3. Finalités du traitement</h2>
+      <h2>3. Finalités et bases juridiques</h2>
 
       <p>
-        Les données personnelles sont traitées exclusivement pour :
+        NDG Live Tech traite les données personnelles uniquement lorsqu’une
+        base juridique permet ce traitement.
+      </p>
+
+      <p>
+        Les traitements peuvent notamment être nécessaires afin de :
       </p>
 
       <ul>
-        <li>répondre aux demandes ;</li>
-        <li>préparer des devis et factures ;</li>
-        <li>organiser les prestations techniques et productions ;</li>
-        <li>la gestion administrative et comptable ;</li>
-        <li>les obligations légales et fiscales ;</li>
-        <li>la communication professionnelle avec les clients et partenaires.</li>
+
+        <li>
+          répondre à une demande et préparer un devis ou une prestation
+          — mesures précontractuelles ;
+        </li>
+
+        <li>
+          organiser, réaliser et assurer le suivi des prestations
+          — exécution d’un contrat ;
+        </li>
+
+        <li>
+          établir et gérer les factures, paiements et documents comptables
+          — exécution du contrat et obligations légales ;
+        </li>
+
+        <li>
+          respecter les obligations comptables, fiscales ou réglementaires
+          applicables à NDG Live Tech
+          — obligation légale ;
+        </li>
+
+        <li>
+          assurer la gestion administrative, la sécurité des services
+          et la défense des droits de NDG Live Tech
+          — intérêt légitime ;
+        </li>
+
+        <li>
+          analyser l’utilisation du site internet lorsque le consentement
+          de l’utilisateur est requis et a été donné
+          — consentement.
+        </li>
+
       </ul>
 
     </section>
@@ -340,30 +431,107 @@
 
     <section>
 
-      <h2>4. Base juridique</h2>
+      <h2>4. Formulaire de contact</h2>
 
       <p>
-        Le traitement des données personnelles repose sur :
+        Le site internet de NDG Live Tech utilise un service technique tiers
+        pour permettre l’envoi des formulaires de contact.
+      </p>
+
+      <p>
+        Les informations introduites dans le formulaire sont traitées afin
+        de transmettre et de traiter votre demande. Il est recommandé de ne
+        pas communiquer, via le formulaire, de données sensibles ou
+        d’informations qui ne sont pas nécessaires à votre demande.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>5. Données liées aux prestations audiovisuelles et drone</h2>
+
+      <p>
+        Dans le cadre de prestations audiovisuelles, événementielles ou
+        réalisées par drone, NDG Live Tech peut traiter des photographies,
+        vidéos et autres images nécessaires à l’exécution de la mission.
+      </p>
+
+      <p>
+        Ces images peuvent, selon les circonstances, permettre d’identifier
+        directement ou indirectement des personnes et constituer des données
+        à caractère personnel.
+      </p>
+
+      <p>
+        NDG Live Tech limite la collecte et l’utilisation de ces images à ce
+        qui est nécessaire à la finalité de la prestation, aux obligations
+        réglementaires applicables et aux utilisations convenues avec le Client.
+      </p>
+
+      <p>
+        Lors d’une inspection par drone, les images peuvent notamment représenter
+        des bâtiments, terrains, véhicules ou éléments environnants. NDG Live Tech
+        prend les mesures raisonnables afin d’éviter la collecte inutile de données
+        concernant des tiers.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>6. Google Analytics et données de navigation</h2>
+
+      <p>
+        NDG Live Tech utilise Google Analytics afin de mieux comprendre
+        l’utilisation du site internet, notamment le nombre de visites,
+        les pages consultées et certaines informations techniques relatives
+        aux appareils et navigateurs utilisés.
+      </p>
+
+      <p>
+        Lorsque la législation exige le consentement de l’utilisateur,
+        les technologies d’analyse concernées ne sont utilisées qu’en fonction
+        du choix exprimé par celui-ci via le système de gestion des cookies.
+      </p>
+
+      <p>
+        Des informations complémentaires concernant les cookies et technologies
+        similaires sont disponibles dans la Politique des cookies.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>7. Destinataires et prestataires</h2>
+
+      <p>
+        Les données personnelles ne sont pas vendues à des tiers.
+      </p>
+
+      <p>
+        Elles peuvent toutefois être communiquées, lorsque cela est nécessaire,
+        à des prestataires intervenant pour le compte de NDG Live Tech,
+        notamment dans les domaines suivants :
       </p>
 
       <ul>
-        <li>l’exécution d’un contrat ;</li>
-        <li>des mesures précontractuelles ;</li>
-        <li>des obligations légales ;</li>
-        <li>l’intérêt légitime de NDG Live Tech.</li>
+        <li>hébergement et services techniques du site internet ;</li>
+        <li>formulaires et communications électroniques ;</li>
+        <li>outils d’analyse du site internet ;</li>
+        <li>facturation et comptabilité ;</li>
+        <li>prestataires techniques et sous-traitants nécessaires à une prestation ;</li>
+        <li>conseillers professionnels ;</li>
+        <li>autorités publiques lorsque la loi l’exige.</li>
       </ul>
 
-    </section>
-
-
-    <section>
-
-      <h2>5. Conservation des données</h2>
-
       <p>
-        Les données personnelles ne sont conservées que pendant
-        la durée nécessaire aux finalités décrites ci-dessus
-        et conformément aux obligations légales belges.
+        Ces destinataires n’ont accès aux données que dans la mesure nécessaire
+        à l’accomplissement de leurs missions ou obligations.
       </p>
 
     </section>
@@ -371,31 +539,19 @@
 
     <section>
 
-      <h2>6. Partage des données</h2>
+      <h2>8. Transferts internationaux de données</h2>
 
       <p>
-        Les données personnelles ne sont jamais vendues à des tiers.
+        Certains prestataires techniques utilisés par NDG Live Tech peuvent
+        traiter ou rendre accessibles des données depuis des pays situés en
+        dehors de l’Espace économique européen.
       </p>
 
       <p>
-        Elles peuvent être partagées avec des prestataires de confiance,
-        des sous-traitants ou des autorités publiques uniquement lorsque
-        cela est nécessaire à des fins techniques, légales,
-        administratives ou comptables.
-      </p>
-
-    </section>
-
-
-    <section>
-
-      <h2>7. Sécurité des données</h2>
-
-      <p>
-        NDG Live Tech met en œuvre des mesures techniques
-        et organisationnelles raisonnables afin de protéger
-        les données personnelles contre l’accès non autorisé,
-        l’usage abusif, la divulgation ou la destruction.
+        Lorsque de tels transferts ont lieu, NDG Live Tech veille, dans la mesure
+        requise par la législation applicable, à ce qu’ils reposent sur un
+        mécanisme juridique reconnu, tel qu’une décision d’adéquation ou des
+        garanties appropriées.
       </p>
 
     </section>
@@ -403,23 +559,89 @@
 
     <section>
 
-      <h2>8. Vos droits</h2>
+      <h2>9. Conservation des données</h2>
 
       <p>
-        Conformément au RGPD, vous disposez notamment du droit de :
+        Les données personnelles sont conservées uniquement pendant la durée
+        nécessaire à la réalisation des finalités pour lesquelles elles ont
+        été collectées, ainsi que pendant les périodes nécessaires au respect
+        des obligations légales ou à la défense de droits en justice.
+      </p>
+
+      <p>
+        Les documents comptables et fiscaux sont conservés pendant les durées
+        imposées par la législation applicable.
+      </p>
+
+      <p>
+        Les données relatives aux demandes de contact qui ne donnent pas lieu
+        à une relation commerciale ne sont pas destinées à être conservées
+        indéfiniment.
+      </p>
+
+      <p>
+        Les images, vidéos, rapports et autres fichiers liés à une prestation
+        sont conservés pendant la durée nécessaire à l’exécution et au suivi
+        de celle-ci, sauf lorsqu’une conservation plus longue est justifiée
+        par le contrat, une obligation légale ou un intérêt légitime.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>10. Sécurité des données</h2>
+
+      <p>
+        NDG Live Tech met en œuvre des mesures techniques et organisationnelles
+        raisonnables afin de protéger les données personnelles contre la perte,
+        l’accès non autorisé, l’utilisation abusive, l’altération ou la
+        divulgation non autorisée.
+      </p>
+
+      <p>
+        Aucun système informatique ou moyen de transmission ne pouvant offrir
+        une sécurité absolue, ces mesures sont adaptées dans la mesure du
+        raisonnable à la nature des données et aux risques identifiés.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>11. Vos droits</h2>
+
+      <p>
+        Dans les conditions prévues par le RGPD, vous pouvez notamment disposer
+        des droits suivants :
       </p>
 
       <ul>
-        <li>accéder à vos données personnelles ;</li>
-        <li>demander la rectification de données inexactes ;</li>
-        <li>demander l’effacement de vos données ;</li>
-        <li>vous opposer au traitement ;</li>
-        <li>demander la limitation du traitement ;</li>
-        <li>demander la portabilité des données lorsque cela est applicable.</li>
+        <li>droit d’être informé du traitement de vos données ;</li>
+        <li>droit d’accès à vos données personnelles ;</li>
+        <li>droit de rectification des données inexactes ou incomplètes ;</li>
+        <li>droit à l’effacement lorsque les conditions légales sont réunies ;</li>
+        <li>droit à la limitation du traitement ;</li>
+        <li>droit d’opposition à certains traitements ;</li>
+        <li>droit à la portabilité des données lorsque celui-ci est applicable ;</li>
+        <li>droit de retirer votre consentement lorsqu’un traitement repose sur celui-ci ;</li>
+        <li>
+          droit de ne pas faire l’objet d’une décision fondée exclusivement
+          sur un traitement automatisé produisant certains effets juridiques
+          ou significatifs, lorsque ce droit est applicable.
+        </li>
       </ul>
 
       <p>
-        Pour exercer vos droits, contactez :
+        Le retrait du consentement n’affecte pas la licéité des traitements
+        effectués avant ce retrait.
+      </p>
+
+      <p>
+        Pour exercer vos droits ou poser une question relative à vos données,
+        vous pouvez contacter :
       </p>
 
       <p>
@@ -428,17 +650,9 @@
         </a>
       </p>
 
-    </section>
-
-
-    <section>
-
-      <h2>9. Réclamations</h2>
-
       <p>
-        Si vous estimez que vos données personnelles ne sont pas
-        traitées correctement, vous pouvez introduire une plainte
-        auprès de l’Autorité de protection des données belge.
+        NDG Live Tech peut demander les informations raisonnablement nécessaires
+        afin de vérifier l’identité de la personne introduisant une demande.
       </p>
 
     </section>
@@ -446,7 +660,43 @@
 
     <section>
 
-      <h2>10. Documents liés</h2>
+      <h2>12. Réclamation auprès de l’Autorité de protection des données</h2>
+
+      <p>
+        Si vous estimez que le traitement de vos données personnelles ne respecte
+        pas la législation applicable, vous disposez du droit d’introduire une
+        plainte auprès de l’Autorité de protection des données belge.
+      </p>
+
+      <p>
+        Autorité de protection des données<br>
+        Rue de la Presse 35<br>
+        1000 Bruxelles — Belgique
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>13. Modification de la politique de confidentialité</h2>
+
+      <p>
+        NDG Live Tech peut modifier la présente Politique de confidentialité
+        afin de tenir compte d’une évolution de ses services, de ses outils
+        techniques ou de la réglementation applicable.
+      </p>
+
+      <p>
+        La date de la dernière mise à jour est indiquée en haut de cette page.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>14. Documents liés</h2>
 
       <div class="legal-links">
 
@@ -472,6 +722,53 @@
   <footer class="legal-footer">
     © 2026 NDG Live Tech. Tous droits réservés.
   </footer>
+
+
+  <!-- ===== COOKIE BANNER ===== -->
+
+  <div class="cookie-banner" id="cookieBanner">
+
+    <div>
+
+      <h3>
+        <i class="fa-solid fa-cookie-bite"></i>
+        Cookies, cookies, cookies...
+      </h3>
+
+      <p>
+        Ce site utilise des cookies essentiels à son bon fonctionnement
+        et peut utiliser des cookies optionnels afin d'améliorer votre expérience.
+        Vous pouvez accepter tous les cookies ou refuser les cookies non essentiels.
+        <a href="cookies-fr.html">En savoir plus</a>
+      </p>
+
+    </div>
+
+    <div class="cookie-actions">
+
+      <button
+        class="btn-secondary"
+        onclick="rejectCookies()"
+      >
+        Refuser les cookies non essentiels
+      </button>
+
+      <button
+        class="btn-primary"
+        onclick="acceptCookies()"
+      >
+        <i class="fa-solid fa-cookie-bite"></i>
+        Tout accepter
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ===== MAIN JAVASCRIPT ===== -->
+
+  <script src="../script.js"></script>
 
 </body>
 

@@ -2,10 +2,51 @@
 <html lang="nl">
 
 <head>
+
+  <!-- =========================
+       GOOGLE ANALYTICS
+       Toestemming standaard geweigerd
+  ========================== -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+    }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1GKQJENK2"></script>
+
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-F1GKQJENK2');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Privacybeleid - NDG Live Tech</title>
+
+  <link rel="stylesheet" href="../css/cookies.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
 
   <style>
     * {
@@ -88,9 +129,7 @@
 
     .legal-language a.active {
       color: #ffffff;
-
       background: rgba(35, 113, 215, 0.20);
-
       border-color: rgba(35, 113, 215, 0.65);
     }
 
@@ -164,7 +203,6 @@
     .legal-links {
       display: flex;
       flex-direction: column;
-
       align-items: flex-start;
       gap: 10px;
     }
@@ -179,7 +217,6 @@
 
     .legal-links a::before {
       content: "→";
-
       color: rgba(60, 141, 245, 0.65);
     }
 
@@ -208,7 +245,6 @@
       h2 {
         font-size: 20px;
       }
-
     }
   </style>
 
@@ -248,14 +284,16 @@
 
     <p class="intro">
       Dit privacybeleid legt uit hoe NDG Live Tech persoonsgegevens
-      verzamelt, gebruikt en beschermt in overeenstemming met de AVG.
+      verzamelt, gebruikt, bewaart en beschermt in het kader van zijn
+      activiteiten en website.
     </p>
 
     <p class="updated">
-      Laatst bijgewerkt — 2026
+      Laatst bijgewerkt — september 2026
     </p>
 
 
+    <!-- 1 -->
     <section>
 
       <h2>1. Verwerkingsverantwoordelijke</h2>
@@ -269,6 +307,9 @@
         Nicolas De Greef<br>
         Avenue de Floréal 172 boîte 1<br>
         1180 Ukkel — België<br><br>
+
+        Ondernemingsnummer: 1037.633.744<br>
+        Btw-nummer: BE1037.633.744<br><br>
 
         E-mail:
         <a href="mailto:legal@ndglivetech.com">
@@ -284,21 +325,17 @@
     </section>
 
 
+    <!-- 2 -->
     <section>
 
       <h2>2. Verzamelde persoonsgegevens</h2>
 
       <p>
-        NDG Live Tech kan persoonsgegevens verzamelen wanneer u:
+        NDG Live Tech kan persoonsgegevens verzamelen wanneer u contact
+        opneemt, een offerte aanvraagt, een dienst bestelt, het
+        contactformulier gebruikt of communiceert in verband met een
+        evenement, productie of andere opdracht.
       </p>
-
-      <ul>
-        <li>ons per e-mail of telefoon contacteert;</li>
-        <li>een offerte aanvraagt;</li>
-        <li>technische diensten boekt;</li>
-        <li>het contactformulier op de website gebruikt;</li>
-        <li>communiceert over een evenement of productie.</li>
-      </ul>
 
       <p>
         De verzamelde gegevens kunnen onder meer omvatten:
@@ -308,112 +345,221 @@
         <li>naam en voornaam;</li>
         <li>e-mailadres;</li>
         <li>telefoonnummer;</li>
-        <li>naam van bedrijf of organisatie;</li>
-        <li>informatie over een evenement;</li>
-        <li>facturatiegegevens;</li>
-        <li>inhoud van berichten en communicatie.</li>
+        <li>naam van een bedrijf of organisatie;</li>
+        <li>facturatie- en administratieve gegevens;</li>
+        <li>informatie over een evenement, productie of opdracht;</li>
+        <li>inhoud van berichten en professionele communicatie;</li>
+        <li>technische gegevens die verband houden met het gebruik van de website.</li>
       </ul>
 
     </section>
 
 
+    <!-- 3 -->
     <section>
 
-      <h2>3. Doeleinden van de verwerking</h2>
+      <h2>3. Doeleinden en rechtsgronden van de verwerking</h2>
 
       <p>
-        Persoonsgegevens worden uitsluitend verwerkt voor:
+        Persoonsgegevens kunnen onder meer worden verwerkt voor:
       </p>
 
       <ul>
-        <li>het beantwoorden van vragen;</li>
-        <li>het opstellen van offertes en facturen;</li>
-        <li>het organiseren van technische diensten en producties;</li>
-        <li>administratief en boekhoudkundig beheer;</li>
-        <li>wettelijke en fiscale verplichtingen;</li>
-        <li>professionele communicatie met klanten en partners.</li>
+        <li>het beantwoorden van vragen en contactaanvragen;</li>
+        <li>het opstellen en opvolgen van offertes;</li>
+        <li>het uitvoeren en organiseren van diensten en opdrachten;</li>
+        <li>facturatie, boekhouding en administratief beheer;</li>
+        <li>het naleven van wettelijke en fiscale verplichtingen;</li>
+        <li>professionele communicatie met klanten, leveranciers en partners;</li>
+        <li>het verbeteren en beveiligen van de website.</li>
       </ul>
 
-    </section>
-
-
-    <section>
-
-      <h2>4. Rechtsgrond</h2>
-
       <p>
-        De verwerking van persoonsgegevens is gebaseerd op:
-      </p>
-
-      <ul>
-        <li>de uitvoering van een overeenkomst;</li>
-        <li>precontractuele maatregelen;</li>
-        <li>wettelijke verplichtingen;</li>
-        <li>het gerechtvaardigd belang van NDG Live Tech.</li>
-      </ul>
-
-    </section>
-
-
-    <section>
-
-      <h2>5. Bewaartermijn</h2>
-
-      <p>
-        Persoonsgegevens worden alleen bewaard zolang dat nodig is
-        voor de hierboven beschreven doeleinden en in overeenstemming
-        met de Belgische wettelijke verplichtingen.
+        Afhankelijk van de situatie is de verwerking gebaseerd op de
+        uitvoering van een overeenkomst, precontractuele maatregelen,
+        een wettelijke verplichting, het gerechtvaardigd belang van
+        NDG Live Tech of, wanneer vereist, uw toestemming.
       </p>
 
     </section>
 
 
+    <!-- 4 -->
     <section>
 
-      <h2>6. Delen van gegevens</h2>
+      <h2>4. Contactformulier</h2>
 
       <p>
-        Persoonsgegevens worden nooit aan derden verkocht.
+        Wanneer u het contactformulier op de website gebruikt, worden de
+        gegevens die u invoert verwerkt om uw aanvraag te ontvangen,
+        te behandelen en te beantwoorden.
       </p>
 
       <p>
-        Gegevens kunnen alleen wanneer dat nodig is voor technische,
-        juridische, administratieve of boekhoudkundige doeleinden
-        worden gedeeld met betrouwbare dienstverleners,
-        onderaannemers of overheidsinstanties.
+        Deze gegevens worden niet gebruikt voor andere doeleinden die
+        onverenigbaar zijn met uw aanvraag zonder een passende rechtsgrond.
       </p>
 
     </section>
 
 
+    <!-- 5 -->
     <section>
 
-      <h2>7. Gegevensbeveiliging</h2>
+      <h2>5. Audiovisuele gegevens en dronebeelden</h2>
+
+      <p>
+        In het kader van audiovisuele producties, evenementen, opnames
+        of droneprestaties kan NDG Live Tech foto's, video's of andere
+        audiovisuele gegevens verwerken.
+      </p>
+
+      <p>
+        Afhankelijk van de opdracht kunnen personen, voertuigen, gebouwen
+        of andere identificeerbare elementen op deze beelden voorkomen.
+      </p>
+
+      <p>
+        NDG Live Tech verwerkt dergelijke gegevens uitsluitend voor de
+        doeleinden die verband houden met de betrokken opdracht en met
+        inachtneming van de toepasselijke regels inzake privacy,
+        gegevensbescherming en beeldrecht.
+      </p>
+
+    </section>
+
+
+    <!-- 6 -->
+    <section>
+
+      <h2>6. Google Analytics en navigatiegegevens</h2>
+
+      <p>
+        De website kan Google Analytics gebruiken om statistische informatie
+        te verkrijgen over het gebruik van de website en om de inhoud,
+        navigatie en prestaties ervan te verbeteren.
+      </p>
+
+      <p>
+        In dit kader kunnen bepaalde technische gegevens over uw bezoek,
+        browser en apparaat worden verwerkt.
+      </p>
+
+      <p>
+        Wanneer het gebruik van dergelijke analysetechnologieën uw
+        toestemming vereist, worden zij gebruikt in overeenstemming
+        met de keuze die u via het cookiebeheersysteem hebt gemaakt.
+      </p>
+
+      <p>
+        Meer informatie over het gebruik van cookies vindt u in ons
+        <a href="cookies-nl.html">Cookiebeleid</a>.
+      </p>
+
+    </section>
+
+
+    <!-- 7 -->
+    <section>
+
+      <h2>7. Ontvangers en dienstverleners</h2>
+
+      <p>
+        Persoonsgegevens worden niet verkocht.
+      </p>
+
+      <p>
+        Ze kunnen, wanneer dit noodzakelijk is voor de uitvoering van
+        de activiteiten van NDG Live Tech, worden meegedeeld aan
+        dienstverleners, technische partners, onderaannemers,
+        administratieve of boekhoudkundige dienstverleners en bevoegde
+        overheidsinstanties.
+      </p>
+
+      <p>
+        Alleen gegevens die noodzakelijk zijn voor de betrokken dienst
+        of verplichting worden meegedeeld.
+      </p>
+
+    </section>
+
+
+    <!-- 8 -->
+    <section>
+
+      <h2>8. Internationale doorgiften</h2>
+
+      <p>
+        Bepaalde technische dienstverleners kunnen persoonsgegevens
+        verwerken buiten de Europese Economische Ruimte.
+      </p>
+
+      <p>
+        Wanneer een dergelijke doorgifte plaatsvindt, gebeurt deze
+        overeenkomstig de toepasselijke regels inzake gegevensbescherming
+        en, indien vereist, op basis van passende waarborgen.
+      </p>
+
+    </section>
+
+
+    <!-- 9 -->
+    <section>
+
+      <h2>9. Bewaartermijn</h2>
+
+      <p>
+        Persoonsgegevens worden niet langer bewaard dan noodzakelijk
+        voor de doeleinden waarvoor zij werden verzameld.
+      </p>
+
+      <p>
+        Sommige gegevens kunnen langer worden bewaard wanneer dit nodig
+        is om te voldoen aan wettelijke, fiscale, boekhoudkundige of
+        contractuele verplichtingen of om de rechten van NDG Live Tech
+        te beschermen.
+      </p>
+
+    </section>
+
+
+    <!-- 10 -->
+    <section>
+
+      <h2>10. Beveiliging</h2>
 
       <p>
         NDG Live Tech neemt redelijke technische en organisatorische
-        maatregelen om persoonsgegevens te beschermen tegen
-        ongeoorloofde toegang, misbruik, openbaarmaking of vernietiging.
+        maatregelen om persoonsgegevens te beschermen tegen verlies,
+        ongeoorloofde toegang, misbruik, wijziging, openbaarmaking
+        of vernietiging.
+      </p>
+
+      <p>
+        Geen enkel systeem kan echter absolute veiligheid garanderen.
       </p>
 
     </section>
 
 
+    <!-- 11 -->
     <section>
 
-      <h2>8. Uw rechten</h2>
+      <h2>11. Uw rechten</h2>
 
       <p>
-        Volgens de AVG hebt u onder meer het recht om:
+        Onder de voorwaarden van de toepasselijke regelgeving kunt u
+        onder meer beschikken over de volgende rechten:
       </p>
 
       <ul>
-        <li>uw persoonsgegevens in te zien;</li>
-        <li>onjuiste gegevens te laten corrigeren;</li>
-        <li>verwijdering van uw gegevens te vragen;</li>
-        <li>bezwaar te maken tegen verwerking;</li>
-        <li>beperking van de verwerking te vragen;</li>
-        <li>gegevensoverdraagbaarheid te vragen wanneer dit van toepassing is.</li>
+        <li>recht op inzage in uw persoonsgegevens;</li>
+        <li>recht op rectificatie van onjuiste of onvolledige gegevens;</li>
+        <li>recht op verwijdering wanneer de wettelijke voorwaarden zijn vervuld;</li>
+        <li>recht op beperking van de verwerking;</li>
+        <li>recht van bezwaar tegen bepaalde verwerkingen;</li>
+        <li>recht op gegevensoverdraagbaarheid wanneer dit van toepassing is;</li>
+        <li>recht om uw toestemming op ieder moment in te trekken wanneer de verwerking daarop is gebaseerd.</li>
       </ul>
 
       <p>
@@ -426,25 +572,52 @@
         </a>
       </p>
 
+      <p>
+        NDG Live Tech kan u om aanvullende informatie vragen wanneer dit
+        noodzakelijk is om uw identiteit te verifiëren voordat een verzoek
+        wordt behandeld.
+      </p>
+
     </section>
 
 
+    <!-- 12 -->
     <section>
 
-      <h2>9. Klachten</h2>
+      <h2>12. Klacht bij de Gegevensbeschermingsautoriteit</h2>
 
       <p>
-        Als u van mening bent dat uw persoonsgegevens niet correct
-        worden verwerkt, kunt u een klacht indienen bij de Belgische
+        Indien u van mening bent dat uw persoonsgegevens niet in
+        overeenstemming met de toepasselijke regelgeving worden verwerkt,
+        kunt u een klacht indienen bij de Belgische
         Gegevensbeschermingsautoriteit.
       </p>
 
     </section>
 
 
+    <!-- 13 -->
     <section>
 
-      <h2>10. Gerelateerde documenten</h2>
+      <h2>13. Wijzigingen van dit privacybeleid</h2>
+
+      <p>
+        NDG Live Tech kan dit privacybeleid wijzigen om rekening te houden
+        met wijzigingen in zijn activiteiten, de website, gebruikte
+        diensten of toepasselijke regelgeving.
+      </p>
+
+      <p>
+        De datum van de laatste update wordt bovenaan deze pagina vermeld.
+      </p>
+
+    </section>
+
+
+    <!-- 14 -->
+    <section>
+
+      <h2>14. Gerelateerde documenten</h2>
 
       <div class="legal-links">
 
@@ -470,6 +643,51 @@
   <footer class="legal-footer">
     © 2026 NDG Live Tech. Alle rechten voorbehouden.
   </footer>
+
+
+  <!-- ===== COOKIE BANNER ===== -->
+
+  <div class="cookie-banner" id="cookieBanner">
+
+    <div>
+
+      <h3>
+        <i class="fa-solid fa-cookie-bite"></i>
+        Cookies, cookies, cookies...
+      </h3>
+
+      <p>
+        Deze website gebruikt essentiële cookies om correct te functioneren
+        en kan optionele cookies gebruiken om uw ervaring te verbeteren.
+        U kunt alle cookies accepteren of niet-essentiële cookies weigeren.
+        <a href="cookies-nl.html">Meer informatie</a>
+      </p>
+
+    </div>
+
+    <div class="cookie-actions">
+
+      <button
+        class="btn-secondary"
+        onclick="rejectCookies()"
+      >
+        Niet-essentiële cookies weigeren
+      </button>
+
+      <button
+        class="btn-primary"
+        onclick="acceptCookies()"
+      >
+        <i class="fa-solid fa-cookie-bite"></i>
+        Alles accepteren
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <script src="../script.js"></script>
 
 </body>
 

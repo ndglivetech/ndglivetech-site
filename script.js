@@ -516,13 +516,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* =========================================================
-     COOKIES
+     COOKIE BANNER
   ========================================================= */
 
-  if (
+  const cookieConsent =
     localStorage.getItem(
       "cookieConsent"
-    ) &&
+    );
+
+
+  /*
+    If a choice has already been made,
+    hide the cookie banner.
+  */
+
+  if (
+    cookieConsent &&
     cookieBanner
   ) {
 
@@ -535,7 +544,53 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /* =========================================================
-   COOKIE FUNCTIONS
+   GOOGLE CONSENT
+========================================================= */
+
+function updateGoogleConsent(status) {
+
+  /*
+    gtag() is created in the <head>.
+    This check prevents an error if Analytics
+    is unavailable for any reason.
+  */
+
+  if (typeof gtag !== "function") {
+    return;
+  }
+
+
+  if (status === "accepted") {
+
+    gtag("consent", "update", {
+
+      analytics_storage: "granted",
+
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied"
+
+    });
+
+  } else {
+
+    gtag("consent", "update", {
+
+      analytics_storage: "denied",
+
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied"
+
+    });
+
+  }
+
+}
+
+
+/* =========================================================
+   ACCEPT COOKIES
 ========================================================= */
 
 function acceptCookies() {
@@ -545,10 +600,21 @@ function acceptCookies() {
     "accepted"
   );
 
+
+  /*
+    Authorise Google Analytics.
+  */
+
+  updateGoogleConsent(
+    "accepted"
+  );
+
+
   const cookieBanner =
     document.getElementById(
       "cookieBanner"
     );
+
 
   if (cookieBanner) {
 
@@ -560,6 +626,10 @@ function acceptCookies() {
 }
 
 
+/* =========================================================
+   REJECT COOKIES
+========================================================= */
+
 function rejectCookies() {
 
   localStorage.setItem(
@@ -567,10 +637,21 @@ function rejectCookies() {
     "rejected"
   );
 
+
+  /*
+    Keep Google Analytics storage denied.
+  */
+
+  updateGoogleConsent(
+    "rejected"
+  );
+
+
   const cookieBanner =
     document.getElementById(
       "cookieBanner"
     );
+
 
   if (cookieBanner) {
 
