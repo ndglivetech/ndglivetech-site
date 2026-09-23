@@ -14,6 +14,21 @@
     <loc>https://ndglivetech.com/nl.html</loc>
   </url>
 
+
+  <!-- Drone Inspection -->
+  <url>
+    <loc>https://ndglivetech.com/drone.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/drone-fr.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ndglivetech.com/drone-nl.html</loc>
+  </url>
+
+
   <!-- Legal - English -->
   <url>
     <loc>https://ndglivetech.com/legal/legal.html</loc>
@@ -31,6 +46,7 @@
     <loc>https://ndglivetech.com/legal/cookies.html</loc>
   </url>
 
+
   <!-- Legal - French -->
   <url>
     <loc>https://ndglivetech.com/legal/legal-fr.html</loc>
@@ -47,6 +63,7 @@
   <url>
     <loc>https://ndglivetech.com/legal/cookies-fr.html</loc>
   </url>
+
 
   <!-- Legal - Dutch -->
   <url>
